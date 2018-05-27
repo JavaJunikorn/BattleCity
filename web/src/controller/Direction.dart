@@ -13,11 +13,11 @@ class Direction{
 
     window.onTouchStart.listen((ev) {
       last = null;
-      first = ev.touches.first.client;
+      first = ev.touches.first.page;
     });
 
     window.onTouchMove.listen((ev){
-      last = ev.touches.first.client;
+      last = ev.touches.first.page;
     });
 
     window.onTouchEnd.listen((ev) {
