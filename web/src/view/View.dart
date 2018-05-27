@@ -16,7 +16,7 @@ class View {
 
   View (Game this.model){
 
-    new Timer.periodic(new Duration(milliseconds: 50), (t){
+    new Timer.periodic(new Duration(milliseconds: 200), (t){
       querySelector(".col-12").children.clear();
       querySelector(".col-12").children.add(toHTMLTable(model));
     });
