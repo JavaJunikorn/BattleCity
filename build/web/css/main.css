@@ -1,0 +1,78 @@
+body {
+    overscroll-behavior: contain;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+
+table td {
+    width: 15px;
+    height: 15px;
+}
+
+.bg-grey {
+    background-color: #5a6268;
+}
+/*
+.bg-black {
+    background-color: black;
+}
+*/
+.bg-brick {
+    background-image: url("../img/wall-field-full.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-steel {
+    background-image: url("../img/steel-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-base-field {
+    position: relative;
+}
+
+.bg-base-field:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -30px;
+    bottom: -13px;
+    background-image: url("../img/base-field.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+.bg-player {
+    position: relative;
+}
+
+
+
+.bg-player:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/player-tank.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/*
+table td {
+    background: black;
+}
+*/
