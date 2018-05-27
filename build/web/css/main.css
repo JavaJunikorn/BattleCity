@@ -1,7 +1,11 @@
-html { overflow-y: hidden; }
+html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
 body {
     overscroll-behavior: contain;
+    position: relative;
 }
 
 table {
