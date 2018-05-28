@@ -1,13 +1,5 @@
-import '../model/GameField.dart';
 import 'dart:html';
 import 'dart:async';
-import '../model/grounds/Road.dart';
-import '../model/grounds/Brick.dart';
-import '../model/grounds/Water.dart';
-import '../model/grounds/Bush.dart';
-import '../model/grounds/Steel.dart';
-import '../model/grounds/Barrier.dart';
-import '../model/grounds/Goal.dart';
 import '../model/Game.dart';
 
 class View {
@@ -15,10 +7,24 @@ class View {
   Game model;
 
   View (Game this.model){
+    querySelector(".col-12").children.add(toHTMLTable(model));
+    new Timer.periodic(new Duration(milliseconds: 2000), (t){
+      TableElement t = toHTMLTable(model);
+      //querySelector(".col-12").children.clear();
+//      querySelector(".col-12").children.add(toHTMLTable(model));
+       Element table = querySelector(".col-12").children.first.children.first;
+       List<Element> rows = table.children;
+       for(int i = 0; i < rows.length; i++){
+         List<Element> cols = rows[i].children;
+         for(int j = 0; j < cols.length; j++){
+           cols[j].setAttribute("class", "bg-" + model.gamefield.gameField[i+1][j+1].ground.type);
+         }
+       }
 
-    new Timer.periodic(new Duration(milliseconds: 200), (t){
-      querySelector(".col-12").children.clear();
-      querySelector(".col-12").children.add(toHTMLTable(model));
+       model.gamefield.moveables.forEach((m){
+         rows[m.positions[0][0].y].children[m.positions[0][0].x].setAttribute("class", "bg-" + m.type);
+       });
+
     });
 
 

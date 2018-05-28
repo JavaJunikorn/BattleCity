@@ -31,7 +31,7 @@ void main() {
  // newGame.generateField(1);
  // newGame.gamefield.gameField[3][3].ground = Brick.ground;
  // EnemyTank tank = new EnemyTank(7, 7, 2, 2, Directions.left, newGame.gamefield, 1, 2, "", "player");
- // direction.game = newGame;
+  direction.game = newGame;
   direction.startListening();
   newGame.startloop();
   //print(lvlLoader.generateJson(27, 27));
