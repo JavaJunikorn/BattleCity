@@ -8,7 +8,7 @@ class View {
 
   View (Game this.model){
     querySelector(".col-12").children.add(toHTMLTable(model));
-    new Timer.periodic(new Duration(milliseconds: 2000), (t){
+    new Timer.periodic(new Duration(milliseconds: 50), (t){
       TableElement t = toHTMLTable(model);
       //querySelector(".col-12").children.clear();
 //      querySelector(".col-12").children.add(toHTMLTable(model));

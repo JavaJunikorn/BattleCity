@@ -3715,7 +3715,7 @@ s=a.d.d
 if(w>=s.length)return H.b(s,w)
 J.aO(v,"class","bg-"+s[w].r)}return z},
 c5:function(a){J.ak(document.querySelector(".col-12")).G(0,this.bE(this.a))
-P.cG(P.c7(0,0,0,2000,0,0),new O.fw(this))},
+P.cG(P.c7(0,0,0,50,0,0),new O.fw(this))},
 p:{
 fu:function(a){var z=new O.ft(a)
 z.c5(a)
