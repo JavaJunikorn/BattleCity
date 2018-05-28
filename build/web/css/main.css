@@ -9,7 +9,7 @@ body {
 }
 
 table {
-    border-spacing: 2px;
+    border-spacing: 0px;
     border-collapse: separate;
 }
 
@@ -17,7 +17,9 @@ table {
 table td {
     width: 15px;
     height: 15px;
+    background-color: black;
 }
+
 
 .bg-grey {
     background-color: #5a6268;
@@ -77,9 +79,23 @@ table td {
     z-index: 1;
 }
 
-
-/*
-table td {
-    background: black;
+.bg-enemy {
+    position: relative;
 }
-*/
+
+
+
+.bg-enemy:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+

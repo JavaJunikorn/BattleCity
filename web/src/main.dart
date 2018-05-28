@@ -25,7 +25,11 @@ void main() {
     Map data = JSON.decode(lvlFromJson);
     //newGame.gamefield = new GameField(27, 27); //lvlLoader.loadFields(data["gameFields"], 27, 27);
     newGame.gamefield = lvlLoader.loadFields(data["gameFields"], 27, 27);
-    newGame.player  = new PlayerTank(0, 0, 2, 2, Directions.right, newGame.gamefield, 2, 10, "");
+    newGame.player  = new PlayerTank(25, 13, 2, 2, Directions.right, newGame.gamefield, 2, 10, "");
+    EnemyTank enemy1 = new EnemyTank(0, 0, 2, 2, Directions.right, newGame.gamefield, 1, 1, "", "enemy");
+    EnemyTank enemy2 = new EnemyTank(0, 4, 2, 2, Directions.right, newGame.gamefield, 1, 1, "", "enemy");
+
+
     //testView.toHTMLTable(testView.model);
   });
  // newGame.generateField(1);
