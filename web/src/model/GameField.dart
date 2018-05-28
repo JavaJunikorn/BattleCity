@@ -31,6 +31,7 @@ class GameField{
     }
   }
 
+
   Field getField(Point p) => gameField[p.y +1][p.x +1];
 
   void setGoal(Point p) => getField(p).ground = new Ground.factory("goal");

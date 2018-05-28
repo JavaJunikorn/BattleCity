@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aeeddc9e-d43d-4bc5-860a-3db4ac8d877e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/build/web/src/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/src/main.dart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/first-lvl.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/first-lvl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/json/lvl1.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/lvl1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/controller/Direction.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Direction.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/lvLoader.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/lvLoader.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/model/GameField.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/GameField.dart" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lvLoader.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/lvLoader.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameField.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/model/GameField.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lvl1.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/json/lvl1.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="74" selection-start-column="74" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="first-lvl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/html/first-lvl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:0},&quot;type&quot;:&quot;&quot;}</find>
+      <find>{&quot;position&quot;:</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:9},&quot;type&quot;:&quot;brick&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;}</find>
+      <find>&quot;col&quot;:2},</find>
+      <find>&quot;col&quot;:2</find>
+      <find>&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;</find>
+      <find>&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;</find>
+      <find>&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;</find>
+      <find>{&quot;level&quot;:1,&quot;gameFields&quot;:[{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:0,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:1,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:11},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:11},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:11},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:10,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:11,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:1},&quot;type&quot;:&quot;steel&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:12,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:13,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:14,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:15,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:16,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:17,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:18,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:19,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:20,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:21,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:22,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:23,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:24,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:25,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:0},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:1},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:5},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:6},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:7},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:8},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:9},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:10},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:11},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:12},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:13},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:14},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:15},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:16},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:17},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:18},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:19},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:20},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:21},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:22},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:23},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:24},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:25},&quot;type&quot;:&quot;road&quot;},{&quot;position&quot;:{&quot;row&quot;:26,&quot;col&quot;:26},&quot;type&quot;:&quot;road&quot;}]}</find>
+      <find>r_o_w</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:9},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:3},&quot;type&quot;:&quot;road&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:2},&quot;type&quot;:&quot;road&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:4,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:4},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:4},&quot;type&quot;:&quot;road&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:2,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:3,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:5,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:6,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:9,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:8,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>{&quot;position&quot;:{&quot;row&quot;:7,&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;}</replace>
+      <replace>&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:6},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:7},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:10},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:0},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:11},&quot;type&quot;:&quot;brick&quot;</replace>
+      <replace>&quot;col&quot;:0},&quot;type&quot;:&quot;steel&quot;</replace>
+      <replace>&quot;col&quot;:1},&quot;type&quot;:&quot;steel&quot;</replace>
+      <replace>&quot;row&quot;</replace>
+      <replace>r_o_w</replace>
+      <replace>col</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/HTML/first-lvl.html" />
+        <option value="$PROJECT_DIR$/web/main.dart" />
+        <option value="$PROJECT_DIR$/web/html/index.html" />
+        <option value="$PROJECT_DIR$/web/src/level" />
+        <option value="$PROJECT_DIR$/web/src/LvlLoader.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/Moveable.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/Field.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/Ground.dart" />
+        <option value="$PROJECT_DIR$/web/html/test.html" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Barrier.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Brick.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Bush.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Goal.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Road.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Steel.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Water.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/grounds/Ground.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/moveables/PlayerTank.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/moveables/EnemyTank.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/moveables/Bullet.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/moveables/Moveable.dart" />
+        <option value="$PROJECT_DIR$/web/src/view/View.dart" />
+        <option value="$PROJECT_DIR$/web/src/controller/Direction.dart" />
+        <option value="$PROJECT_DIR$/web/src/Level.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/Game.dart" />
+        <option value="$PROJECT_DIR$/web/html/first-lvl.html" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$PROJECT_DIR$/web/src/main.dart" />
+        <option value="$PROJECT_DIR$/web/src/model/GameField.dart" />
+        <option value="$PROJECT_DIR$/web/json/lvl1.json" />
+        <option value="$PROJECT_DIR$/web/src/lvLoader.dart" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="grounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="lvlLoad&#9;null&#9;null&#10;lvl&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BC/web/json/lvl1.json&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BC/web/css/main.css&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Direction&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BC/web/src/controller/Direction.dart&#10;css&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BC/web/css/main.css&#10;Dire&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BC/web/src/controller/Direction.dart&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;bg-pla&#9;null&#9;null&#10;genera&#9;null&#9;null&#10;generate&#9;null&#9;null&#10;getFiel&#9;null&#9;null&#10;vje&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="last_opened_file_path" value="C:/tools/dart-sdk" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BC\web\src\model" />
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BC\web\src" />
+      <recent name="$PROJECT_DIR$/web/src" />
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BC\web\json" />
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BC\web\src\model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/BC/web/html/test.html" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aeeddc9e-d43d-4bc5-860a-3db4ac8d877e" name="Default" comment="" />
+      <created>1526453026666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526453026666</updated>
+      <workItem from="1526453028620" duration="15961000" />
+      <workItem from="1527172492988" duration="546000" />
+      <workItem from="1527173071555" duration="225000" />
+      <workItem from="1527173333031" duration="6136000" />
+      <workItem from="1527324806998" duration="11638000" />
+      <workItem from="1527354526524" duration="1292000" />
+      <workItem from="1527412826906" duration="2721000" />
+      <workItem from="1527415936092" duration="2256000" />
+      <workItem from="1527418241837" duration="10602000" />
+      <workItem from="1527429340150" duration="983000" />
+      <workItem from="1527441990655" duration="3962000" />
+      <workItem from="1527445989413" duration="7098000" />
+      <workItem from="1527494619258" duration="212000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="63420000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.221875" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dart Dev Server" order="13" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3297587" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Pub Serve" order="10" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3282365" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32925585" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32956153" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239584" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Pub Serve" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Dev Server" order="13" weight="0.32925585" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3282365" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/first-lvl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/Bullet.dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/model/GameField.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/Ground.dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html" />
+    <entry file="file://$PROJECT_DIR$/web/html/main.dart" />
+    <entry file="file://$PROJECT_DIR$/.packages">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/levelloader.dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/level" />
+    <entry file="file://$PROJECT_DIR$/web/src/LvlLoader.dart" />
+    <entry file="file://$USER_HOME$/Downloads/level (1).dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/model/Moveable.dart" />
+    <entry file="file://$PROJECT_DIR$/web/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/Tank.dart" />
+    <entry file="file://$USER_HOME$/Downloads/levelloader (1).dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/model/Bullet.dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/model/Ground.dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Barrier.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Brick.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Bush.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Goal.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Steel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Water.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Ground.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/index_backup.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/moveables/PlayerTank.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="223" selection-start-line="6" selection-start-column="223" selection-end-line="6" selection-end-column="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/moveables/Bullet.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/moveables/Tank.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/moveables/Moveable.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis_options.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/controller/Direction.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/moveables/EnemyTank.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Road.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/Level.dart" />
+    <entry file="file://$PROJECT_DIR$/web/src/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/GameField.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/first-lvl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/json/lvl1_b.json" />
+    <entry file="file://$PROJECT_DIR$/web/src/lvLoader.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/json/lvl1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="74" selection-start-column="74" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

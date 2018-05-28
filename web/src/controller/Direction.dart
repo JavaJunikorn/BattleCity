@@ -56,7 +56,6 @@ class Direction{
       //Shoot
       if(k.which == 32) { //spacebar
         game.player.shoot();
-        print("tap");
       }
       //Up
       if(k.which == 119 || k.keyCode == KeyCode.UP){
