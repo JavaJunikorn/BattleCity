@@ -9,7 +9,7 @@ body {
 }
 
 table {
-    border-spacing: 0px;
+    border-spacing: 2px;
     border-collapse: separate;
 }
 
@@ -76,6 +76,7 @@ table td {
     background-repeat: no-repeat;
     z-index: 1;
 }
+
 
 /*
 table td {
