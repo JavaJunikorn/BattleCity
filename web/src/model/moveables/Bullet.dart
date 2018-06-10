@@ -103,7 +103,7 @@ class Bullet extends Moveable {
 
   void move(int count) {
     if (count % speed != 0) return;
-    if(positions[0][0].x < 0 || positions[0][0].y < 0 || positions[positions.length][positions[0].length].x >= game.level.cols || positions[positions.length][positions[0].length].y >= game.level.rows)
+    if(positions[0][0].x < 0 || positions[0][0].y < 0 || positions[positions.length-1][positions[0].length-1].x >= game.level.cols || positions[positions.length-1][positions[0].length-1].y >= game.level.rows)
       return;
     switch (direction) {
       case Directions.up:
