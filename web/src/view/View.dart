@@ -55,8 +55,15 @@ class View {
 
       updateHint();
       model.level.gamefield.moveables.forEach((m){
-        rows[m.positions[0][0].y].children[m.positions[0][0].x].setAttribute("class", "bg-" + m.type + "-" + Moveable.directionOf(m));
-      });
+
+        try {
+          rows[m.positions[0][0].y].children[m.positions[0][0].x]
+              .setAttribute(
+              "class", "bg-" + m.type + "-" + Moveable.directionOf(m));
+        }
+        catch(e){}
+
+        });
     });
   }
 
@@ -76,6 +83,6 @@ class View {
     }
   }
 
-  void showCongruts() {
+  void showCongrats() {
   }
 }

@@ -1,3 +1,4 @@
+import '../Game.dart';
 import 'Moveable.dart';
 import '../GameField.dart';
 import 'Moveable.dart';
@@ -6,11 +7,12 @@ import 'dart:math';
 
 class EnemyTank extends Tank {
   EnemyTank(int x, int y, int width, int height, Directions direction,
-      GameField field, int speed, int health, String bulletType, String type)
-      : super(x, y, width, height, direction, field, speed, health, bulletType, type);
+      Game game, int speed, int health, String bulletType, String type)
+      : super(x, y, width, height, direction, game, speed, health, bulletType, type);
 
   @override
-  move() {
+  move(int count) {
+    if(count % speed != 0)return;
     Random rnd = new Random();
     if (!checkMovementPossible()) {
       if (health > 0) {
@@ -39,7 +41,7 @@ class EnemyTank extends Tank {
         }
       }
     } else
-      super.move();
+      super.move(count);
     doCollisions();
     int i = rnd.nextInt(1);
     if (i == 0) this.shoot();

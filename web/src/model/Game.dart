@@ -13,6 +13,7 @@ import '../LevelLoader.dart';
 
 class Game {
 
+  final int delay = 30;
   Level level;
   //Point goal;
   //GameField gamefield;
@@ -20,6 +21,8 @@ class Game {
   Timer t;
   int currentLevel = 0;
   int levelCount = 0;
+  Set<Moveable> toRemove = new Set();
+  int count = 0;
 
 
   Game(){
@@ -34,26 +37,27 @@ class Game {
   }
 
 
-  Future startloop(int delay) {
-    Future f = LevelLoader.load(currentLevel, (level) {
+  Future startloop() {
+    Future f = LevelLoader.load(currentLevel, this, (level) {
       this.level = level;
-      print(level);
     });
-    print(level);
 
-    this.t = new Timer.periodic(new Duration(milliseconds: 500), (t){
-      this.levelLoop();
-    }) ;
+
+    f.whenComplete(() {
+      this.t = new Timer.periodic(new Duration(milliseconds: delay), (t) {
+        this.levelLoop();
+      });
+    });
     return f;
   }
 
   continueLoop(){
-    this.t = new Timer.periodic(new Duration(milliseconds: 500), (t){
+    this.t = new Timer.periodic(new Duration(milliseconds: delay), (t){
       this.levelLoop();
     });
   }
 
-  void stoploop(){
+  void stopLoop(){
     this.t.cancel();
   }
 
@@ -67,30 +71,49 @@ class Game {
     return true;
   }
 
+
+  void printlevel(){String s = "";
+
+    level.gamefield.gameField.forEach((l){
+      l.forEach((f){
+        s += "[" + f.ground.toString() + ", " + f.moveable.toString() + "], ";
+      });
+      s += "\n";
+    });
+    print(s);
+  }
+
   /**
    * @return true on completion, false if lost
    */
   void levelLoop() {
-    print(levelCount);
-    Moveable tank;
-      level.gamefield.moveables.forEach((m) {
-        m.move();
-        print("(" + m.positions[0][0].x.toString() + "," + m.positions[0][0].y.toString() + ")");
-        if (m is PlayerTank)
-          tank = m;
-      });
-      _checkWinLose(tank);
+      for(int i = 0; i < level.gamefield.moveables.length; i++){
+        level.gamefield.moveables[i].move(count);
+      }
+      for(int i = 0; i < toRemove.length; i++){
+        for(int j = 0; j < toRemove.elementAt(i).positions.length; j++){
+          for(int k = 0; k < toRemove.elementAt(i).positions[j].length; k++){
+            level.gamefield.getField(toRemove.elementAt(i).positions[j][k]).moveable = null;
+          }
+        }
+        level.gamefield.moveables.remove(toRemove.elementAt(i));
+      }
+      toRemove = new Set();
+      _checkWinLose();
+      count++;
   }
 
-  void _checkWinLose(Moveable tank){
+  void _checkWinLose(){
     if(level.player.health < 1)
       print("player dead");
     if(level.gamefield.moveables.length < 1)
       print("amount of moveables: " + level.gamefield.moveables.length.toString());
-    if (tank.positions[0][0].x == level.goal.x && tank.positions[0][0].y == level.goal.y) {
-      stoploop();
-      LevelLoader.load(1, (level) {
+    if (level.player.positions[0][0].x == level.goal.x && level.player.positions[0][0].y == level.goal.y) {
+      stopLoop();
+      LevelLoader.load(1, this, (level) {
         this.level = level;
+      }).whenComplete((){
+        continueLoop();
       });
     }
     //if(gamefield.getField(goal).ground is! Goal)

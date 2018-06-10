@@ -1,10 +1,11 @@
+import '../Game.dart';
 import '../GameField.dart';
 import 'Moveable.dart';
 import 'Tank.dart';
 import 'dart:math';
 
 class PlayerTank extends Tank{
-  PlayerTank(int x, int y, int width, int height, Directions direction, GameField gameField, int speed, int health, String bulletType) : super(x, y, width, height, direction, gameField, speed, health, bulletType, "player");
+  PlayerTank(int x, int y, int width, int height, Directions this.lastDirection, Game game, int speed, int health, String bulletType) : super(x, y, width, height, Directions.stop, game, speed, health, bulletType, "player");
   Directions lastDirection;
 
   void changeDirection(Directions newDirection){

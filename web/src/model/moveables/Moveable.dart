@@ -1,3 +1,4 @@
+import '../Game.dart';
 import '../GameField.dart';
 import 'dart:math';
 import 'PlayerTank.dart';
@@ -12,7 +13,7 @@ abstract class Moveable {
   static const Point STOP = const Point(0, 0);
   List<List<Point>> positions;
   Directions direction;
-  GameField gameField;
+  Game game;
   int speed;
   int height;
   int width;
@@ -21,89 +22,76 @@ abstract class Moveable {
   /**
    * (x,y) topLeft position of the Object
    */
-  Moveable(int x, int y, int this.width, int this.height,
-      Directions this.direction, GameField this.gameField, int this.speed,
+  Moveable(
+      int x,
+      int y,
+      int this.width,
+      int this.height,
+      Directions this.direction,
+      Game this.game,
+      int this.speed,
       String this.type) {
-    print(gameField);
-    print(gameField.moveables);
-    gameField.moveables.add(this);
+    game.level.gamefield.moveables.add(this);
     positions = new List(height);
     for (int row = 0; row < height; row++) {
       positions[row] = new List(width);
       for (int col = 0; col < width; col++) {
         positions[row][col] = new Point(col + y, row + x);
-        gameField
-            .getField(new Point(y + col, x + row))
-            .moveable = this;
+        game.level.gamefield.getField(new Point(y + col, x + row)).moveable =
+            this;
       }
     }
   }
 
-  void move() {
+  void move(int count) {
+    if (count % speed != 0) return;
     switch (direction) {
       case Directions.up:
         {
-          positions[positions.length - 1].forEach((p) =>
-          gameField
-              .getField(p)
-              .moveable = null);
+          positions[positions.length - 1]
+              .forEach((p) => game.level.gamefield.getField(p).moveable = null);
 
-          _movePositions(Moveable.UP);
+          movePositions(UP);
 
           positions[0].forEach((p) {
-            gameField
-                .getField(p)
-                .moveable = this;
+            game.level.gamefield.getField(p).moveable = this;
           });
 
           break;
         }
       case Directions.down:
         {
-          positions[0].forEach((p) =>
-          gameField
-              .getField(p)
-              .moveable = null);
+          positions[0]
+              .forEach((p) => game.level.gamefield.getField(p).moveable = null);
 
-          _movePositions(Moveable.DOWN);
-
+          movePositions(DOWN);
           positions[positions.length - 1].forEach((p) {
-            gameField
-                .getField(p)
-                .moveable = this;
+            game.level.gamefield.getField(p).moveable = this;
           });
           break;
         }
       case Directions.left:
         {
           positions.forEach((l) =>
-          gameField
-              .getField(l[l.length - 1])
-              .moveable = null);
+              game.level.gamefield.getField(l[l.length - 1]).moveable = null);
 
-          _movePositions(Moveable.LEFT);
+          movePositions(LEFT);
 
           positions.forEach((l) {
-            gameField
-                .getField(l[0])
-                .moveable = this;
+            game.level.gamefield.getField(l[0]).moveable = this;
           });
 
           break;
         }
       case Directions.right:
         {
-          positions.forEach((l) =>
-          gameField
-              .getField(l[0])
-              .moveable = null);
+          positions.forEach(
+              (l) => game.level.gamefield.getField(l[0]).moveable = null);
 
-          _movePositions(Moveable.RIGHT);
+          movePositions(RIGHT);
 
           positions.forEach((l) {
-            gameField
-                .getField(l[l.length - 1])
-                .moveable = this;
+            game.level.gamefield.getField(l[l.length - 1]).moveable = this;
           });
 
           break;
@@ -115,7 +103,7 @@ abstract class Moveable {
     }
   }
 
-  void _movePositions(Point direction) {
+  void movePositions(Point direction) {
     for (int i = 0; i < positions.length; i++) {
       for (int j = 0; j < positions[i].length; j++) {
         positions[i][j] += direction;
@@ -125,7 +113,6 @@ abstract class Moveable {
 
   void hit(int dmg);
 
-
   void doCollisions();
 
   static String directionOf(Moveable m) {
@@ -133,24 +120,28 @@ abstract class Moveable {
       if (m is PlayerTank) {
         return directionToString(m.lastDirection);
       }
-    } else {
-      return directionToString(m.direction);
     }
+    return directionToString(m.direction);
   }
 
   static String directionToString(Directions direction) {
+    String s;
     switch (direction) {
       case Directions.up:
-        return "up";
+        s = "up";
+        break;
       case Directions.down:
-        return "down";
+        s = "down";
+        break;
       case Directions.left:
-        return "left";
+        s = "left";
+        break;
       case Directions.right:
-        return "right";
+        s = "right";
+        break;
       case Directions.stop:
         break;
     }
+    return s;
   }
-
 }

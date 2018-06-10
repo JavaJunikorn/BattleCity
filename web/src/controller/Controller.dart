@@ -18,8 +18,8 @@ class Controller {
   }
 
   void startlevel() {
-    game.startloop(250).whenComplete(() {
-      view.update(50);
+    game.startloop().whenComplete(() {
+      view.update(10);
       direction.startListening();
     });
   }

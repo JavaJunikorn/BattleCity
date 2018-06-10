@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'model/Game.dart';
 import 'model/GameField.dart';
 import 'Level.dart';
 import 'model/moveables/PlayerTank.dart';
@@ -10,12 +11,12 @@ import 'dart:async';
 
 class LevelLoader {
 
-  static Future load(final int levelNr, void callbackFunction(Level level)) {
+  static Future load(final int levelNr,Game game, void callbackFunction(Level level)) {
     final String path = "../json/$levelNr.json";
 
     return HttpRequest.getString(path).then((lvlJson) {
       Map data = JSON.decode(lvlJson);
-      Level lvl = _levelFromMap(data);
+      Level lvl = _levelFromMap(data, game);
       callbackFunction(lvl);
     });
 
@@ -25,14 +26,15 @@ class LevelLoader {
     return JSON.decode(response);
   }
 
-  static Level _levelFromMap(Map data) {
+  static Level _levelFromMap(Map data, Game game) {
     Level lvl = new Level();
+    game.level = lvl;
     lvl.level = data['level'];
     lvl.rows = data['rows'];
     lvl.cols = data['cols'];
     lvl.goal = _createFieldPointFrom(data['goal']);
     lvl.gamefield = gameFieldFromMap(data['gameFields'], lvl.rows, lvl.cols);
-    lvl.player = _createPlayerTankFrom(data['playerTank'], lvl.gamefield);
+    lvl.player = _createPlayerTankFrom(data['playerTank'], game);
     return lvl;
   }
 
@@ -50,7 +52,7 @@ class LevelLoader {
 
   static Point _createFieldPointFrom(Map data) => new Point(data["col"], data["row"]);
 
-  static PlayerTank _createPlayerTankFrom(Map data, GameField gameField) {
+  static PlayerTank _createPlayerTankFrom(Map data, Game game) {
     Point initPosition = _createFieldPointFrom(data['position']);
     int width = data['width'];
     int height = data['height'];
@@ -63,7 +65,7 @@ class LevelLoader {
         width,
         height,
         Directions.values[direction],
-        gameField,
+        game,
         speed,
         health,
         bulletType);

@@ -33,15 +33,14 @@ class GameField{
   }
 
 
-  Field getField(Point p) => gameField[p.y +1][p.x +1];
-
+  Field getField(Point p) {
+    return gameField[p.y + 1][p.x + 1];
+  }
   void setGoal(Point p) => getField(p).ground = new Ground.factory("goal");
 
   void setGround(Point destination, String groundType) => getField(destination).ground = new Ground.factory(groundType);
 
-  Point getTankPosition() {
-    moveables;
-  }
+
 }
 
 class Field{
