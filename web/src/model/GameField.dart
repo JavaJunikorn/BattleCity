@@ -1,6 +1,7 @@
 import 'moveables/Moveable.dart';
 import 'dart:math';
 import 'grounds/Ground.dart';
+import 'moveables/PlayerTank.dart';
 
 class GameField{
   int height;
@@ -37,6 +38,10 @@ class GameField{
   void setGoal(Point p) => getField(p).ground = new Ground.factory("goal");
 
   void setGround(Point destination, String groundType) => getField(destination).ground = new Ground.factory(groundType);
+
+  Point getTankPosition() {
+    moveables;
+  }
 }
 
 class Field{

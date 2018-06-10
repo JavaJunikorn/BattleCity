@@ -8,6 +8,7 @@ body {
     position: relative;
 }
 
+
 table {
     border-spacing: 0px;
     border-collapse: separate;
@@ -15,8 +16,8 @@ table {
 
 
 table td {
-    width: 15px;
-    height: 15px;
+    width: 2vh;
+    height: 2vh;
     background-color: black;
 }
 
@@ -33,6 +34,19 @@ table td {
     background-image: url("../img/wall-field-full.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.bg-water {
+    background-image: url("../img/water-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-bush {
+    background-image: url("../img/bush-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 .bg-steel {
@@ -60,24 +74,13 @@ table td {
 
 
 
-.bg-player {
+ {
     position: relative;
 }
 
 
 
-.bg-player:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/player-tank.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
+
 
 .bg-enemy {
     position: relative;
@@ -98,4 +101,196 @@ table td {
     z-index: 1;
 }
 
+.bg-bullet-up, .bg-bullet-down, .bg-bullet-left, .bg-bullet-right,
+.bg-player-up, .bg-player-down, .bg-player-left, .bg-player-right {
+    position: relative;
+}
 
+.bg-player-up:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/player-tank-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-player-left:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/player-tank-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-player-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/player-tank-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-player-down:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/player-tank-down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+.bg-bullet-up:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/bullet-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+.bg-bullet-down:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/bullet-down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-bullet-left:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/bullet-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-bullet-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/bullet-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+/* blink */
+@-webkit-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+@-moz-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+@-o-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+@keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+.invalid {
+    -webkit-animation: invalid 1s infinite; /* Safari 4+ */
+    -moz-animation:    invalid 1s infinite; /* Fx 5+ */
+    -o-animation:      invalid 1s infinite; /* Opera 12+ */
+    animation:         invalid 1s infinite; /* IE 10+ */
+}
+
+.speech-bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+    /*display: inline-block; */
+    margin-left: 6rem;
+
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-right-color: #00aabb;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}
+
+.swipe-right {
+    margin-left: 6rem;
+    left: 20%;
+    position: absolute;
+    animation: move-to-right 5s;
+}
+
+.swipe-right img {
+    width: 3rem;
+}
+
+.swipe-up {
+    margin-left: 6rem;
+    width: 20%;
+    bottom: 25%;
+    position: absolute;
+    animation: move-to-top 5s;
+}
+
+@keyframes move-to-right {
+    from {
+        left: 20px;
+    }
+}
+
+
+@keyframes move-to-top {
+    from {
+        bottom: 20px;
+    }
+}

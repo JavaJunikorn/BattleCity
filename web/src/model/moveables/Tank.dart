@@ -12,7 +12,7 @@ abstract class Tank extends Moveable {
   String bulletType;
 
   Tank(int x, int y, int width, int height, Directions direction,
-      GameField gameField, int speed, int this.health, String this.bulletType, String type)
+      GameField gameField, int this.speed, int this.health, String this.bulletType, String type)
       : super(x, y, width, height, direction, gameField, speed, type);
 
   factory Tank.factory(
@@ -108,6 +108,6 @@ abstract class Tank extends Moveable {
   }
 
   void shoot() {
-
+    new Bullet(this.bulletType, this, gameField);
   }
 }

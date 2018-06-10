@@ -1,6 +1,9 @@
 import '../GameField.dart';
 import '../grounds/Ground.dart';
 import 'Moveable.dart';
+import 'dart:math';
+import 'PlayerTank.dart';
+import 'Tank.dart';
 
 class Bullet extends Moveable {
   int speed = 5; //lower is faster
@@ -17,20 +20,63 @@ class Bullet extends Moveable {
       : super(x, y, width, height, direction, gameField, speed, type);
 
 
-      factory Bullet(String bulletType, int x, int y, Directions direction, GameField gameField){
-        Bullet b;
-        switch (bulletType){
-          case "weak":{
-
-            break;
-          }
-          default:{
-            b = new Bullet._internal(x, y, 2, 1, direction, gameField, 4, 1, "bullet");
-          }
-        }
-
-        return b;
+  factory Bullet(String bulletType, Tank tank,
+      GameField gameField) {
+    Bullet b;
+    Directions direction;
+    if(tank.direction == Directions.stop){
+      if(tank is PlayerTank){
+        direction = tank.lastDirection;
       }
+    }else{
+      direction = tank.direction;
+    }
+
+    switch (bulletType) {
+      case "weak":
+        {
+          break;
+        }
+      default:
+        {
+          Point p = getStartPosition(tank, direction, 2, 1);
+          b = new Bullet._internal(
+              p.x, p.y, 2, 1, direction, gameField, 4, 1, "bullet");
+        }
+    }
+    return b;
+  }
+
+  static Point getStartPosition(Tank t, Directions direction, int width, int height) {
+    int x,y;
+    switch (direction){
+      case Directions.up:{
+        y = t.positions[0][0].y - 1;
+        x = t.positions[0][(t.positions[0].length/2).floor()].x - (width/2).floor();
+        break;
+      }
+      case Directions.down:{
+        y = t.positions[t.positions.length-1][t.positions[0].length-1].y + 1;
+        x = t.positions[0][(t.positions[0].length/2).floor()].x - (width/2).floor();
+        break;
+      }
+      case Directions.left:{
+        x = t.positions[0][0].x - 1;
+        y = t.positions[0][(t.positions.length/2).floor()].y + (height/2).floor();
+        break;
+      }
+      case Directions.right:{
+        x = t.positions[t.positions.length-1][t.positions[0].length-1].x +1;
+        y = t.positions[0][(t.positions.length/2).floor()].y + (height/2).floor();
+        break;
+      }
+      case Directions.stop:{
+        break;
+      }
+    }
+    return new Point(y, x);
+
+  }
 
 
   @override
