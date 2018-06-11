@@ -6,6 +6,8 @@ html, body {
 body {
     overscroll-behavior: contain;
     position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80%;
 }
 
 
