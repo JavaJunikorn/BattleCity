@@ -79,7 +79,7 @@ table td {
 
 
 
-.bg-enemy-left, .bg-enemy-right, .bg-enemy-up, .bg-bullet-down {
+.bg-enemy-left, .bg-enemy-right, .bg-enemy-up, .bg-enemy-down {
     position: relative;
 }
 
@@ -278,8 +278,6 @@ table td {
     background: #00aabb;
     border-radius: .4em;
     /*display: inline-block; */
-    margin-left: 6rem;
-
 }
 
 .speech-bubble:after {
@@ -298,33 +296,79 @@ table td {
 }
 
 .swipe-right {
-    margin-left: 6rem;
-    left: 20%;
-    position: absolute;
-    animation: move-to-right 5s;
+    animation: move-to-right 5s infinite;
+    position: relative;
+    width: 5rem;
 }
 
-.swipe-right img {
-    width: 3rem;
+.swipe-left {
+    animation: move-to-left 5s infinite;
+    position: relative;
+    width: 5rem;
 }
 
 .swipe-up {
-    margin-left: 6rem;
-    width: 20%;
-    bottom: 25%;
-    position: absolute;
-    animation: move-to-top 5s;
+    animation: move-to-up 5s infinite;
+    position: relative;
+    width: 5rem;
+}
+
+.swipe-down {
+    animation: move-to-down 5s infinite;
+    position: relative;
+    width: 5rem;
+}
+
+.swipe img {
+    width: 5rem;
 }
 
 @keyframes move-to-right {
-    from {
-        left: 20px;
-    }
+
+    from { left: 0%;}
+    to { left: 40%; }
 }
 
 
-@keyframes move-to-top {
-    from {
-        bottom: 20px;
-    }
+@keyframes move-to-left {
+    from { left: 40%; }
+    to { left: -10%;}
+}
+
+@keyframes move-to-down {
+    from { top: 0rem; }
+    to { top: 4rem;}
+}
+
+@keyframes move-to-up {
+    from { top: 4rem; }
+    to { top: 0rem;}
+}
+
+.column-l{
+    float: left;
+    width: 6rem;
+}
+.column-l img {
+    width: 5rem;
+}
+.column-r{
+    display: inline-block;
+    width: 6rem;
+}
+.column-r img{
+    padding-left: 1rem;
+}
+.column-c{
+    float: left;
+    width: 6rem;
+}
+
+.column-c-12{
+    float: left;
+    width: 12rem;
+}
+
+.speech-bubble img {
+    width: 1rem;
 }
