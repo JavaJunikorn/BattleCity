@@ -22,16 +22,8 @@ abstract class Moveable {
   /**
    * (x,y) topLeft position of the Object
    */
-  Moveable(
-      int x,
-      int y,
-      int this.width,
-      int this.height,
-      Directions this.direction,
-      Game this.game,
-      int this.speed,
-      String this.type) {
-    game.level.gamefield.moveables.add(this);
+  Moveable(int x, int y, int this.width, int this.height, Directions this.direction,
+      Game this.game, int this.speed, String this.type) {
     positions = new List(height);
     for (int row = 0; row < height; row++) {
       positions[row] = new List(width);
@@ -41,6 +33,7 @@ abstract class Moveable {
             this;
       }
     }
+    game.level.gamefield.moveables.add(this);
   }
 
   void move(int count) {

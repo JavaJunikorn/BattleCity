@@ -3872,7 +3872,6 @@ x=x[z]
 w=J.p(x)
 w.p(x,y,J.q(w.h(x,y),a));++y}}},
 az:function(a,b,c,d,e,f,g,h){var z,y,x,w,v,u,t
-this.c.b.f.d.push(this)
 z=this.e
 if(typeof z!=="number")return H.o(z)
 y=new Array(z)
@@ -3896,7 +3895,7 @@ if(u>>>0!==u||u>=v.length)return H.a(v,u)
 u=v[u]
 v=b+t+1
 if(v>>>0!==v||v>=u.length)return H.a(u,v)
-u[v].a=this}}}},
+u[v].a=this}}this.c.b.f.d.push(this)}},
 fd:{"^":"b:0;a",
 $1:function(a){this.a.c.b.f.t(a).a=null
 return}},
