@@ -6,6 +6,8 @@ html, body {
 body {
     overscroll-behavior: contain;
     position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80%;
 }
 
 
@@ -74,28 +76,62 @@ table td {
 
 
 
- {
+
+
+
+
+
+.bg-enemy-left, .bg-enemy-right, .bg-enemy-up, .bg-enemy-down {
     position: relative;
 }
 
 
 
-
-
-.bg-enemy {
-    position: relative;
-}
-
-
-
-.bg-enemy:before {
+.bg-enemy-left:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/enemy-tank.png");
+    background-image: url("../img/enemy-tank-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-enemy-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-enemy-up:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-enemy-down:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank-down.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -244,8 +280,6 @@ table td {
     background: #00aabb;
     border-radius: .4em;
     /*display: inline-block; */
-    margin-left: 6rem;
-
 }
 
 .speech-bubble:after {
@@ -264,33 +298,80 @@ table td {
 }
 
 .swipe-right {
-    margin-left: 6rem;
-    left: 20%;
-    position: absolute;
-    animation: move-to-right 5s;
+    animation: move-to-right 5s infinite;
+    position: relative;
+    width: 5rem;
 }
 
-.swipe-right img {
-    width: 3rem;
+.swipe-left {
+    animation: move-to-left 5s infinite;
+    position: relative;
+    width: 5rem;
 }
 
 .swipe-up {
-    margin-left: 6rem;
-    width: 20%;
-    bottom: 25%;
-    position: absolute;
-    animation: move-to-top 5s;
+    animation: move-to-up 5s infinite;
+    position: relative;
+    width: 5rem;
+}
+
+.swipe-down {
+    animation: move-to-down 5s infinite;
+    position: relative;
+    width: 5rem;
+}
+
+.swipe img {
+    width: 5rem;
 }
 
 @keyframes move-to-right {
-    from {
-        left: 20px;
-    }
+
+    from { left: 0%;}
+    to { left: 40%; }
 }
 
 
-@keyframes move-to-top {
-    from {
-        bottom: 20px;
-    }
+@keyframes move-to-left {
+    from { left: 40%; }
+    to { left: -10%;}
 }
+
+@keyframes move-to-down {
+    from { top: 0rem; }
+    to { top: 4rem;}
+}
+
+@keyframes move-to-up {
+    from { top: 4rem; }
+    to { top: 0rem;}
+}
+
+.column-l{
+    float: left;
+    width: 6rem;
+}
+.column-l img {
+    width: 5rem;
+}
+.column-r{
+    display: inline-block;
+    width: 6rem;
+}
+.column-r img{
+    padding-left: 1rem;
+}
+.column-c{
+    float: left;
+    width: 6rem;
+}
+
+.column-c-12{
+    float: left;
+    width: 12rem;
+}
+
+.speech-bubble img {
+    width: 1rem;
+}
+

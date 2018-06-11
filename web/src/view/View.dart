@@ -57,9 +57,9 @@ class View {
       model.level.gamefield.moveables.forEach((m){
 
         try {
+          print("type: " + m.type + " direction: " + m.direction.toString());
           rows[m.positions[0][0].y].children[m.positions[0][0].x]
-              .setAttribute(
-              "class", "bg-" + m.type + "-" + Moveable.directionOf(m));
+              .setAttribute("class", "bg-" + m.type + "-" + Moveable.directionOf(m) + " bg-" + model.level.gamefield.getField(m.positions[0][0]).ground.type);
         }
         catch(e){}
 
@@ -72,14 +72,30 @@ class View {
   }
 
   void updateHint() {
-    if (model.level.player.positions[0][0].x == 25 && model.level.player.positions[0][0].y == 25) {
+    Point playerTankPos = model.level.player.positions[0][0];
+    if ((playerTankPos.x == 14 && playerTankPos.y == 25) || (playerTankPos.x == 6 && playerTankPos.y == 25)) {
       querySelector(".speech-bubble").text = "Wische von unten nach oben um den Panzer nach oben zu bewegen";
+      ImageElement img = querySelector(".swipe").children.first as ImageElement;
+      img.src = "../img/swipe-to-up.png";
+      querySelector(".swipe").setAttribute("class", "swipe swipe-up");
     } else if (model.level.player.positions[0][0].x == 25 && model.level.player.positions[0][0].y == 14) {
       querySelector(".speech-bubble").text = "Wische von rechts nach links um den Panzer nach links zu bewegen";
-    } else if (model.level.player.positions[0][0].x == 21 && model.level.player.positions[0][0].y == 14) {
+      ImageElement img = querySelector(".swipe").children.first as ImageElement;
+      img.src = "../img/swipe-to-left.png";
+      querySelector(".swipe").setAttribute("class", "swipe swipe-left");
+
+    } else if ((playerTankPos.x == 18 && playerTankPos.y == 23) || (playerTankPos.x == 10 && playerTankPos.y == 23)) {
       querySelector(".speech-bubble").text = "Wische von oben nach unten um den Panzer nach unten zu bewegen";
-    } else if (model.level.player.positions[0][0].x == 21 && model.level.player.positions[0][0].y == 19) {
-      querySelector(".speech-bubble").text = "Wische von rechts nach links um den Panzer nach links zu bewegen";
+      ImageElement img = querySelector(".swipe").children.first as ImageElement;
+      img.src = "../img/swipe-to-down.png";
+      querySelector(".swipe").setAttribute("class", "swipe swipe-down");
+
+    } else if ((playerTankPos.x == 6 && playerTankPos.y == 23)
+        || (playerTankPos.x == 14 && playerTankPos.y == 23) || (playerTankPos.x == 18 && playerTankPos.y == 25)) {
+      querySelector(".speech-bubble").text = "Wische von links nach rechts um den Panzer nach rechts zu bewegen";
+      ImageElement img = querySelector(".swipe").children.first as ImageElement;
+      img.src = "../img/swipe-to-right.png";
+      querySelector(".swipe").setAttribute("class", "swipe swipe-right");
     }
   }
 

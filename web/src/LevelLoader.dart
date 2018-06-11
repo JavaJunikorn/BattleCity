@@ -7,7 +7,7 @@ import 'model/moveables/Moveable.dart';
 import 'dart:convert';
 import 'dart:html';
 import 'dart:async';
-
+import 'model/moveables/EnemyTank.dart';
 
 class LevelLoader {
 
@@ -35,6 +35,12 @@ class LevelLoader {
     lvl.goal = _createFieldPointFrom(data['goal']);
     lvl.gamefield = gameFieldFromMap(data['gameFields'], lvl.rows, lvl.cols);
     lvl.player = _createPlayerTankFrom(data['playerTank'], game);
+    if (lvl.level == 1) {
+      new EnemyTank(0, 0, 2, 2, Directions.right, game, 8, 1, "default", "enemy");
+      new EnemyTank(0, 25, 2, 2, Directions.right, game, 8, 1, "default", "enemy");
+      new EnemyTank(25, 0, 2, 2, Directions.right, game, 8, 1, "default", "enemy");
+    };
+
     return lvl;
   }
 

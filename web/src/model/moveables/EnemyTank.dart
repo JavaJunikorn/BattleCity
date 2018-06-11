@@ -43,7 +43,7 @@ class EnemyTank extends Tank {
     } else
       super.move(count);
     doCollisions();
-    int i = rnd.nextInt(1);
+    int i = rnd.nextInt(4);
     if (i == 0) this.shoot();
   }
 }

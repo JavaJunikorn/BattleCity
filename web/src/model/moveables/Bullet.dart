@@ -47,7 +47,7 @@ class Bullet extends Moveable {
           } else if (direction == Directions.left ||
               direction == Directions.right) {
             b = new Bullet._internal(
-                p.x, p.y, 1, 2, direction, game, 4, 1, "Bullet");
+                p.x, p.y, 1, 2, direction, game, 4, 1, "bullet");
           }
         }
     }
