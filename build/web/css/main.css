@@ -74,28 +74,62 @@ table td {
 
 
 
- {
+
+
+
+
+
+.bg-enemy-left, .bg-enemy-right, .bg-enemy-up, .bg-bullet-down {
     position: relative;
 }
 
 
 
-
-
-.bg-enemy {
-    position: relative;
-}
-
-
-
-.bg-enemy:before {
+.bg-enemy-left:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/enemy-tank.png");
+    background-image: url("../img/enemy-tank-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-enemy-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-enemy-up:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-enemy-down:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/enemy-tank-down.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
