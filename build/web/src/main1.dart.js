@@ -311,7 +311,7 @@ m:function(a,b){return a===b},
 gn:function(a){return H.N(a)},
 i:["bW",function(a){return H.aO(a)}],
 ay:["bV",function(a,b){throw H.c(P.c2(a,b.gbt(),b.gbx(),b.gbu(),null))}],
-"%":"DOMError|FileError|MediaError|NavigatorUserMediaError|PositionError|PushMessageData|SQLError|SVGAnimatedNumberList|SVGAnimatedString"},
+"%":"DOMError|FileError|MediaError|NavigatorUserMediaError|PositionError|PushMessageData|SQLError|SVGAnimatedLength|SVGAnimatedLengthList|SVGAnimatedNumber|SVGAnimatedNumberList|SVGAnimatedString|Screen"},
 dG:{"^":"d;",
 i:function(a){return String(a)},
 gn:function(a){return a?519018:218159},
@@ -3058,7 +3058,7 @@ ap:{"^":"d;",$isap:1,"%":"AnimationEvent|AnimationPlayerEvent|ApplicationCacheEr
 bO:{"^":"d;",
 cb:function(a,b,c,d){return a.addEventListener(b,H.ae(c,1),!1)},
 cv:function(a,b,c,d){return a.removeEventListener(b,H.ae(c,1),!1)},
-"%":"MediaStream;EventTarget"},
+"%":"MediaStream|ScreenOrientation;EventTarget"},
 hx:{"^":"I;j:length=","%":"HTMLFormElement"},
 ba:{"^":"d;",$isba:1,"%":"ImageData"},
 hz:{"^":"I;",$isd:1,$isM:1,"%":"HTMLInputElement"},
@@ -3196,7 +3196,8 @@ $1:function(a){return new P.au(a)}}}],["","",,P,{"^":"",h7:{"^":"aq;",$isd:1,"%"
 gbv:function(a){return new W.cw(a,"touchend",!1,[W.er])},
 $isd:1,
 "%":"SVGComponentTransferFunctionElement|SVGDescElement|SVGDiscardElement|SVGFEDistantLightElement|SVGFEFuncAElement|SVGFEFuncBElement|SVGFEFuncGElement|SVGFEFuncRElement|SVGFEMergeNodeElement|SVGFEPointLightElement|SVGFESpotLightElement|SVGMetadataElement|SVGStopElement|SVGStyleElement|SVGTitleElement;SVGElement"},hU:{"^":"aq;",$isd:1,"%":"SVGSVGElement"},hV:{"^":"l;",$isd:1,"%":"SVGSymbolElement"},el:{"^":"aq;","%":"SVGTSpanElement|SVGTextElement|SVGTextPositioningElement;SVGTextContentElement"},hW:{"^":"el;",$isd:1,"%":"SVGTextPathElement"},hX:{"^":"aq;",$isd:1,"%":"SVGUseElement"},hY:{"^":"l;",$isd:1,"%":"SVGViewElement"},i2:{"^":"l;",$isd:1,"%":"SVGGradientElement|SVGLinearGradientElement|SVGRadialGradientElement"},i4:{"^":"l;",$isd:1,"%":"SVGCursorElement"},i5:{"^":"l;",$isd:1,"%":"SVGFEDropShadowElement"},i6:{"^":"l;",$isd:1,"%":"SVGMPathElement"}}],["","",,P,{"^":""}],["","",,P,{"^":""}],["","",,P,{"^":""}],["","",,N,{"^":"",
-ic:[function(){var z=J.d9(document.querySelector(".btn"))
+ic:[function(){window.screen.orientation.lock("portait")
+var z=J.d9(document.querySelector(".btn"))
 W.cx(z.a,z.b,new N.fZ(),!1,H.R(z,0))},"$0","cX",0,0,1],
 fG:function(a){var z,y,x,w,v,u
 z=a==null
