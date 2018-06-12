@@ -4551,11 +4551,13 @@ s=a.b.e.d
 if(w>=s.length)return H.a(s,w)
 J.b3(v,"class","bg-"+s[w].r)}return z},
 el:function(a){var z=document
+z.querySelector(".tutorial").hidden=!1
 J.J(z.querySelector(".main-container")).K(0)
 J.J(z.querySelector(".main-container")).C(0,this.ei(this.a))
 P.db(P.bH(0,0,0,a,0,0),new O.hL(this))},
 bk:function(){var z,y
 z=document
+z.querySelector(".tutorial").hidden=!0
 y=z.createElement("button")
 C.w.bi(y,"start")
 W.a0(y,"click",new O.hJ(this),!1,W.bQ)

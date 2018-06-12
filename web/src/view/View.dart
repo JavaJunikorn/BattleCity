@@ -46,6 +46,7 @@ class View {
   void setElement(Point destination) {}
 
   void update(int delay) {
+    querySelector(".tutorial").hidden = false;
     querySelector(".main-container").children.clear();
     querySelector(".main-container").children.add(toHTMLTable(model));
     new Timer.periodic(new Duration(milliseconds: delay), (t) {
@@ -135,6 +136,7 @@ class View {
   }
 
   void showMainMenu() {
+    querySelector(".tutorial").hidden = true;
     ButtonElement button = new ButtonElement();
     button.setInnerHtml("start");
      var l;
