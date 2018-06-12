@@ -1,15 +1,23 @@
 import '../model/Game.dart';
 import '../model/moveables/Moveable.dart';
+import 'Controller.dart';
+import 'dart:async';
 import 'dart:html';
 
-class Direction{
+class Listeners{
 
-
+  Controller controller;
   Point first, last;
   Game game;
-  static Point lastDirection;
+  StreamSubscription keyListener;
+  StreamSubscription touchstartListener;
+  StreamSubscription touchendListener;
+  StreamSubscription touchmoveListener;
+
+  Listeners(Controller this.controller, Game this.game);
 
   void _getSwipe(){
+
     if(last == null || first.distanceTo(last) < 20)
      game.level.player.shoot();
     else {
@@ -19,16 +27,10 @@ class Direction{
         if( first.x > last.x){
           //links
           game.level.player.changeDirection(Directions.left);
-
-          //Jenia: last direction is left
-          lastDirection = Moveable.LEFT;
         }
         else{
           //rechts
           game.level.player.changeDirection(Directions.right);
-
-          //Jenia: last direction is right
-          lastDirection = Moveable.RIGHT;
         }
       }
       else{
@@ -36,17 +38,10 @@ class Direction{
         if(first.y > last.y){
           //Up
           game.level.player.changeDirection(Directions.up);
-
-
-          //Jenia: last direction is up
-          lastDirection = Moveable.UP;
         }
         else{
           //Down
           game.level.player.changeDirection(Directions.down);
-
-          //Jenia: last direction is down
-          lastDirection = Moveable.DOWN;
         }
       }
     }
@@ -55,24 +50,20 @@ class Direction{
   void startListening(){
 
 
-    window.onTouchStart.listen((ev) {
+   touchstartListener =  window.onTouchStart.listen((ev) {
       last = null;
-    //  print("start");
       first = ev.touches.first.screen;
     });
-
-    window.onTouchMove.listen((ev){
+    touchmoveListener = window.onTouchMove.listen((ev){
       last = ev.touches.first.screen;
-    // print(last.toString());
     });
 
-    window.onTouchEnd.listen((ev) {
-     // print("End");
+    touchendListener = window.onTouchEnd.listen((ev) {
       _getSwipe();
     });
 
 
-    window.onKeyPress.listen((k) {
+   keyListener =  window.onKeyPress.listen((k) {
       //Shoot
       if(k.which == 32) { //spacebar
         game.level.player.shoot();
@@ -98,4 +89,9 @@ class Direction{
 
   }
 
+
+
+  void stopListeners() {
+
+  }
 }

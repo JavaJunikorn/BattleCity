@@ -17,7 +17,6 @@ void main() {
 
 
   Controller controller = new Controller();
-  controller.startlevel();
 
   /*
   LevelLoader.load(0, (level) {

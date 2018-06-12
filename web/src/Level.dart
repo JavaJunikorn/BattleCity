@@ -7,7 +7,6 @@ class Level {
   int level;
   int cols;
   int rows;
-  Point goal;
   PlayerTank player;
   GameField gamefield;
 }

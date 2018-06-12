@@ -43,11 +43,11 @@ class Bullet extends Moveable {
           Point p = getStartPosition(tank, direction, 2, 1);
           if (direction == Directions.up || direction == Directions.down) {
             b = new Bullet._internal(
-                p.x, p.y, 2, 1, direction, game, 4, 1, "bullet");
+                p.x, p.y, 2, 1, direction, game, 1, 1, "bullet");
           } else if (direction == Directions.left ||
               direction == Directions.right) {
             b = new Bullet._internal(
-                p.x, p.y, 1, 2, direction, game, 4, 1, "bullet");
+                p.x, p.y, 1, 2, direction, game, 1, 1, "bullet");
           }
         }
     }
@@ -102,7 +102,7 @@ class Bullet extends Moveable {
   }
 
   void move(int count) {
-    if (count % speed != 0) return;
+    if (speed == 0 || count % speed != 0) return;
     if(positions[0][0].x < 0 || positions[0][0].y < 0 || positions[positions.length-1][positions[0].length-1].x >= game.level.cols || positions[positions.length-1][positions[0].length-1].y >= game.level.rows)
       return;
     switch (direction) {
@@ -170,6 +170,7 @@ class Bullet extends Moveable {
 
   @override
   void doCollisions() {
+    List<Moveable> hit = new List();
     for (int i = 0; i < positions.length; i++) {
       for (int j = 0; j < positions[i].length; j++) {
         Field f = game.level.gamefield.getField(positions[i][j]);
@@ -181,11 +182,17 @@ class Bullet extends Moveable {
 
         }
         if (f.ground.destroyable) f.ground = new Ground.factory("road");
-        if (f.moveable != null && f.moveable != this) {
+        if (f.moveable != null && f.moveable != this && !hit.contains(f.moveable)) {
+          print(this.type + " hit: " + f.moveable.type + " at " + i.toString() + " " + j.toString());
           f.moveable.hit(this.damage);
-
+          this.hit(damage);
+          hit.add(f.moveable);
         }
       }
     }
+  }
+  @override
+  String getLevel() {
+    return this.damage.toString();
   }
 }

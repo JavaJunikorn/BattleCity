@@ -36,8 +36,11 @@ abstract class Moveable {
     game.level.gamefield.moveables.add(this);
   }
 
+
+  String getLevel();
+
   void move(int count) {
-    if (count % speed != 0) return;
+    if (speed == 0 && count % speed != 0) return;
     switch (direction) {
       case Directions.up:
         {
@@ -136,5 +139,19 @@ abstract class Moveable {
         break;
     }
     return s;
+  }
+
+  static Directions stringToDirection(String s) {
+    switch (s){
+      case "up":
+        return Directions.up;
+      case "down":
+        return Directions.down;
+      case "left":
+        return Directions.left;
+      case "right":
+        return Directions.right;
+    }
+    return Directions.stop;
   }
 }
