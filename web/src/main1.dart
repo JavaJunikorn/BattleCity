@@ -18,7 +18,7 @@ void main() {
 
 
   Controller controller = new Controller();
-  controller.startlevel();
+
   /*
   LevelLoader.load(0, (level) {
     newGame.level = level;
@@ -28,7 +28,7 @@ void main() {
   });*/
 
   querySelector(".fullscreen").onTouchEnd.listen((l) {
-    fullscreenWorkaround(document.body);
+    requestFullscreenOn(document.body);
     document.body.onFullscreenChange.listen((i) {
       print("Inside: onFullScreenChange.listen()");
       querySelector(".fullscreen").setAttribute("class", "nav-link btn btn-primary ml-1 fullscreen");
@@ -43,7 +43,7 @@ void main() {
 }
 
 
-void fullscreenWorkaround(Element element) {
+void requestFullscreenOn(Element element) {
   var elem = new JsObject.fromBrowserObject(element);
 
   if (elem.hasProperty("requestFullscreen")) {

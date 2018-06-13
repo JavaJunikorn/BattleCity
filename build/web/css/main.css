@@ -61,6 +61,12 @@ table td {
     background-repeat: no-repeat;
 }
 
+.bg-goal {
+    background-image: url("../img/goal-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .bg-base-field {
     position: relative;
 }
@@ -85,129 +91,165 @@ table td {
 
 
 
-.bg-enemy-left, .bg-enemy-right, .bg-enemy-up, .bg-enemy-down {
+.bg-easyEnemy-left-1, .bg-easyEnemy-right-1, .bg-easyEnemy-up-1, .bg-easyEnemy-down-1, .bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2 {
     position: relative;
 }
 
 
 
-.bg-enemy-left:before {
+.bg-easyEnemy-left-1:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/enemy-tank-left.png");
+    background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-enemy-right:before {
+.bg-easyEnemy-right-1:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/enemy-tank-right.png");
+    background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
-.bg-enemy-up:before {
+.bg-easyEnemy-up-1:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/enemy-tank-up.png");
+    background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
-.bg-enemy-down:before {
+.bg-easyEnemy-down-2:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/enemy-tank-down.png");
+    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-bullet-up, .bg-bullet-down, .bg-bullet-left, .bg-bullet-right,
-.bg-player-up, .bg-player-down, .bg-player-left, .bg-player-right {
+
+.bg-easyEnemy-left-2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-easyEnemy-right-2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-easyEnemy-up-2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-easyEnemy-down-2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-bullet-up-1, .bg-bullet-down-1, .bg-bullet-left-1, .bg-bullet-right-1,
+.bg-player-up-, .bg-player-down-, .bg-player-left-, .bg-player-right- {
     position: relative;
 }
 
-.bg-player-up:before {
+.bg-player-up-:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/player-tank-up.png");
+    background-image: url("../img/moveables/bg-player-up-.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-player-left:before {
+.bg-player-left-:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/player-tank-left.png");
+    background-image: url("../img/moveables/bg-player-left-.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-player-right:before {
+.bg-player-right-:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/player-tank-right.png");
+    background-image: url("../img/moveables/bg-player-right-.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-player-down:before {
+.bg-player-down-:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/player-tank-down.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-
-
-.bg-bullet-up:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/bullet-up.png");
+    background-image: url("../img/moveables/bg-player-down-.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -215,40 +257,55 @@ table td {
 
 
 
-.bg-bullet-down:before {
+.bg-bullet-up-1:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/bullet-down.png");
+    background-image: url("../img/moveables/bg-bullet-up-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-bullet-left:before {
+
+
+.bg-bullet-down-1:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/bullet-left.png");
+    background-image: url("../img/moveables/bg-bullet-down-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.bg-bullet-right:before {
+.bg-bullet-left-1:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0px;
     right: -15px;
     bottom: -15px;
-    background-image: url("../img/bullet-right.png");
+    background-image: url("../img/moveables/bg-bullet-left-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-bullet-right-1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/moveables/bg-bullet-right-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -412,3 +469,40 @@ table td {
     #warning-message { display:none; }
 }
 */
+
+/* modal */
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}

@@ -25,19 +25,42 @@ abstract class Tank extends Moveable {
     switch (tankType) {
       case "player":
         {
-          t = new PlayerTank(x, y, 2, 2, direction, game, 5, 10, "default");
+          t = new PlayerTank(x, y, 2, 2, direction, game, 10, 10, "default");
           break;
         }
       //Todo Enemy tanks
-      case "easy":
+      case "tutorial":
+        t = new EnemyTank(x, y, 2, 2, direction, game, 0, 2, "", "easyEnemy");
+        break;
+      case "easy1":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 3, 1, "default", "easy");
+              x, y, 2, 2, direction, game, 5, 1, "default", "easyEnemy");
+          break;
+        }
+      case "easy2":
+        {
+          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 2, "default", "easyEnemy");
+          break;
+        }
+      case "easy3":
+        {
+          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 3, "default", "easyEnemy");
+          break;
+        }
+      case "easy4":
+        {
+          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 4, "default", "easyEnemy");
           break;
         }
     }
 
     return t;
+  }
+
+  @override
+  String getLevel() {
+    return health.toString();
   }
 
   /**
@@ -47,12 +70,15 @@ abstract class Tank extends Moveable {
     health -= dmg;
     if (health <= 0) {
       game.toRemove.add(this);
+      if (this is! PlayerTank) {
+        game.level.gamefield.enemyCount--;
+      }
     }
   }
 
   @override
   void move(int count) {
-    if(count % speed != 0)return;
+    if (count % speed != 0) return;
     if (checkMovementPossible()) {
       super.move(count);
       doCollisions();
@@ -64,26 +90,26 @@ abstract class Tank extends Moveable {
     switch (direction) {
       case Directions.up:
         {
-          positions[0]
-              .forEach((p) => pos.add(game.level.gamefield.getField(p + Moveable.UP)));
+          positions[0].forEach(
+              (p) => pos.add(game.level.gamefield.getField(p + Moveable.UP)));
           break;
         }
       case Directions.down:
         {
-          positions[positions.length - 1]
-              .forEach((p) => pos.add(game.level.gamefield.getField(p + Moveable.DOWN)));
+          positions[positions.length - 1].forEach(
+              (p) => pos.add(game.level.gamefield.getField(p + Moveable.DOWN)));
           break;
         }
       case Directions.left:
         {
-          positions.forEach(
-              (l) => pos.add(game.level.gamefield.getField(l[0] + Moveable.LEFT)));
+          positions.forEach((l) =>
+              pos.add(game.level.gamefield.getField(l[0] + Moveable.LEFT)));
           break;
         }
       case Directions.right:
         {
-          positions.forEach((l) =>
-              pos.add(game.level.gamefield.getField(l[l.length - 1] + Moveable.RIGHT)));
+          positions.forEach((l) => pos.add(
+              game.level.gamefield.getField(l[l.length - 1] + Moveable.RIGHT)));
           break;
         }
       case Directions.stop:
@@ -112,12 +138,12 @@ abstract class Tank extends Moveable {
   }
 
   void shoot() {
-    if(readyToShoot) {
+    if (readyToShoot) {
       readyToShoot = false;
       new Bullet(this.bulletType, this, game);
-    new Timer(new Duration(milliseconds: shootSpeed), (){
-      this.readyToShoot = true;
-    });
-  }
+      new Timer(new Duration(milliseconds: shootSpeed), () {
+        this.readyToShoot = true;
+      });
+    }
   }
 }
