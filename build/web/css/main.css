@@ -402,7 +402,7 @@ table td {
 .bg-img {
     background-image: url("../img/bg-body.jpg");
 }
-
+/*
 #warning-message { display: none; }
 @media only screen and (orientation:portrait){
     #wrapper { display:none; }
@@ -411,4 +411,4 @@ table td {
 @media only screen and (orientation:landscape){
     #warning-message { display:none; }
 }
-/*
+*/

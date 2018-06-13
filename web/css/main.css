@@ -7,7 +7,11 @@ body {
     overscroll-behavior: contain;
     position: relative;
     font-family: 'Orbitron', sans-serif;
-    font-size: 80%;
+    font-size: 1.7vh;
+}
+
+.btn {
+    font-size: 2vh;
 }
 
 
@@ -349,14 +353,15 @@ table td {
 
 .column-l{
     float: left;
-    width: 6rem;
+    width: 67%;
 }
 .column-l img {
-    width: 5rem;
+    float: left;
+    width: 33%;
 }
 .column-r{
     display: inline-block;
-    width: 6rem;
+    width: 33%;
 }
 .column-r img{
     padding-left: 1rem;
@@ -375,3 +380,35 @@ table td {
     width: 1rem;
 }
 
+@font-face {
+    font-family: 'blade-runner'; /*a name to be used later*/
+    src: url('../fonts/bladerunner.TTF'); /*URL to font*/
+}
+
+.blade-runner-font {
+    font-family: blade-runner;
+}
+
+.card {
+
+}
+
+
+.card-body {
+    padding: 0.2rem 0.2rem 0.2rem 0.7rem;
+
+}
+
+.bg-img {
+    background-image: url("../img/bg-body.jpg");
+}
+/*
+#warning-message { display: none; }
+@media only screen and (orientation:portrait){
+    #wrapper { display:none; }
+    #warning-message { display:block; }
+}
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+}
+*/

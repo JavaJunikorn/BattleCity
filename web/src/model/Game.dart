@@ -99,7 +99,6 @@ class Game {
         level.gamefield.moveables.remove(toRemove.elementAt(i));
       }
 
-      print(level.player.positions[0][0].toString());
       toRemove = new Set();
       _checkWinLose();
       count++;

@@ -4,45 +4,85 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", minimal-ui>
     <meta name="scaffolded-by" content="https://github.com/google/stagehand">
     <title>BattleCity</title>
 
 
+    <link rel="manifest" href="../json/manifest.json">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <script defer src="../src/main1.dart" type="application/dart"></script>
     <script defer src="packages/browser/dart.js"></script>
+    <script src="https://use.fontawesome.com/9a47f2e441.js"></script>
 </head>
 
-<body class="bg-faded">
+<body>
 <header>
-    <div class="container-fluid bg-grey">
-        <div class="row">
-            <h1 class="d-block mx-auto">Level 1</h1>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <a class="navbar-brand blade-runner-font">Level 1</a>
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item float-left">
+                    <a class="nav-link active tutorial" href="#"><i class="fa fa-address-card-o"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-play"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-secondary ml-1 fullscreen" href="#"><i class="fa fa-expand"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-gamepad"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-question"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-qrcode"></i></a>
+                </li>
+            </ul>
         </div>
-    </div>
-</header>
-
-
-<main class="container-fluid h-100 bg-grey">
-    <div class="tutorial card ">
-        <div>
-            <div class="info">
-                <div class="column-l"><img src="../img/campbel.jpg"></div>
-                <div class="column-c"><p class="speech-bubble">Wische von links nach rechts um den Panzer nach rechts zu bewegen</p></div>
-                <div class="column-r">
-                    <h6 class="speech-bubble">Zum Beispiel</h6>
-                    <div class="swipe swipe-right"><img src="../img/swipe-to-right.png"></div>
+        <div class="card-body align-items-start">
+            <div class="row">
+                <div class="col-12">
+                    <img src="../img/campbel.jpg" class="float-left pr-1">
+                    <div class="pl-5">
+                        <h6 class="text-left">Tutorial</h6>
+                        <p class="text-left">
+                            Nam at tortor in tellus interdum sagittis. Fusce vulputate eleifend sapien. Praesent blandit
+                            laoreet nibh. Duis vel nibh at velit scelerisque suscipit. Pellentesque ut neque.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--
+            <div class="tutorial card ">
+                <h1 class="blade-runner-font text-center">Tutorial</h1>
+                <div class="info">
+                    <div class="column-l"><img src="../img/campbel.jpg"><h6 class="card-title">Tutorial</h6></div>
+                    <div class="column-r">
+                        <div class="swipe swipe-right"><img src="../img/swipe-to-right.png"></div>
+                    </div>
+                </div>
+            </div>
+            -->
+</header>
+
+
+<main class="container-fluid h-100 bg-grey">
+    <div id="warning-message">first warning</div>
+    <div id="wrapper">
     <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-sm-auto main-container" align="center">
+        <div class="col-sm-auto main-container p-0" align="center">
         </div>
+    </div>
     </div>
 </main>
 
