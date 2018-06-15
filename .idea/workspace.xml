@@ -2,91 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="809b3f2b-d635-4e8c-898a-19e410f1f623" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/bg-goal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-down-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-down-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-down-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-down-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-left-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-left-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-left-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-left-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-right-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-right-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-right-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-right-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-up-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-up-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-up-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-bullet-up-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-down-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-down-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-down-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-down-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-left-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-left-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-left-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-left-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-right-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-right-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-right-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-right-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-up-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-up-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-up-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-easyEnemy-up-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-down-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-down-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-down-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-down-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-left-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-left-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-left-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-left-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-right-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-right-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-right-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-right-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-up-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-up-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-up-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-medEnemy-up-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-player-down-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-player-left-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-player-right-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-player-up-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-down-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-down-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-down-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-down-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-left-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-left-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-left-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-left-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-right-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-right-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-right-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-right-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-up-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-up-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-up-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-strongEnemy-up-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-down-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-down-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-down-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-down-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-left-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-left-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-left-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-left-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-right-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-right-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-right-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-right-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-up-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-up-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-up-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/moveables/bg-veryStrongEnemy-up-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/view/Modal.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap-grid.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap-grid.css.map" beforeDir="false" />
@@ -101,7 +17,7 @@
       <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap.min.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/css/fontawesome-all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/css/main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/css/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/doc/2018-04-27_Battle-City-Example-in-AVR.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/favicon.ico" beforeDir="false" />
@@ -111,13 +27,14 @@
       <change beforePath="$PROJECT_DIR$/build/web/html/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/html/index_backup.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/html/swipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/html/test.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/html/test_b.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/2018-04-18_Battle-City-Ressources.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/Unbenannt.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/Xiao_Hua_Lan.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/battle-city-logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/bg-body.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/bg-goal.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/bullet-down.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/bullet-left.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/bullet-right.png" beforeDir="false" />
@@ -131,6 +48,90 @@
       <change beforePath="$PROJECT_DIR$/build/web/img/gesture-and-transition-icon.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/goal-field.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-down-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-left-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-right-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-up-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-4.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-down.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-left.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-right.png" beforeDir="false" />
@@ -177,26 +178,37 @@
       <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/packages/browser/dart.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/packages/browser/interop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/main1.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/src/main1.dart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/src/main1.dart.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/src/packages/browser/dart.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/src/packages/browser/interop.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/web/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/base-field.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/goal-field.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/Level.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/Level.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/LevelLoader.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/LevelLoader.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/controller/Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/test_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/test_b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/Unbenannt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/Xiao_Hua_Lan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/bg-body.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/bg-goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/bush-field.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fields/bg-bush-field.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/campbel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/character/campbel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/goal-field.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fields/bg-goal-field.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/steel-field.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fields/bg-steel-field.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe-to-down.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/swipes/swipe1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe-to-left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe-to-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/swipes/swipe2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe-to-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/swipes/swipe0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe-to-up.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/swipes/swipe3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/swipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/wall-field-bottom-left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/wall-field-bottom-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/wall-field-full.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fields/bg-brick-field.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/wall-field-top-left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/wall-field-top-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/water-field.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fields/bg-water-field.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/controller/Direction.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Direction.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main1.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/Game.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/Game.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/GameField.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/GameField.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/Bullet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/Bullet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/EnemyTank.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/EnemyTank.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/Moveable.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/Moveable.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/PlayerTank.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/PlayerTank.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/view/View.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/view/View.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -214,74 +226,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/html/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="44" column="95" selection-start-line="44" selection-start-column="95" selection-end-line="44" selection-end-column="95" />
+              <folding>
+                <element signature="e#3837#3844#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state relative-caret-position="-86">
+              <caret line="4" selection-start-line="4" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/html/test.html">
+      <file leaf-file-name="Modal.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/view/Modal.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            <state relative-caret-position="355">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
-                <element signature="e#3681#3688#1" expanded="true" />
+                <element signature="e#221#610#0" />
+                <element signature="e#642#794#0" />
+                <element signature="e#820#1147#0" />
+                <element signature="e#1171#1336#0" />
+                <element signature="e#2816#3698#0" />
+                <element signature="e#3748#4049#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <file leaf-file-name="Ground.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Ground.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="507" column="1" selection-start-line="507" selection-start-column="1" selection-end-line="507" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main1.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/controller/Controller.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="View.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="View.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="306">
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -293,6 +292,12 @@
       <find>a</find>
       <find>print</find>
       <find>start</find>
+      <find>modal</find>
+      <find>swipe-left</find>
+      <find>swipe</find>
+      <find>swi</find>
+      <find>bg-</find>
+      <find>bg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,11 +308,14 @@
       <list>
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/web/json/manifest.json" />
-        <option value="$PROJECT_DIR$/web/src/main1.dart" />
         <option value="$PROJECT_DIR$/web/src/model/Game.dart" />
+        <option value="$PROJECT_DIR$/web/src/controller/Controller.dart" />
+        <option value="$PROJECT_DIR$/web/src/controller/Direction.dart" />
+        <option value="$PROJECT_DIR$/web/src/main1.dart" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/web/html/test.html" />
+        <option value="$PROJECT_DIR$/web/src/view/Modal.dart" />
         <option value="$PROJECT_DIR$/web/src/view/View.dart" />
+        <option value="$PROJECT_DIR$/web/html/test.html" />
       </list>
     </option>
   </component>
@@ -320,7 +328,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -331,6 +339,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -347,6 +356,26 @@
               <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
               <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,20 +383,26 @@
               <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="View&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;Cont&#9;null&#9;null&#10;game&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;start&#9;null&#9;null&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Game&#9;null&#9;null&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;man&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/manifest.json&#10;yaml&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;htm&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;ya&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;main1&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/main1.dart" />
+    <property name="SearchEverywhereHistoryKey" value="View&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;ya&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;Groun&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/grounds/Ground.dart&#10;Field&#9;null&#9;null&#10;Mo&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;Listen&#9;null&#9;null&#10;Con&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;main1&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/main1.dart&#10;view&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;Liste&#9;null&#9;null&#10;pubs&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;moda&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;modal-con&#9;null&#9;null&#10;modal-co&#9;null&#9;null&#10;vi&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;main.cs&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;Dire&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;displayMo&#9;null&#9;null&#10;showMo&#9;null&#9;null&#10;List&#9;null&#9;null&#10;Moda&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;Li&#9;null&#9;null&#10;modal&#9;null&#9;null&#10;Lis&#9;null&#9;null&#10;Direc&#9;null&#9;null&#10;ma&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;yam&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;Modal&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Cont&#9;null&#9;null&#10;game&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;start&#9;null&#9;null&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Game&#9;null&#9;null&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;man&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/manifest.json&#10;yaml&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;htm&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/web/html/test.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/character" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -375,6 +410,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BattleCity\web\html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BattleCity\web\img\character" />
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BattleCity\web\img" />
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BattleCity\web\img\fields" />
+      <recent name="P:\_Studium\02. Projekte\04. Projektarbeit-Webtechnologien Projekt\BattleCity\web\img\swipes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,27 +453,36 @@
       <workItem from="1528869976933" duration="2173000" />
       <workItem from="1528872185459" duration="4000" />
       <workItem from="1528872204445" duration="84000" />
-      <workItem from="1528872317712" duration="2465000" />
+      <workItem from="1528872317712" duration="3708000" />
+      <workItem from="1528911462544" duration="8644000" />
+      <workItem from="1528965964289" duration="884000" />
+      <workItem from="1528970600199" duration="3677000" />
+      <workItem from="1528985676664" duration="1318000" />
+      <workItem from="1528994331604" duration="374000" />
+      <workItem from="1528994739068" duration="20628000" />
+      <workItem from="1529040564106" duration="1493000" />
+      <workItem from="1529085834992" duration="8324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43754000" />
+    <option name="totallyTimeSpent" value="90339000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3297587" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3297587" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297587" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.502" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -442,28 +492,27 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Dart Dev Server" order="8" weight="0.3297587" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Dart Analysis" order="8" weight="0.3297587" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3297587" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Dart Dev Server" order="0" weight="0.3297587" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Dart Dev Server" order="13" weight="0.3297587" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3297587" />
       <window_info id="Favorites" order="2" sideWeight="0.502" side_tool="true" weight="0.25" />
     </layout-to-restore>
   </component>
@@ -473,200 +522,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6443">
-          <caret line="379" column="1" selection-start-line="379" selection-start-column="1" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="64" lean-forward="true" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="e#3681#3688#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6443">
-          <caret line="379" column="1" selection-start-line="379" selection-start-column="1" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="64" lean-forward="true" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6443">
-          <caret line="379" column="1" selection-start-line="379" selection-start-column="1" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="64" lean-forward="true" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6715">
-          <caret line="395" lean-forward="true" selection-start-line="395" selection-end-line="395" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6834">
@@ -798,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/json/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -812,61 +666,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="17">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+    <entry file="file://$PROJECT_DIR$/web/src/model/moveables/Moveable.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="507" column="1" selection-start-line="507" selection-start-column="1" selection-end-line="507" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/swipe.jpg" />
+    <entry file="file://$PROJECT_DIR$/web/img/swipes/swipe0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5447" column="1" selection-start-line="5447" selection-start-column="1" selection-end-line="5447" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/swipes/swipe1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/swipes/swipe3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/swipes/swipe2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.599/links.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.335/buttons.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.267/buttons.css" />
+    <entry file="file://$PROJECT_DIR$/web/src/controller/Controller.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/controller/Direction.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="85" column="44" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        <state>
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
+    <entry file="file://$USER_HOME$/Desktop/BattleCity - Kopie/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#3681#3688#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
+    <entry file="file://$PROJECT_DIR$/web/img/Unbenannt.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fields/bg-water-field.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bg-body.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bullet-left.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bullet-down.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fields/bg-bush-field.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fields/bg-road-field.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fields/bg-brick-field.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/grid.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bg-goal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fields/bg-goal-field.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/GameField.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="287">
+          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/controller/Controller.dart">
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="4" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/view/Modal.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#221#610#0" />
+            <element signature="e#642#794#0" />
+            <element signature="e#820#1147#0" />
+            <element signature="e#1171#1336#0" />
+            <element signature="e#2816#3698#0" />
+            <element signature="e#3748#4049#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="306">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/grounds/Ground.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="44" column="95" selection-start-line="44" selection-start-column="95" selection-end-line="44" selection-end-column="95" />
+          <folding>
+            <element signature="e#3837#3844#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

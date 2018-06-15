@@ -26,28 +26,27 @@
                 <li class="nav-item float-left">
                     <a class="nav-link active tutorial" href="#"><i class="fa fa-address-card-o"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-play"></i></a>
+                <li id="play" class="nav-item">
+                    <button class="nav-link btn btn-secondary ml-1"><i class="fa fa-play"></i></button>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link btn btn-secondary ml-1 fullscreen" href="#"><i class="fa fa-expand"></i></a>
                 </li>
-                <li class="nav-item">
+                <li id="controlls" class="nav-item">
                     <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-gamepad"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-question"></i></a>
+                <li id="help" class="nav-item">
+                    <button class="nav-link btn btn-secondary ml-1"><i class="fa fa-question"></i></button>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link btn btn-secondary ml-1" href="#"><i class="fa fa-qrcode"></i></a>
+                <li id="qr" class="nav-item">
+                    <button class="nav-link btn btn-secondary ml-1"><i class="fa fa-qrcode"></i></button>
                 </li>
             </ul>
         </div>
         <div class="card-body align-items-start">
             <div class="row">
                 <div class="col-12">
-                    <img src="../img/campbel.jpg" class="float-left pr-1">
+                    <img src="../img/character/campbel.jpg" class="float-left pr-1">
                     <div class="pl-5">
                         <h6 class="text-left">Tutorial</h6>
                         <p class="text-left">
@@ -65,7 +64,7 @@
                 <div class="info">
                     <div class="column-l"><img src="../img/campbel.jpg"><h6 class="card-title">Tutorial</h6></div>
                     <div class="column-r">
-                        <div class="swipe swipe-right"><img src="../img/swipe-to-right.png"></div>
+                        <div class="swipe swipe-right"><img src="../img/swipe0.png"></div>
                     </div>
                 </div>
             </div>
@@ -73,18 +72,29 @@
 </header>
 
 
-<main class="container-fluid h-100 bg-grey">
+<main class="container-fluid h-100 bg-img">
     <!-- TODO: create showcase of warning modal for wrong screen orientation -->
     <!--<div id="warning-message">first warning</div>
     <div id="wrapper"> -->
     <div class="row h-100 justify-content-center align-items-center">
 
         <div id="showModal" class="modal">
+
             <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">×</span>
-                <p>Some text in the Modal..</p>
+            <div id="modalContent" class="modal-content">
+                <div class="modal-header">
+                    <div><h6>Modal Header</h6></div>
+                    <span class="close">×</span>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <p></p>
+                </div>
+                <!--
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div> -->
             </div>
+
         </div>
 
         <div class="col-sm-auto main-container p-0" align="center">
@@ -94,7 +104,17 @@
 </main>
 
 
-<footer></footer>
+<footer>
+    <div class="row">
+        <div class="col-12">
+            <a>jake.stradling@stud.fh-luebeck.de</a>
+            <a>jake.stradling@stud.fh-luebeck.de</a>
+            <a>Unser Projekt auf GitHub</a>
+            <a>Dokumentation zum Spiel</a>
+        </div>
+
+    </div>
+</footer>
 
 
 

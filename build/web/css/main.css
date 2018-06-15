@@ -24,10 +24,11 @@ table {
 table td {
     width: 2vh;
     height: 2vh;
-    background-color: black;
 }
 
-
+.bg-black {
+    background-color: black;
+}
 .bg-grey {
     background-color: #5a6268;
 }
@@ -37,32 +38,32 @@ table td {
 }
 */
 .bg-brick {
-    background-image: url("../img/wall-field-full.png");
+    background-image: url("../img/fields/bg-brick-field.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg-water {
-    background-image: url("../img/water-field.png");
+    background-image: url("../img/fields/bg-water-field.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg-bush {
-    background-image: url("../img/bush-field.png");
+    background-image: url("../img/fields/bg-bush-field.png");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
 }
 
 .bg-steel {
-    background-image: url("../img/steel-field.png");
+    background-image: url("../img/fields/bg-steel-field.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg-goal {
-    background-image: url("../img/goal-field.png");
+    background-image: url("../img/fields/bg-goal-field.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -91,7 +92,9 @@ table td {
 
 
 
-.bg-easyEnemy-left-1, .bg-easyEnemy-right-1, .bg-easyEnemy-up-1, .bg-easyEnemy-down-1, .bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2 {
+.bg-easyEnemy-left-1, .bg-easyEnemy-right-1,
+.bg-easyEnemy-up-1, .bg-easyEnemy-down-1,
+.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2 {
     position: relative;
 }
 
@@ -358,49 +361,51 @@ table td {
     margin-left: -9px;
 }
 
-.swipe-right {
-    animation: move-to-right 5s infinite;
-    position: relative;
-    width: 5rem;
-}
-
-.swipe-left {
-    animation: move-to-left 5s infinite;
-    position: relative;
-    width: 5rem;
-}
-
-.swipe-up {
-    animation: move-to-up 5s infinite;
-    position: relative;
-    width: 5rem;
-}
-
-.swipe-down {
-    animation: move-to-down 5s infinite;
-    position: relative;
-    width: 5rem;
-}
-
+/* Classes for animations */
 .swipe img {
     width: 5rem;
 }
 
-@keyframes move-to-right {
+.swipe-animation-0, .swipe-animation-1,
+.swipe-animation-2, .swipe-animation-3 {
+    position: relative;
+    width: 5rem;
+}
 
-    from { left: 0%;}
-    to { left: 40%; }
+
+.swipe-animation-0 {
+    animation: move-to-left 5s infinite;
+
+}
+
+.swipe-animation-1 {
+    animation: move-to-down 5s infinite;
+    left: 60%;
+}
+
+.swipe-animation-2 {
+    animation: move-to-right 5s infinite;
+}
+
+.swipe-animation-3 {
+    animation: move-to-up 5s infinite;
+}
+
+
+@keyframes move-to-right {
+    from { left: 60%;}
+    to { left: 0%; }
 }
 
 
 @keyframes move-to-left {
-    from { left: 40%; }
-    to { left: -10%;}
+    from { left: 0%; }
+    to { left: 60%;}
 }
 
 @keyframes move-to-down {
     from { top: 0rem; }
-    to { top: 4rem;}
+    to { top: 3rem;}
 }
 
 @keyframes move-to-up {
@@ -408,34 +413,7 @@ table td {
     to { top: 0rem;}
 }
 
-.column-l{
-    float: left;
-    width: 67%;
-}
-.column-l img {
-    float: left;
-    width: 33%;
-}
-.column-r{
-    display: inline-block;
-    width: 33%;
-}
-.column-r img{
-    padding-left: 1rem;
-}
-.column-c{
-    float: left;
-    width: 6rem;
-}
 
-.column-c-12{
-    float: left;
-    width: 12rem;
-}
-
-.speech-bubble img {
-    width: 1rem;
-}
 
 @font-face {
     font-family: 'blade-runner'; /*a name to be used later*/
@@ -446,9 +424,6 @@ table td {
     font-family: blade-runner;
 }
 
-.card {
-
-}
 
 
 .card-body {
@@ -457,7 +432,9 @@ table td {
 }
 
 .bg-img {
-    background-image: url("../img/bg-body.jpg");
+    background: url("http://www.clker.com/cliparts/r/q/r/j/F/K/black-and-white-skyline-md.png") bottom;
+    background-color: orange;
+    background-repeat-y: no-repeat;
 }
 /*
 #warning-message { display: none; }
@@ -471,21 +448,20 @@ table td {
 */
 
 /* modal */
-/* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-/* Modal Body */
-.modal-body {padding: 2px 16px;}
-
-/* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+/* The Modal (background) */
+.modal {
+    font-size: 1.7vh;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 16.5vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -497,12 +473,70 @@ table td {
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
 }
 
 /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #007bff;
+    color: white;
+}
+
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.tutorial-img-sm {
+    width: 3vh;
+}
+
+#swipesTable tr:nth-child(even) {
+    height: 6rem;
+}
+
+.main-container table {
+    border-color: gray;
+    border-top: 3px dotted #000;
+    border-bottom: 3px dotted #000;
+    box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+    margin-bottom: 1px;
+}
+
+.wrapper {
+    border-bottom: 7px dotted #000;
+    box-shadow: inset 0 -3px 0 0 #000, 0 3px 0 0 #000;
 }

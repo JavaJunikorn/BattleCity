@@ -5,11 +5,20 @@ import '../model/Game.dart';
 import '../model/moveables/Moveable.dart';
 import '../controller/Direction.dart';
 import '../model/moveables/Tank.dart';
+import 'Modal.dart';
+
 
 class View {
   Game model;
   Controller controller;
   Element htmlTable;
+
+  var qrButton = document.getElementById("qr");
+  var helpBtn = document.getElementById("help");
+  var controllsBtn = document.getElementById("controlls");
+  var nextBtn = document.getElementById("someId");
+  var modal = new Modal();
+
   List<Element> rows;
   List<Element> cols;
 
@@ -41,6 +50,7 @@ class View {
               "class", "bg-" + game.level.gamefield.moveables[i].type);
     }
 
+    table.setAttribute("class", "bg-black");
     return table;
   }
 
@@ -100,21 +110,21 @@ class View {
       querySelector(".speech-bubble").text =
           "Wische von unten nach oben um den Panzer nach oben zu bewegen";
       ImageElement img = querySelector(".swipe").children.first as ImageElement;
-      img.src = "../img/swipe-to-up.png";
+      img.src = "../img/swipe3.png";
       querySelector(".swipe").setAttribute("class", "swipe swipe-up");
     } else if (model.level.player.positions[0][0].x == 25 &&
         model.level.player.positions[0][0].y == 14) {
       querySelector(".speech-bubble").text =
           "Wische von rechts nach links um den Panzer nach links zu bewegen";
       ImageElement img = querySelector(".swipe").children.first as ImageElement;
-      img.src = "../img/swipe-to-left.png";
+      img.src = "../img/swipe2.png";
       querySelector(".swipe").setAttribute("class", "swipe swipe-left");
     } else if ((playerTankPos.x == 18 && playerTankPos.y == 23) ||
         (playerTankPos.x == 10 && playerTankPos.y == 23)) {
       querySelector(".speech-bubble").text =
           "Wische von oben nach unten um den Panzer nach unten zu bewegen";
       ImageElement img = querySelector(".swipe").children.first as ImageElement;
-      img.src = "../img/swipe-to-down.png";
+      img.src = "../img/swipe1.png";
       querySelector(".swipe").setAttribute("class", "swipe swipe-down");
     } else if ((playerTankPos.x == 6 && playerTankPos.y == 23) ||
         (playerTankPos.x == 14 && playerTankPos.y == 23) ||
@@ -122,7 +132,7 @@ class View {
       querySelector(".speech-bubble").text =
           "Wische von links nach rechts um den Panzer nach rechts zu bewegen";
       ImageElement img = querySelector(".swipe").children.first as ImageElement;
-      img.src = "../img/swipe-to-right.png";
+      img.src = "../img/swipe0.png";
       querySelector(".swipe").setAttribute("class", "swipe swipe-right");
     }
   }
@@ -141,8 +151,7 @@ class View {
     //querySelector(".tutorial").hidden = true;
 
     //TODO: Make for buttons "play and pause" own methods
-    querySelector(".fa-play").onTouchStart.listen((l) {
-      print("started");
+    document.getElementById("play").onTouchStart.listen((l) {
       controller.startLevel();
     });
     /*
@@ -174,6 +183,13 @@ class View {
    });
    querySelector(".main-container").children.add(button);
   }
-  
-  
+
+  void showModal(String btnId) {
+    modal.displayModal(btnId);
+  }
+
+  void hideModal(String btnId) {
+    modal.hideModal(btnId);
+  }
+
 }

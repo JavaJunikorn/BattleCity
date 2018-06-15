@@ -13,6 +13,10 @@ class Listeners{
   StreamSubscription touchstartListener;
   StreamSubscription touchendListener;
   StreamSubscription touchmoveListener;
+  StreamSubscription touchQrBtnListener;
+  StreamSubscription touchHelpBtnListener;
+  StreamSubscription touchControllBtnListener;
+  StreamSubscription touchPlayBtnListener;
 
   Listeners(Controller this.controller, Game this.game);
 
@@ -57,11 +61,34 @@ class Listeners{
     touchmoveListener = window.onTouchMove.listen((ev){
       last = ev.touches.first.screen;
     });
-
     touchendListener = window.onTouchEnd.listen((ev) {
       _getSwipe();
     });
+    touchQrBtnListener = controller.view.qrButton.onTouchStart.listen((ev) {
+      controller.view.showModal(controller.view.qrButton.id);
+      controller.view.modal.span.onTouchStart.listen((ev) {
+        controller.view.hideModal(controller.view.qrButton.id);
+      });
+    });
+    touchQrBtnListener = controller.view.helpBtn.onTouchStart.listen((ev) {
+      controller.view.showModal(controller.view.helpBtn.id);
+      controller.view.modal.span.onTouchStart.listen((ev) {
+        controller.view.hideModal(controller.view.helpBtn.id);
+      });
+    });
+   touchControllBtnListener = controller.view.controllsBtn.onTouchStart.listen((ev) {
+     controller.view.showModal(controller.view.controllsBtn.id);
+     controller.view.modal.span.onTouchStart.listen((ev) {
+       controller.view.hideModal(controller.view.controllsBtn.id);
+     });
+   });
 
+   /* TODO:// Zusammen mit Jake überarbeiten
+   touchPlayBtnListener = controller.view.playBtn.onTouchStart.listen((l) {
+     print("Touched play btn");
+     controller.startLevel();
+   });
+   */
 
    keyListener =  window.onKeyPress.listen((k) {
       //Shoot

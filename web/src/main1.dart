@@ -11,7 +11,7 @@ import 'LevelLoader.dart';
 import 'dart:async';
 import 'controller/Controller.dart';
 import 'dart:js';
-
+import 'view/Modal.dart';
 
 
 void main() {
@@ -19,13 +19,6 @@ void main() {
 
   Controller controller = new Controller();
 
-  /*
-  LevelLoader.load(0, (level) {
-    newGame.level = level;
-    testView.update(50);
-    direction.startListening();
-    newGame.startloop(500);
-  });*/
 
   querySelector(".fullscreen").onTouchEnd.listen((l) {
     requestFullscreenOn(document.body);
@@ -36,10 +29,6 @@ void main() {
     });
   });
 
-/*
-  window.screen.orientation.onChange.listen(( l) {
-    print(window.screen.orientation.type);
-  }); */
 }
 
 
