@@ -4665,22 +4665,24 @@ z=J.A(document.getElementById(a))
 J.au(z.gI(z),"class","nav-link btn btn-secondary ml-1")},
 dX:function(){var z,y,x,w,v,u,t,s,r
 this.c.textContent="Anleitung (2/3): Feldertypen"
-z=this.bM(6,2,"fieldTypes")
-y=["road","brick","bush","water","steel","goal"]
-x=[["durchfahrbar","durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","zerst\xf6rbar"],["durchfahrbar","durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","durchl\xe4ssig","zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","zerst\xf6rbar"]]
-for(w=[W.by],v=0;v<6;++v){u=W.c1(null,null,null)
-t=this.dO(x[v])
-u.src="../img/fields/bg-"+y[v]+"-field.png"
+z=this.a.style
+z.paddingTop="2vh"
+y=this.bM(6,2,"fieldTypes")
+x=["road","brick","bush","water","steel","goal"]
+w=[["durchfahrbar","durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","zerst\xf6rbar"],["durchfahrbar","durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","durchl\xe4ssig","zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","zerst\xf6rbar"]]
+for(z=[W.by],v=0;v<6;++v){u=W.c1(null,null,null)
+t=this.dO(w[v])
+u.src="../img/fields/bg-"+x[v]+"-field.png"
 u.setAttribute("class","tutorial-img-sm")
-J.au(J.ah(new W.ae(z.rows,w).h(0,v)).h(0,0),"class","text-center")
-J.aV(J.A(J.ah(new W.ae(z.rows,w).h(0,v)).h(0,0)),u)
-J.aV(J.A(J.ah(new W.ae(z.rows,w).h(0,v)).h(0,1)),t)}s=document
+J.au(J.ah(new W.ae(y.rows,z).h(0,v)).h(0,0),"class","text-center")
+J.aV(J.A(J.ah(new W.ae(y.rows,z).h(0,v)).h(0,0)),u)
+J.aV(J.A(J.ah(new W.ae(y.rows,z).h(0,v)).h(0,1)),t)}s=document
 r=s.createElement("button")
 r.setAttribute("class","btn btn-primary")
 r.textContent=""
-z.insertRow(6).insertCell(0).setAttribute("class","text-center")
-J.aV(J.A(J.ah(new W.ae(z.rows,w).h(0,6)).h(0,0)),r)
-J.A(s.getElementById("modalBody")).u(0,z)},
+y.insertRow(6).insertCell(0).setAttribute("class","text-center")
+J.aV(J.A(J.ah(new W.ae(y.rows,z).h(0,6)).h(0,0)),r)
+J.A(s.getElementById("modalBody")).u(0,y)},
 dW:function(){var z,y,x,w,v,u,t
 this.c.textContent="Hilfe: Steuerung"
 z=["Nach rechts bewegen","Nach unten bewegen","Nach links bewegen","Nach oben bewegen"]
