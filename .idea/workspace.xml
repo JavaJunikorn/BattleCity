@@ -3,181 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="809b3f2b-d635-4e8c-898a-19e410f1f623" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/fontawesome-all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/doc/2018-04-27_Battle-City-Example-in-AVR.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/fonts/bladerunner.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/first-lvl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/first-lvl_b.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/index_backup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/swipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/test_b.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/2018-04-18_Battle-City-Ressources.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/background/city-at-night.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/background/city-skyline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/brand/battle-city-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/bullet-down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/bullet-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/bullet-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/bullet-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/character/campbel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/character/kazuki-takemura.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/enemy-tank-down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/enemy-tank-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/enemy-tank-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/enemy-tank-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/fields/bg-brick-field.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/fields/bg-bush-field.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/fields/bg-goal-field.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/fields/bg-road-field.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/fields/bg-steel-field.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/fields/bg-water-field.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/gesture-and-transition-icon.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/img sources.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-down-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-left-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-right-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-bullet-up-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-down-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-left-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-right-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-easyEnemy-up-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-down-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-left-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-right-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-medEnemy-up-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-down-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-left-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-right-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-player-up-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-down-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-left-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-right-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-strongEnemy-up-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-down-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-left-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-right-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/moveables/bg-veryStrongEnemy-up-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/player-tank-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/qr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/swipes/swipe0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/swipes/swipe1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/swipes/swipe2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/swipes/swipe3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/0.json___jb_tmp___" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/0_b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/lvl1_b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/browser/dart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/browser/interop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/main1.dart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/model/Game.dart___jb_tmp___" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/packages/browser/dart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/packages/browser/interop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/LevelLoader.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/LevelLoader.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/controller/Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/controller/Direction.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Direction.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main1.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/Game.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/Game.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/Game.dart___jb_tmp___" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/view/ModalElement.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/view/ModalElement.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/view/View.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/view/View.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -206,7 +31,7 @@
       <file leaf-file-name="View.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
+            <state relative-caret-position="17">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -218,7 +43,7 @@
       <file leaf-file-name="ModalElement.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/view/ModalElement.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="17">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
@@ -245,11 +70,20 @@
       <file leaf-file-name="main1.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="153">
               <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/html/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -263,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/json/1.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -402,20 +236,18 @@
             <path>
               <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
               <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
               <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BattleCity" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BattleCity" type="b2602c69:ProjectViewProjectNode" />
@@ -444,7 +276,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;y&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;1js&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;View&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;main1&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/main1.dart&#10;Level&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;json&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;Contro&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;Game&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;ModalEle&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;view&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;goals&#9;null&#9;null&#10;jso&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;Tank&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;updaLevel&#9;null&#9;null&#10;update&#9;null&#9;null&#10;upda&#9;null&#9;null&#10;upd&#9;null&#9;null&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;main-co&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Direc&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;Vi&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;Test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;yaml&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;vie&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;modal&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;modalEle&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;Modal&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;ModalEl&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;maincs&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;Moda&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;ya&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;Dire&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;Di&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;moda&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;Cont&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;Direction&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Contr&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;css&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;pu&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;0&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/0.json&#10;contr&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;gam&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;Fie&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/GameField.dart&#10;Mo&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Moveable.dart" />
+    <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;y&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;1js&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;View&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;main1&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/main1.dart&#10;Level&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;json&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;Contro&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;Game&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;ModalEle&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;view&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;goals&#9;null&#9;null&#10;jso&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;Tank&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;updaLevel&#9;null&#9;null&#10;update&#9;null&#9;null&#10;upda&#9;null&#9;null&#10;upd&#9;null&#9;null&#10;main-co&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Direc&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;Vi&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;Test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;yaml&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;vie&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;modal&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;modalEle&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;Modal&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;ModalEl&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;maincs&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;Moda&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;ya&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;Dire&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;Di&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;moda&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/Modal.dart&#10;Cont&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;Direction&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Direction.dart&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Contr&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;css&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;pu&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;0&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/0.json&#10;contr&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;gam&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;Fie&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/GameField.dart&#10;Mo&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Moveable.dart" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -520,18 +352,19 @@
       <workItem from="1529395340536" duration="8019000" />
       <workItem from="1529431739434" duration="5144000" />
       <workItem from="1529437345146" duration="4242000" />
-      <workItem from="1529443010912" duration="274000" />
+      <workItem from="1529443010912" duration="815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182789000" />
+    <option name="totallyTimeSpent" value="183330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32905138" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3297587" />
@@ -549,7 +382,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Dart Dev Server" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32905138" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3297587" />
@@ -706,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/model/moveables/Tank.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -735,13 +560,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/json/json_1a-backup.json" />
-    <entry file="file://$PROJECT_DIR$/web/src/view/ModalElement.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/controller/Direction.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
@@ -749,44 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/LevelLoader.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/json/0_b.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -801,6 +585,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/view/ModalElement.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/LevelLoader.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main1.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
         </state>
       </provider>
     </entry>
