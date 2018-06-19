@@ -1,23 +1,21 @@
 {
-  "level": 1,
+  "level": 0,
   "rows": 27,
   "cols": 27,
-  "goal": {
-    "row": 3,
-    "col": 13
-  },
-  "playerTank": {
-    "position": {
-      "row": 25,
-      "col": 25
+  "tanks": [
+    {
+      "type": "player",
+      "row": 0,
+      "col": 25,
+      "direction": "right"
     },
-    "width": 2,
-    "height": 2,
-    "health": 2,
-    "speed": 10,
-    "direction": 0,
-    "bulletType": "Default"
-  },
+    {
+      "type": "easy1",
+      "row": 21,
+      "col": 10,
+      "direction": "left"
+    }
+  ],
   "gameFields": [
     {
       "position": {
@@ -416,14 +414,14 @@
         "row": 2,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -444,14 +442,14 @@
         "row": 2,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -472,14 +470,14 @@
         "row": 2,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -500,14 +498,14 @@
         "row": 2,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -528,14 +526,14 @@
         "row": 2,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -556,21 +554,21 @@
         "row": 2,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 2,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -605,14 +603,14 @@
         "row": 3,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -633,14 +631,14 @@
         "row": 3,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -661,14 +659,14 @@
         "row": 3,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -689,14 +687,14 @@
         "row": 3,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -717,14 +715,14 @@
         "row": 3,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -745,21 +743,21 @@
         "row": 3,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 3,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -794,14 +792,14 @@
         "row": 4,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 4,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -822,14 +820,14 @@
         "row": 4,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 4,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -850,7 +848,7 @@
         "row": 4,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -885,7 +883,7 @@
         "row": 4,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -906,14 +904,14 @@
         "row": 4,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 4,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -934,21 +932,21 @@
         "row": 4,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 4,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 4,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -983,14 +981,14 @@
         "row": 5,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 5,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1011,14 +1009,14 @@
         "row": 5,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 5,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1039,7 +1037,7 @@
         "row": 5,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1074,7 +1072,7 @@
         "row": 5,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1095,14 +1093,14 @@
         "row": 5,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 5,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1123,21 +1121,21 @@
         "row": 5,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 5,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 5,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1172,14 +1170,14 @@
         "row": 6,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1200,14 +1198,14 @@
         "row": 6,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1228,42 +1226,42 @@
         "row": 6,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 12
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 13
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1284,14 +1282,14 @@
         "row": 6,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1312,21 +1310,21 @@
         "row": 6,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 6,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1361,14 +1359,14 @@
         "row": 7,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1389,14 +1387,14 @@
         "row": 7,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1417,42 +1415,42 @@
         "row": 7,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 12
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 13
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1473,14 +1471,14 @@
         "row": 7,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1501,21 +1499,21 @@
         "row": 7,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 7,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1550,14 +1548,14 @@
         "row": 8,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1578,14 +1576,14 @@
         "row": 8,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1606,14 +1604,14 @@
         "row": 8,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1634,14 +1632,14 @@
         "row": 8,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1662,14 +1660,14 @@
         "row": 8,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1690,21 +1688,21 @@
         "row": 8,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 8,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1739,14 +1737,14 @@
         "row": 9,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 9,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1767,14 +1765,14 @@
         "row": 9,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 9,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1851,14 +1849,14 @@
         "row": 9,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 9,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1879,21 +1877,21 @@
         "row": 9,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 9,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 9,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -1956,105 +1954,105 @@
         "row": 10,
         "col": 6
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 7
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 8
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 9
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 10
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 11
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 12
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 13
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 14
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 15
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 16
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 17
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 18
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 19
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 10,
         "col": 20
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
@@ -2145,105 +2143,105 @@
         "row": 11,
         "col": 6
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 7
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 8
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 9
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 10
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 11
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 12
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 13
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 14
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 15
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 16
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 17
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 18
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 19
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
         "row": 11,
         "col": 20
       },
-      "type": "road"
+      "type": "bush"
     },
     {
       "position": {
@@ -2292,14 +2290,14 @@
         "row": 12,
         "col": 0
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 1
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
@@ -2320,28 +2318,28 @@
         "row": 12,
         "col": 4
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 5
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2418,35 +2416,35 @@
         "row": 12,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 20
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 21
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2467,28 +2465,28 @@
         "row": 12,
         "col": 25
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 12,
         "col": 26
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 0
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 1
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2509,28 +2507,28 @@
         "row": 13,
         "col": 4
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 5
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2607,35 +2605,35 @@
         "row": 13,
         "col": 18
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 19
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 20
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 21
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2656,14 +2654,14 @@
         "row": 13,
         "col": 25
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 13,
         "col": 26
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2901,7 +2899,7 @@
         "row": 15,
         "col": 6
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
@@ -2929,14 +2927,14 @@
         "row": 15,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 15,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -2957,14 +2955,14 @@
         "row": 15,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 15,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3062,14 +3060,14 @@
         "row": 16,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3090,14 +3088,14 @@
         "row": 16,
         "col": 6
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 16,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3118,42 +3116,42 @@
         "row": 16,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 12
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 13
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3202,21 +3200,21 @@
         "row": 16,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 16,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3251,14 +3249,14 @@
         "row": 17,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 17,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3279,105 +3277,105 @@
         "row": 17,
         "col": 6
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 7
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 8
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 9
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 10
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 11
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 12
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 13
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 14
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 15
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 16
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 17
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 18
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 19
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 20
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
@@ -3391,21 +3389,21 @@
         "row": 17,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 17,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 17,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3440,14 +3438,14 @@
         "row": 18,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 18,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3468,105 +3466,105 @@
         "row": 18,
         "col": 6
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 7
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 8
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 9
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 10
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 11
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 12
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 13
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 14
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 15
       },
-      "type": "brick"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 16
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 17
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 18
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 19
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 20
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
@@ -3580,21 +3578,21 @@
         "row": 18,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 18,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 18,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3629,14 +3627,14 @@
         "row": 19,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 19,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3657,14 +3655,14 @@
         "row": 19,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 19,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3685,14 +3683,14 @@
         "row": 19,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 19,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3713,14 +3711,14 @@
         "row": 19,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 19,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3769,21 +3767,21 @@
         "row": 19,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 19,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 19,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3818,14 +3816,14 @@
         "row": 20,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 20,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3846,14 +3844,14 @@
         "row": 20,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 20,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3874,14 +3872,14 @@
         "row": 20,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 20,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3902,14 +3900,14 @@
         "row": 20,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 20,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -3958,21 +3956,21 @@
         "row": 20,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 20,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 20,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4007,14 +4005,14 @@
         "row": 21,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 21,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4035,14 +4033,14 @@
         "row": 21,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 21,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4063,14 +4061,14 @@
         "row": 21,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 21,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4091,14 +4089,14 @@
         "row": 21,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 21,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4147,21 +4145,21 @@
         "row": 21,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 21,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 21,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4196,14 +4194,14 @@
         "row": 22,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4224,14 +4222,14 @@
         "row": 22,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4252,14 +4250,14 @@
         "row": 22,
         "col": 10
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 11
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4280,14 +4278,14 @@
         "row": 22,
         "col": 14
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 15
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4336,21 +4334,21 @@
         "row": 22,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4385,14 +4383,14 @@
         "row": 23,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 23,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4413,14 +4411,14 @@
         "row": 23,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 23,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4525,21 +4523,21 @@
         "row": 23,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 23,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 23,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4574,14 +4572,14 @@
         "row": 24,
         "col": 2
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 24,
         "col": 3
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4602,14 +4600,14 @@
         "row": 24,
         "col": 6
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 24,
         "col": 7
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4714,21 +4712,21 @@
         "row": 24,
         "col": 22
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 24,
         "col": 23
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
         "row": 24,
         "col": 24
       },
-      "type": "brick"
+      "type": "road"
     },
     {
       "position": {
@@ -4847,7 +4845,7 @@
         "row": 25,
         "col": 14
       },
-      "type": "road"
+      "type": "goal"
     },
     {
       "position": {

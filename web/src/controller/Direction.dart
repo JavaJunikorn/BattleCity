@@ -4,7 +4,7 @@ import 'Controller.dart';
 import 'dart:async';
 import 'dart:html';
 
-class Listeners{
+class Listeners {
 
   Controller controller;
   Point first, last;
@@ -13,10 +13,8 @@ class Listeners{
   StreamSubscription touchstartListener;
   StreamSubscription touchendListener;
   StreamSubscription touchmoveListener;
-  StreamSubscription touchQrBtnListener;
-  StreamSubscription touchHelpBtnListener;
-  StreamSubscription touchControllBtnListener;
-  StreamSubscription touchPlayBtnListener;
+
+
 
   Listeners(Controller this.controller, Game this.game);
 
@@ -64,31 +62,7 @@ class Listeners{
     touchendListener = window.onTouchEnd.listen((ev) {
       _getSwipe();
     });
-    touchQrBtnListener = controller.view.qrButton.onTouchStart.listen((ev) {
-      controller.view.showModal(controller.view.qrButton.id);
-      controller.view.modal.span.onTouchStart.listen((ev) {
-        controller.view.hideModal(controller.view.qrButton.id);
-      });
-    });
-    touchQrBtnListener = controller.view.helpBtn.onTouchStart.listen((ev) {
-      controller.view.showModal(controller.view.helpBtn.id);
-      controller.view.modal.span.onTouchStart.listen((ev) {
-        controller.view.hideModal(controller.view.helpBtn.id);
-      });
-    });
-   touchControllBtnListener = controller.view.controllsBtn.onTouchStart.listen((ev) {
-     controller.view.showModal(controller.view.controllsBtn.id);
-     controller.view.modal.span.onTouchStart.listen((ev) {
-       controller.view.hideModal(controller.view.controllsBtn.id);
-     });
-   });
 
-   /* TODO:// Zusammen mit Jake überarbeiten
-   touchPlayBtnListener = controller.view.playBtn.onTouchStart.listen((l) {
-     print("Touched play btn");
-     controller.startLevel();
-   });
-   */
 
    keyListener =  window.onKeyPress.listen((k) {
       //Shoot
@@ -114,8 +88,46 @@ class Listeners{
       }
     });
 
+
   }
 
+  void starMenuListeners() {
+    document.getElementById("play").onClick.listen((ev) {
+      controller.view.closeMainMenu();
+      controller.listeners.startListening();
+      controller.startLevel();
+    });
+
+    document.getElementById("pause").onClick.listen((ev) {
+      controller.view.showPause();
+    });
+
+    document.getElementById("controlls").onClick.listen((ev) {
+      controller.view.showControlls();
+    });
+
+
+    document.getElementById("help").onClick.listen((ev) {
+      controller.view.showTutorial();
+    });
+
+    controller.view.modal.nextBtn.onClick.listen((ev) {
+      print("nextBtn");
+      controller.view.showTutorial();
+    });
+
+    document.getElementById("qr").onClick.listen((ev) {
+      controller.view.showQrCode();
+    });
+
+
+    controller.view.modal.closeButton.onClick.listen((ev) {
+      controller.view.hideControlls();
+      controller.view.hideQrCode();
+      controller.view.hideTutorial();
+      controller.view.hidePause();
+    });
+  }
 
 
   void stopListeners() {

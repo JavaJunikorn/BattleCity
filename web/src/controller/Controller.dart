@@ -17,6 +17,7 @@ class Controller {
     listeners = new Listeners(this, game);
     game.loadMeta().whenComplete(() {
       mainMenu();
+      listeners.starMenuListeners();
     });
   }
 
@@ -26,7 +27,6 @@ class Controller {
     if (reason == "lose") {
       view.showLose();
     } else if (reason == "win") {
-      view.showLoading();
       if (game.currentLevel > game.levelCount)
         view.showCongrats();
       else {
@@ -40,8 +40,11 @@ class Controller {
   }
 
   void startLevel() {
+    //showloading
     game.loadNextLevel().whenComplete(() {
+      //hideloading
       game.startLoop();
+      view.updateLevelCount();
       view.update(20);
       listeners.startListening();
     });

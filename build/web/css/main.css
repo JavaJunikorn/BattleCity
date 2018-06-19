@@ -11,7 +11,7 @@ body {
 }
 
 .btn {
-    font-size: 2vh;
+    font-size: 1.3vh;
 }
 
 
@@ -63,9 +63,20 @@ table td {
 }
 
 .bg-goal {
+    position: relative;
+}
+
+.bg-goal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -30px;
+    bottom: -13px;
     background-image: url("../img/fields/bg-goal-field.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .bg-base-field {
@@ -137,6 +148,20 @@ table td {
     background-repeat: no-repeat;
     z-index: 1;
 }
+
+.bg-easyEnemy-down-1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
 .bg-easyEnemy-down-2:before {
     content: "";
     position: absolute;
@@ -305,7 +330,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-right-1.png");
@@ -431,6 +456,10 @@ table td {
 
 }
 
+.bg-city-at-night {
+    background: url("../img/background/city-at-night.jpg");
+}
+
 .bg-img {
     background: url("http://www.clker.com/cliparts/r/q/r/j/F/K/black-and-white-skyline-md.png") bottom;
     background-color: orange;
@@ -454,7 +483,7 @@ table td {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 16.5vh; /* Location of the box */
+    padding-top: 10.5vh; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -511,12 +540,15 @@ table td {
     color: white;
 }
 
+.modal-header img {
+    width: 100%
+}
+
 
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
     color: white;
 }
 
@@ -544,4 +576,22 @@ table td {
 
 #fieldTypes td {
     padding: 0.2rem;
+}
+
+#speech img {
+    width: 1.7vh;
+}
+
+.main-menu {
+    list-style: none;
+}
+
+.main-menu li {
+    padding: 2vh;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.main-menu li i {
+    padding-right: 0.5vh;
 }

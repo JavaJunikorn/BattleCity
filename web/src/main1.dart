@@ -10,16 +10,20 @@ import 'Level.dart';
 import 'LevelLoader.dart';
 import 'dart:async';
 import 'controller/Controller.dart';
-import 'dart:js';
-import 'view/Modal.dart';
+
+import 'view/ModalElement.dart';
 
 
 void main() {
 
 
   Controller controller = new Controller();
+  //ModalElement m = new ModalElement.created();
+  //document.getElementById("modalWrapper").children.add(m.modalWrapper);
 
 
+  /*
+  print(new Point(1, 1) == new Point(1, 1));
   querySelector(".fullscreen").onTouchEnd.listen((l) {
     requestFullscreenOn(document.body);
     document.body.onFullscreenChange.listen((i) {
@@ -27,29 +31,10 @@ void main() {
       querySelector(".fullscreen").setAttribute("class", "nav-link btn btn-primary ml-1 fullscreen");
       querySelector(".fa-expand").setAttribute("class", "fa fa-compress");
     });
-  });
+  });*/
 
 }
 
 
-void requestFullscreenOn(Element element) {
-  var elem = new JsObject.fromBrowserObject(element);
 
-  if (elem.hasProperty("requestFullscreen")) {
-    elem.callMethod("requestFullscreen");
-  }
-  else {
-    List<String> vendors = ['moz', 'webkit', 'ms', 'o'];
-    for (String vendor in vendors) {
-      String vendorFullscreen = "${vendor}RequestFullscreen";
-      if (vendor == 'moz') {
-        vendorFullscreen = "${vendor}RequestFullScreen";
-      }
-      if (elem.hasProperty(vendorFullscreen)) {
-        elem.callMethod(vendorFullscreen);
-        return;
-      }
-    }
-  }
-}
 
