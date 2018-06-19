@@ -236,8 +236,8 @@ table td {
     position: absolute;
     top: 0;
     left: 0px;
-    right: -15px;
-    bottom: -15px;
+    right: -1.7vh;
+    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-up-.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -249,8 +249,8 @@ table td {
     position: absolute;
     top: 0;
     left: 0px;
-    right: -15px;
-    bottom: -15px;
+    right: -1.7vh;
+    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-left-.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -262,8 +262,8 @@ table td {
     position: absolute;
     top: 0;
     left: 0px;
-    right: -15px;
-    bottom: -15px;
+    right: -1.7vh;
+    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-right-.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -275,8 +275,8 @@ table td {
     position: absolute;
     top: 0;
     left: 0px;
-    right: -15px;
-    bottom: -15px;
+    right: -1.7vh;
+    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-down-.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -561,9 +561,7 @@ table td {
 }
 
 .main-container table {
-    border-color: gray;
-    border-top: 3px dotted #000;
-    border-bottom: 3px dotted #000;
+    border: 5px dotted darkgoldenrod;
     box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
     margin-bottom: 1px;
 }
