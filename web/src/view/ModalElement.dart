@@ -10,6 +10,7 @@ class ModalElement {
   DivElement modalBody;
   DivElement modalFooter;
   ButtonElement nextBtn;
+  ButtonElement  backToMenuBtn;
 
 
 
@@ -22,6 +23,7 @@ class ModalElement {
     modalBody = new DivElement();
     modalFooter = new DivElement();
     nextBtn = new ButtonElement();
+    backToMenuBtn = new ButtonElement();
 
     modalWrapper.id = "showModal";
     modalWrapper.setAttribute("class", "modal");
@@ -31,15 +33,25 @@ class ModalElement {
 
     modalHeader.setAttribute("class", "modal-header");
 
+
     closeButton.id = "closeBtn";
     closeButton.setAttribute("class", "close fa fa-times");
+
+    backToMenuBtn.id = "backToMenuBtn";
+    backToMenuBtn.setAttribute("class", "btn btn-primary btn-block");
+    backToMenuBtn.style.display ="none";
+    backToMenuBtn.text= "Zurück zum Menü";
+
+
 
     modalBody.id = "modalBody";
     modalBody.setAttribute("class", "modal-body");
 
+
     nextBtn.id = "next";
     nextBtn.setAttribute("class", "btn btn-primary btn-block");
     nextBtn.text= "weiter";
+    nextBtn.style.display = "none";
 
     modalFooter.setAttribute("class", "modal-footer");
     modalFooter.style.display = "none";
@@ -52,6 +64,7 @@ class ModalElement {
     modalContent.children.add(modalFooter);
 
     modalFooter.children.add(nextBtn);
+    modalFooter.children.add(backToMenuBtn);
 
     modalWrapper.children.add(modalContent);
 
@@ -68,6 +81,10 @@ class ModalElement {
 
   void showModal() {
     modalWrapper.style.display = "block";
+  }
+
+  void showHeader() {
+    modalHeader.style.display = "block";
   }
 
   void showModalFooter() {
@@ -91,6 +108,11 @@ class ModalElement {
     modalFooter.style.display = "none";
   }
 
+
+  void hideHeader() {
+    modalHeader.style.display = "none";
+  }
+
   void setModalbodyChildren(Element child) {
     modalBody.children.add(child);
   }
@@ -106,7 +128,10 @@ class ModalElement {
 
     modalHeader.setAttribute("class", "modal-header");
     modalHeader.setAttribute("style", "");
+
     closeButton.setAttribute("class", "close fa fa-times");
+    backToMenuBtn.style.display ="none";
+    nextBtn.style.display = "none";
 
     modalBody.id = "modalBody";
     modalBody.setAttribute("class", "modal-body");

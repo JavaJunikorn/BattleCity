@@ -18,6 +18,7 @@ void main() {
 
 
   Controller controller = new Controller();
+  //print(LevelLoader.generateJson(20, 20));
   //ModalElement m = new ModalElement.created();
   //document.getElementById("modalWrapper").children.add(m.modalWrapper);
 

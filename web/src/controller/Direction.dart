@@ -93,6 +93,7 @@ class Listeners {
 
   void starMenuListeners() {
     document.getElementById("play").onClick.listen((ev) {
+      print("startBtnClicked");
       controller.view.closeMainMenu();
       controller.listeners.startListening();
       controller.startLevel();
@@ -126,6 +127,11 @@ class Listeners {
       controller.view.hideQrCode();
       controller.view.hideTutorial();
       controller.view.hidePause();
+    });
+
+    document.getElementById("backToMenuBtn").onClick.listen((e){
+      controller.view.hideLosee();
+      controller.mainMenu();
     });
   }
 

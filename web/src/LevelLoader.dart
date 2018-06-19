@@ -94,5 +94,4 @@ class LevelLoader {
     return json;
   }
 
-
 }

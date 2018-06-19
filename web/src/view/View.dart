@@ -13,11 +13,15 @@ class View {
   Game model;
   Controller controller;
   Element htmlTable;
-  var subGoals = [new Point(0, 25), new Point(6, 25), new Point(21, 17), new Point(25, 9), new Point(4, 5), new Point(12, 5)];
-
-  var tutorialPart = 0;
   ModalElement modal;
-
+  List<Element> rows;
+  List<Element> cols;
+  var tutorialPart = 0;
+  var tutorialSubgoals = [
+    new Point(0, 25), new Point(6, 25),
+    new Point(21, 17), new Point(25, 9),
+    new Point(4, 5), new Point(12, 5)
+  ];
   var speechText = [
     "Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels."
     "Du kannst jederzeit die Steuerungs Hilfe mit der Taste (<i class=\"fa fa-gamepad\"></i>) abrufen."
@@ -39,10 +43,8 @@ class View {
 
     "Du hast Brick vor dir",
 
-    "Hinter dem Brick ist..."];
-
-  List<Element> rows;
-  List<Element> cols;
+    "Hinter dem Brick ist..."
+  ];
 
 
   View(Game this.model, Controller this.controller) {
@@ -77,11 +79,10 @@ class View {
     return table;
   }
 
-  void setElement(Point destination) {}
 
   void update(int delay) {
-    querySelector(".tutorial").hidden = false;
     querySelector(".main-container").children.clear();
+    _resetSpeech();
     querySelector(".main-container").children.add(toHTMLTable(model));
     new Timer.periodic(new Duration(milliseconds: delay), (t) {
       htmlTable =
@@ -94,12 +95,12 @@ class View {
                   model.level.gamefield.gameField[i + 1][j + 1].ground.type);
         }
       }
-      if (model.currentLevel == 0 && subGoals.length != 0) {
-        updateHint();
+      if (model.currentLevel == 0 && tutorialSubgoals.length != 0) {
+        updateTutorialSpeech();
+      } else {
+        updateLevelStatSpeech();
       }
 
-      //TODO: change method with using modals
-      //updateHint();
       model.level.gamefield.moveables.forEach((m) {
         StringBuffer buffer = new StringBuffer("bg-");
         buffer.write(
@@ -127,75 +128,44 @@ class View {
         .setAttribute(name, value);
   }
 
-  void updateHint() {
+  void updateTutorialSpeech() {
     Point playerPos = model.level.player.positions[0][0];
-    //print(playerPos);
-    //print("subgoals.length" + subGoals.length.toString());
-    //print("speech.length" + speechText.length.toString());
 
-    if (subGoals.length == 0)
+    if (tutorialSubgoals.length == 0)
       return;
 
-    if (playerPos == subGoals[0] && subGoals.length == 6) {
+    if (playerPos == tutorialSubgoals[0] && tutorialSubgoals.length == 6) {
       document.getElementById("speech").innerHtml = speechText[0];
-      subGoals.removeAt(0);
+      tutorialSubgoals.removeAt(0);
       speechText.removeAt(0);
       return;
     }
 
-    if (playerPos == subGoals[0] && subGoals.length == 5) {
+    if (playerPos == tutorialSubgoals[0] && tutorialSubgoals.length == 5) {
       document.getElementById("speech").innerHtml = speechText[0];
-      subGoals.removeAt(0);
+      tutorialSubgoals.removeAt(0);
       speechText.removeAt(0);
       return;
     }
-    if (playerPos == subGoals[0] && subGoals.length == 4) {
+    if (playerPos == tutorialSubgoals[0] && tutorialSubgoals.length == 4) {
       document.getElementById("speech").innerHtml= speechText[0];
-      subGoals.removeAt(0);
+      tutorialSubgoals.removeAt(0);
       speechText.removeAt(0);
       return;
     }
-    if (playerPos == subGoals[0] && subGoals.length == 3) {
+    if (playerPos == tutorialSubgoals[0] && tutorialSubgoals.length == 3) {
       document.getElementById("speech").innerHtml = speechText[0];
-      subGoals.removeAt(0);
+      tutorialSubgoals.removeAt(0);
       speechText.removeAt(0);
       return;
     }
-    if (playerPos == subGoals[0] && subGoals.length == 2) {
+    if (playerPos == tutorialSubgoals[0] && tutorialSubgoals.length == 2) {
       document.getElementById("speech").innerHtml = speechText[0];
-      subGoals.removeAt(0);
+      tutorialSubgoals.removeAt(0);
       speechText.removeAt(0);
       return;
     }
-    higlightTutorialSubgoal(subGoals[0]);
-
-
-    /*
-    print("subgoals.length:" + subGoals.length.toString());
-    if (playerPos == subGoals[0] && subGoals.length == 2) {
-      document.getElementById("speech").text = speechText[1];
-      subGoals.removeAt(0);
-      return;
-    }
-    if (playerPos != subGoals[0] && subGoals.length == 2) {
-      higlightTutorialSubgoal(subGoals[0]);
-      document.getElementById("speech").text = speechText[0];
-      return;
-    }
-
-    if (playerPos != subGoals[0] && subGoals.length == 1) {
-      higlightTutorialSubgoal(subGoals[0]);
-      document.getElementById("speech").text = speechText[1];
-      return;
-    }
-
-    if (playerPos == subGoals[0] && subGoals.length == 1) {
-      document.getElementById("speech").text = "Du hast eine Wasserhindernis vor dir."
-          "Sie ist nicht zestörbar, nicht durchfahrbar,aber kugeldurchlässig."
-          "Überhole sie und bewege dich zum nächsten Punkt";
-      subGoals.removeAt(0);
-      return;
-    }*/
+    higlightTutorialSubgoal(tutorialSubgoals[0]);
   }
 
   void higlightTutorialSubgoal(Point postion) {
@@ -204,6 +174,35 @@ class View {
     rows[postion.y + 1].children.elementAt(postion.x).setAttribute("class", "bg-road invalid");
     rows[postion.y + 1].children.elementAt(postion.x + 1).setAttribute("class", "bg-road invalid");
 
+  }
+
+  void updateLevelStatSpeech() {
+    document.getElementById("speech").children.clear();
+    document.getElementById("speech").text = "Lebenspunkte:";
+    document.getElementById("speech").style.fontSize = "2vh";
+    for (int i = 0; i < model.level.player.health; i++) {
+      var  health = new SpanElement();
+      health.setAttribute("class", "fa fa-heart");
+      health.style.paddingLeft = "1vh";
+      document.getElementById("speech").children.add(health);
+    }
+
+    document.getElementById("enemiesStat").children.clear();
+    document.getElementById("enemiesStat").text = "Verbliebende Gegner: ";
+    document.getElementById("enemiesStat").style.fontSize = "2vh";
+    for (int i = 0; i < model.level.gamefield.enemyCount; i++) {
+      var  enemy = new ImageElement();
+      enemy.src = "../img/etc/enemy-stat.png";
+      enemy.style.paddingLeft = "1vh";
+      enemy.style.width = "4vh";
+      document.getElementById("enemiesStat").children.add(enemy);
+    }
+  }
+
+
+  void _resetSpeech() {
+    document.getElementById("speech").children.clear();
+    document.getElementById("enemiesStat").children.clear();
   }
 
   void showCongrats() {
@@ -364,6 +363,7 @@ class View {
     modal.showHeading();
     modal.showCloseButton();
     modal.showModalFooter();
+    modal.nextBtn.style.display = "block";
     modal.showModal();
   }
 
@@ -499,11 +499,20 @@ class View {
   }
 
   void showLose() {
-    //Todo show menue
 
-    querySelector("------back to menu button-----").onClick.listen((e){
-      controller.mainMenu();
-    });
+    var loseImg = new ImageElement();
+    loseImg.src = "../img/etc/lose-banner.png";
+    loseImg.style.width = "100%";
+
+    modal.setModalbodyChildren(loseImg);
+    modal.hideHeader();
+    modal.showModalFooter();
+    modal.backToMenuBtn.style.display = "block";
+    modal.showModal();
+  }
+
+  void hideLosee() {
+    modal.hideModal();
   }
 
   void showLoading() {

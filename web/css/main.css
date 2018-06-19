@@ -16,7 +16,7 @@ body {
 
 
 table {
-    border-spacing: 0px;
+    border-spacing: 0;
     border-collapse: separate;
 }
 
@@ -105,8 +105,20 @@ table td {
 
 .bg-easyEnemy-left-1, .bg-easyEnemy-right-1,
 .bg-easyEnemy-up-1, .bg-easyEnemy-down-1,
-.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2 {
+.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2, .bg-tank {
     position: relative;
+}
+
+.bg-tank:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -1.7vh;
+    bottom: -1.7vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 
@@ -115,7 +127,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
@@ -128,7 +140,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
@@ -140,7 +152,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
@@ -274,7 +286,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -1.7vh;
     bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-down-.png");
@@ -289,7 +301,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-up-1.png");
@@ -304,7 +316,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-down-1.png");

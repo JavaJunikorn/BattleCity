@@ -49,4 +49,18 @@ class Controller {
       listeners.startListening();
     });
   }
+
+  void restartGame() {
+    game = new Game((String reason) {
+      {
+        gamepaused(reason);
+      }
+    });
+    view = new View(game, this);
+    listeners = new Listeners(this, game);
+    game.loadMeta().whenComplete(() {
+      mainMenu();
+      listeners.starMenuListeners();
+    });
+  }
 }
