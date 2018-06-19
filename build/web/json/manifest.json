@@ -1,0 +1,12 @@
+{
+  // Required
+  "app": {
+    "background": {
+
+    }
+  },
+  "manifest_version": 2,
+  "name": "My App",
+  "display": "standalone",
+  "orientation": "landscape"
+}
