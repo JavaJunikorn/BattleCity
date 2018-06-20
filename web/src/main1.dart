@@ -2,7 +2,7 @@ import 'dart:html';
 import 'dart:convert';
 import 'view/View.dart';
 import 'model/Game.dart';
-import 'controller/Direction.dart';
+import 'controller/Listeners.dart';
 import 'model/moveables/PlayerTank.dart';
 import 'model/moveables/Moveable.dart';
 import 'model/GameField.dart';

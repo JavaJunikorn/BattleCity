@@ -5,43 +5,33 @@ import 'dart:async';
 import 'dart:html';
 
 class Listeners {
-
   Controller controller;
   Point first, last;
   Game game;
-  StreamSubscription keyListener;
-  StreamSubscription touchstartListener;
-  StreamSubscription touchendListener;
-  StreamSubscription touchmoveListener;
 
-
-
+  bool _listen = true;
   Listeners(Controller this.controller, Game this.game);
 
-  void _getSwipe(){
-
-    if(last == null || first.distanceTo(last) < 20)
-     game.level.player.shoot();
+  void _getSwipe() {
+    if (last == null || first.distanceTo(last) < 20)
+      game.level.player.shoot();
     else {
       Point d = first - last;
-      if(d.x.abs() > d.y.abs()){
+      if (d.x.abs() > d.y.abs()) {
         //Waagerecht
-        if( first.x > last.x){
+        if (first.x > last.x) {
           //links
           game.level.player.changeDirection(Directions.left);
-        }
-        else{
+        } else {
           //rechts
           game.level.player.changeDirection(Directions.right);
         }
-      }
-      else{
+      } else {
         //Senkrecht
-        if(first.y > last.y){
+        if (first.y > last.y) {
           //Up
           game.level.player.changeDirection(Directions.up);
-        }
-        else{
+        } else {
           //Down
           game.level.player.changeDirection(Directions.down);
         }
@@ -49,46 +39,53 @@ class Listeners {
     }
   }
 
-  void startListening(){
+  void stopListening(){
+        _listen = false;
+  }
 
+  void resumeListening(){
+    _listen = true;
+  }
 
-   touchstartListener =  window.onTouchStart.listen((ev) {
+  void startListening() {
+    window.onTouchStart.listen((ev) {
       last = null;
+      if(!_listen)return;
       first = ev.touches.first.screen;
     });
-    touchmoveListener = window.onTouchMove.listen((ev){
+    window.onTouchMove.listen((ev) {
+      if(!_listen) return;
       last = ev.touches.first.screen;
     });
-    touchendListener = window.onTouchEnd.listen((ev) {
+    window.onTouchEnd.listen((ev) {
+      if(!_listen)return;
       _getSwipe();
     });
 
-
-   keyListener =  window.onKeyPress.listen((k) {
+    window.onKeyDown.listen((k) {
+      if(!_listen)return;
       //Shoot
-      if(k.which == 32) { //spacebar
+      if (k.keyCode == KeyCode.SPACE) {
+        //spacebar
         game.level.player.shoot();
       }
       //Up
-      if(k.which == 119 || k.keyCode == KeyCode.UP){
+      if (k.keyCode == KeyCode.W || k.keyCode == KeyCode.UP) {
         game.level.player.changeDirection(Directions.up);
-        print("Up");
       }
       //Down
-      if(k.which == 115 || k.keyCode == KeyCode.DOWN){
+      if (k.keyCode == KeyCode.S || k.keyCode == KeyCode.DOWN) {
         game.level.player.changeDirection(Directions.down);
       }
       //Left
-      if(k.which == 97 || k.keyCode == KeyCode.LEFT){
+      if (k.keyCode == KeyCode.A || k.keyCode == KeyCode.LEFT) {
         game.level.player.changeDirection(Directions.left);
       }
       //Right
-      if(k.which == 100 || k.keyCode == KeyCode.RIGHT){
+      if (k.keyCode == KeyCode.D || k.keyCode == KeyCode.RIGHT) {
         game.level.player.changeDirection(Directions.right);
       }
     });
-
-
   }
 
   void starMenuListeners() {
@@ -107,7 +104,6 @@ class Listeners {
       controller.view.showControlls();
     });
 
-
     document.getElementById("help").onClick.listen((ev) {
       controller.view.showTutorial();
     });
@@ -121,7 +117,6 @@ class Listeners {
       controller.view.showQrCode();
     });
 
-
     controller.view.modal.closeButton.onClick.listen((ev) {
       controller.view.hideControlls();
       controller.view.hideQrCode();
@@ -129,14 +124,11 @@ class Listeners {
       controller.view.hidePause();
     });
 
-    document.getElementById("backToMenuBtn").onClick.listen((e){
+    document.getElementById("backToMenuBtn").onClick.listen((e) {
       controller.view.hideLosee();
       controller.mainMenu();
     });
   }
 
-
-  void stopListeners() {
-
-  }
+  void stopListeners() {}
 }

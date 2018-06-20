@@ -1,6 +1,6 @@
 import '../model/Game.dart';
 import '../view/View.dart';
-import 'Direction.dart';
+import 'Listeners.dart';
 
 class Controller {
   Game game;
@@ -26,8 +26,8 @@ class Controller {
     listeners.stopListeners();
     if (reason == "lose") {
       view.showLose();
-    } else if (reason == "win") {
-      if (game.currentLevel > game.levelCount)
+    } else if (reason == "winLevel") {
+      if (game.currentLevel >= game.levelCount)
         view.showCongrats();
       else {
         startLevel();

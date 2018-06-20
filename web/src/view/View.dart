@@ -3,7 +3,7 @@ import 'dart:html';
 import 'dart:async';
 import '../model/Game.dart';
 import '../model/moveables/Moveable.dart';
-import '../controller/Direction.dart';
+import '../controller/Listeners.dart';
 import '../model/moveables/Tank.dart';
 import 'ModalElement.dart';
 import 'dart:js';

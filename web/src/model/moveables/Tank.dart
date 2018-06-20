@@ -35,12 +35,12 @@ abstract class Tank extends Moveable {
       case "easy1":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 5, 1, "default", "easyEnemy");
+              x, y, 2, 2, direction, game, 20, 2, "default", "easyEnemy");
           break;
         }
       case "easy2":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 2, "default", "easyEnemy");
+          t = new EnemyTank(x, y, 2, 2, direction, game, 10, 2, "default", "easyEnemy");
           break;
         }
       case "easy3":
@@ -119,7 +119,7 @@ abstract class Tank extends Moveable {
     }
     bool ret = true;
     pos.forEach((f) {
-      if (!f.ground.passable || f.moveable is Tank) ret = false;
+      if (!f.ground.passable || f.moveable != null) ret = false;
     });
     return ret;
   }

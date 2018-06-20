@@ -7,7 +7,7 @@ import '../Level.dart';
 import '../LevelLoader.dart';
 
 class Game {
-  final int delay = 50;
+  final int delay = 35;
   Level level;
   Timer t;
   int levelCount = 0;
@@ -36,6 +36,7 @@ class Game {
 
   void startLoop() {
     this.t = new Timer.periodic(new Duration(milliseconds: delay), (t) {
+      print((speedCount /10).floor());
       this.levelLoop();
     });
   }
@@ -89,6 +90,7 @@ class Game {
   void _checkWinLose() {
     if (level.player.health < 1 || !checkGoalsThere()) {
       stopLoop();
+      currentLevel = 0;
       function("lose");
     }
     if(level.gamefield.enemyCount < 1){
