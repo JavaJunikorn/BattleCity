@@ -22,7 +22,6 @@ class Controller {
   }
 
   void gamepaused(String reason) {
-    print(reason);
     listeners.stopListeners();
     if (reason == "lose") {
       view.showLose();

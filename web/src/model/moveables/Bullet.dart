@@ -1,5 +1,6 @@
 import '../Game.dart';
 import '../GameField.dart';
+import '../grounds/Goal.dart';
 import '../grounds/Ground.dart';
 import 'Moveable.dart';
 import 'dart:math';
@@ -7,8 +8,8 @@ import 'PlayerTank.dart';
 import 'Tank.dart';
 
 class Bullet extends Moveable {
-  int speed = 5; //lower is faster
   int damage = 1;
+  bool _destroyed = false;
 
   /**
    * @param gamefield a reference to the field the bullet is in
@@ -19,7 +20,9 @@ class Bullet extends Moveable {
   Bullet._internal(int x, int y, int width, int height, Directions direction,
       Game game, int speed, int this.damage, String type)
       : super(x, y, width, height, direction, game, speed, type){
+    print("before x: $x y: $y");
     doCollisions();
+    print("collision done: x: $x  y: $y");
   }
 
   factory Bullet(String bulletType, Tank tank, Game game) {
@@ -43,11 +46,11 @@ class Bullet extends Moveable {
           Point p = getStartPosition(tank, direction, 2, 1);
           if (direction == Directions.up || direction == Directions.down) {
             b = new Bullet._internal(
-                p.x, p.y, 2, 1, direction, game, 1, 1, "bullet");
+                p.x, p.y, 2, 1, direction, game, 5, 1, "bullet");
           } else if (direction == Directions.left ||
               direction == Directions.right) {
             b = new Bullet._internal(
-                p.x, p.y, 1, 2, direction, game, 1, 1, "bullet");
+                p.x, p.y, 1, 2, direction, game, 5, 1, "bullet");
           }
         }
     }
@@ -98,6 +101,7 @@ class Bullet extends Moveable {
 
   @override
   void hit(int dmg) {
+    this._destroyed = true;
     game.toRemove.add(this);
   }
 
@@ -166,10 +170,12 @@ class Bullet extends Moveable {
           break;
         }
     }
+    print("$type : ${positions[0][0]}, ${direction}");
   }
 
   @override
   void doCollisions() {
+    if(this._destroyed) return;
     List<Moveable> hit = new List();
     for (int i = 0; i < positions.length; i++) {
       for (int j = 0; j < positions[i].length; j++) {
@@ -177,20 +183,24 @@ class Bullet extends Moveable {
 
         f.ground.activate(this);
         if (!f.ground.permeable) {
-
           this.hit(damage);
+        }
+        if (f.ground.destroyable) {
+          if(f.ground is Goal)
+            game.level.gamefield.goals.removeWhere((g)=> g == positions[i][j]);
+          f.ground = new Ground.factory("road");
 
         }
-        if (f.ground.destroyable) f.ground = new Ground.factory("road");
-        if (f.moveable != null && f.moveable != this && !hit.contains(f.moveable)) {
-          print(this.type + " hit: " + f.moveable.type + " at " + i.toString() + " " + j.toString());
-          f.moveable.hit(this.damage);
-          this.hit(damage);
-          hit.add(f.moveable);
+          if (f.moveable != null && f.moveable != this && !hit.contains(f.moveable)) {
+            f.moveable.hit(this.damage);
+            this.hit(damage);
+            hit.add(f.moveable);
+          }
         }
       }
     }
-  }
+
+
   @override
   String getLevel() {
     return this.damage.toString();

@@ -36,7 +36,6 @@ class Game {
 
   void startLoop() {
     this.t = new Timer.periodic(new Duration(milliseconds: delay), (t) {
-      print((speedCount /10).floor());
       this.levelLoop();
     });
   }
@@ -75,20 +74,8 @@ class Game {
   }
 
 
-  /**
-   * @return false if all goals are destroyed
-   */
-  bool checkGoalsThere(){
-    List goals = level.gamefield.goals;
-    for(int i = 0; i < goals.length; i++){
-      if(level.gamefield.getField(goals[i]).ground.type == "goal")
-        return true;
-    }
-    return false;
-  }
-
   void _checkWinLose() {
-    if (level.player.health < 1 || !checkGoalsThere()) {
+    if (level.player.health < 1 || level.gamefield.goals.length < 1) {
       stopLoop();
       currentLevel = 0;
       function("lose");

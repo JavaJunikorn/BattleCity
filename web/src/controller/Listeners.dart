@@ -90,7 +90,6 @@ class Listeners {
 
   void starMenuListeners() {
     document.getElementById("play").onClick.listen((ev) {
-      print("startBtnClicked");
       controller.view.closeMainMenu();
       controller.listeners.startListening();
       controller.startLevel();

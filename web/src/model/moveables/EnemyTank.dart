@@ -14,38 +14,48 @@ class EnemyTank extends Tank {
 
   @override
   move(int count) {
-    if(speed == 0 ||count % speed != 0)return;
+    if(health < 1)return;
+    if (speed == 0 || count % speed != 0) return;
     Random rnd = new Random();
     if (!checkMovementPossible()) {
-      if (health > 0) {
-        int i = rnd.nextInt(4);
-        switch (i) {
-          case 0:
-            {
-              this.direction = Directions.up;
-              break;
-            }
-          case 1:
-            {
-              this.direction = Directions.down;
-              break;
-            }
-          case 2:
-            {
-              this.direction = Directions.left;
-              break;
-            }
-          case 3:
-            {
-              this.direction = Directions.right;
-              break;
-            }
-        }
+      moveRandomly();
+    } else {
+      int i = rnd.nextInt(20);
+      if (i == 0) {
+        moveRandomly();
       }
-    } else
-      super.move(count);
+    }
+    super.move(count);
     doCollisions();
-    int i = rnd.nextInt(4);
+    int i = rnd.nextInt(3);
     if (i == 0) this.shoot();
   }
+
+
+void moveRandomly(){
+  var rnd = new Random();
+  int i = rnd.nextInt(4);
+  switch (i) {
+    case 0:
+      {
+        this.direction = Directions.up;
+        break;
+      }
+    case 1:
+      {
+        this.direction = Directions.down;
+        break;
+      }
+    case 2:
+      {
+        this.direction = Directions.left;
+        break;
+      }
+    case 3:
+      {
+        this.direction = Directions.right;
+        break;
+      }
+  }
+}
 }

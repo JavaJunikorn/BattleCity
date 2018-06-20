@@ -17,7 +17,8 @@ abstract class Tank extends Moveable {
 
   Tank(int x, int y, int width, int height, Directions direction, Game game,
       int this.speed, int this.health, String this.bulletType, String type)
-      : super(x, y, width, height, direction, game, speed, type);
+      : super(x, y, width, height, direction, game, speed, type){
+  }
 
   factory Tank.factory(
       String tankType, int x, int y, Directions direction, Game game) {
