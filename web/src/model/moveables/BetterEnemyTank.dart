@@ -12,5 +12,10 @@ class BetterEnemyTank extends EnemyTank{
   void move(int count){
     if(count % speed != 0)return;
     Point goal = game.level.gamefield.goals[0];
+    if(goal == null)
+      super.move(count);
+    else{
+
+    }
   }
 }
