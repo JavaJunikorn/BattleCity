@@ -27,7 +27,7 @@ abstract class Tank extends Moveable {
     switch (tankType) {
       case "player":
         {
-          t = new PlayerTank(x, y, 2, 2, direction, game, 10, 2, "default");
+          t = new PlayerTank(x, y, 2, 2, direction, game, 7, 2, "default");
           break;
         }
       //Todo Enemy tanks

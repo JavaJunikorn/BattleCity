@@ -1,6 +1,7 @@
 import '../model/Game.dart';
 import '../view/View.dart';
 import 'Listeners.dart';
+import 'dart:html';
 
 class Controller {
   Game game;
@@ -17,21 +18,20 @@ class Controller {
     listeners = new Listeners(this, game);
     game.loadMeta().whenComplete(() {
       mainMenu();
-      listeners.starMenuListeners();
     });
   }
 
   void gamepaused(String reason) {
-
-
+    view.pauseLoop();
     listeners.pauseListening();
     if (reason == "lose") {
       view.showLose();
       game.score = 0;
 
-    } else if (reason == "winLevel") {
+    } else if (reason == "win") {
       if (game.currentLevel >= game.levelCount)
-        view.showCongrats();
+        //Todo replace with win screen
+        mainMenu();
       else {
         startLevel();
       }
@@ -40,6 +40,7 @@ class Controller {
 
   void mainMenu() {
     view.showMainMenu();
+    listeners.starMenuListeners();
   }
 
   void startLevel() {
