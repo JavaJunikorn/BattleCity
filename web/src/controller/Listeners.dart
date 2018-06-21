@@ -8,9 +8,12 @@ class Listeners {
   Controller controller;
   Point first, last;
   Game game;
-
   bool _listen = true;
-  Listeners(Controller this.controller, Game this.game);
+
+  Listeners(Controller this.controller, Game this.game){
+   _startListeners();
+   pauseListening();
+  }
 
   void _getSwipe() {
     if (last == null || first.distanceTo(last) < 20)
@@ -39,31 +42,32 @@ class Listeners {
     }
   }
 
-  void stopListening(){
-        _listen = false;
+  void pauseListening() {
+    _listen = false;
   }
 
-  void resumeListening(){
+  void resumeListening() {
     _listen = true;
   }
 
-  void startListening() {
+  void _startListeners() {
+
     window.onTouchStart.listen((ev) {
       last = null;
-      if(!_listen)return;
+      if (!_listen) return;
       first = ev.touches.first.screen;
     });
     window.onTouchMove.listen((ev) {
-      if(!_listen) return;
+      if (!_listen) return;
       last = ev.touches.first.screen;
     });
     window.onTouchEnd.listen((ev) {
-      if(!_listen)return;
+      if (!_listen) return;
       _getSwipe();
     });
 
     window.onKeyDown.listen((k) {
-      if(!_listen)return;
+      if (!_listen) return;
       //Shoot
       if (k.keyCode == KeyCode.SPACE) {
         //spacebar
@@ -91,7 +95,7 @@ class Listeners {
   void starMenuListeners() {
     document.getElementById("play").onClick.listen((ev) {
       controller.view.closeMainMenu();
-      controller.listeners.startListening();
+      controller.listeners.resumeListening();
       controller.startLevel();
     });
 
@@ -108,7 +112,6 @@ class Listeners {
     });
 
     controller.view.modal.nextBtn.onClick.listen((ev) {
-      print("nextBtn");
       controller.view.showTutorial();
     });
 
@@ -128,6 +131,4 @@ class Listeners {
       controller.mainMenu();
     });
   }
-
-  void stopListeners() {}
 }

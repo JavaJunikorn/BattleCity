@@ -20,9 +20,7 @@ class Bullet extends Moveable {
   Bullet._internal(int x, int y, int width, int height, Directions direction,
       Game game, int speed, int this.damage, String type)
       : super(x, y, width, height, direction, game, speed, type){
-    print("before x: $x y: $y");
     doCollisions();
-    print("collision done: x: $x  y: $y");
   }
 
   factory Bullet(String bulletType, Tank tank, Game game) {
@@ -170,7 +168,6 @@ class Bullet extends Moveable {
           break;
         }
     }
-    print("$type : ${positions[0][0]}, ${direction}");
   }
 
   @override

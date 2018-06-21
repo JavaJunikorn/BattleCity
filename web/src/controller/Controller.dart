@@ -22,7 +22,7 @@ class Controller {
   }
 
   void gamepaused(String reason) {
-    listeners.stopListeners();
+    listeners.pauseListening();
     if (reason == "lose") {
       view.showLose();
     } else if (reason == "winLevel") {
@@ -42,10 +42,10 @@ class Controller {
     //showloading
     game.loadNextLevel().whenComplete(() {
       //hideloading
+      view.startLoop();
+      listeners.resumeListening();
       game.startLoop();
-      view.updateLevelCount();
-      view.update(20);
-      listeners.startListening();
+
     });
   }
 
@@ -61,5 +61,16 @@ class Controller {
       mainMenu();
       listeners.starMenuListeners();
     });
+  }
+
+  void resume() {
+    view.resumeLoop();
+    listeners.resumeListening();
+    game.startLoop();
+  }
+  void pause(){
+    view.pauseLoop();
+    listeners.pauseListening();
+    game.stopLoop();
   }
 }

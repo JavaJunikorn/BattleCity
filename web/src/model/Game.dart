@@ -23,7 +23,6 @@ class Game {
     return HttpRequest.getString("../json/meta.json").then((json) {
       Map m = JSON.decode(json);
       this.levelCount = m['lvlCount'];
-      print("levelcount = " + levelCount.toString());
     });
   }
 
@@ -52,7 +51,6 @@ class Game {
    * @return true on completion, false if lost
    */
   void levelLoop() {
-    print(level.player.positions[0][0]);
     for (int i = 0; i < level.gamefield.moveables.length; i++) {
       level.gamefield.moveables[i].move(speedCount);
     }

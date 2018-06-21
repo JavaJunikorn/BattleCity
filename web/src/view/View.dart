@@ -10,12 +10,14 @@ import 'dart:js';
 
 
 class View {
+  int delay = 25;
   Game model;
   Controller controller;
   Element htmlTable;
   ModalElement modal;
   List<Element> rows;
   List<Element> cols;
+  Timer timer;
   var tutorialPart = 0;
   var tutorialSubgoals = [
     new Point(0, 25), new Point(6, 25),
@@ -80,11 +82,16 @@ class View {
   }
 
 
-  void update(int delay) {
+
+  void startLoop() {
     querySelector(".main-container").children.clear();
     _resetSpeech();
     querySelector(".main-container").children.add(toHTMLTable(model));
-    new Timer.periodic(new Duration(milliseconds: delay), (t) {
+    resumeLoop();
+  }
+
+
+  void updateField(){
       htmlTable =
           querySelector(".main-container").children.first.children.first;
       rows = htmlTable.children;
@@ -92,7 +99,7 @@ class View {
         cols = rows[i].children;
         for (int j = 0; j < cols.length; j++) {
           cols[j].setAttribute("class", "bg-" +
-                  model.level.gamefield.gameField[i + 1][j + 1].ground.type);
+              model.level.gamefield.gameField[i + 1][j + 1].ground.type);
         }
       }
       if (model.currentLevel == 0 && tutorialSubgoals.length != 0) {
@@ -117,7 +124,17 @@ class View {
           field.setAttribute("class", buffer.toString());
         } catch (e) {}
       });
+    }
+
+  void pauseLoop(){
+    timer.cancel();
+  }
+
+  void resumeLoop(){
+    timer = new Timer.periodic(new Duration(milliseconds: delay), (t) {
+      updateField();
     });
+
   }
 
   void setAttributeTo(Point destination, String name, String value) {
