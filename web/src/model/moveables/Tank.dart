@@ -13,10 +13,11 @@ abstract class Tank extends Moveable {
   int health;
   String bulletType;
   bool readyToShoot = true;
-  int shootSpeed = 1000; //lower means shooting can be done more often
+  int shootSpeed = 500; //lower means shooting can be done more often
+  int score;
 
   Tank(int x, int y, int width, int height, Directions direction, Game game,
-      int this.speed, int this.health, String this.bulletType, String type)
+      int this.speed, int this.health, String this.bulletType, String type, int this.score)
       : super(x, y, width, height, direction, game, speed, type){
   }
 
@@ -31,27 +32,27 @@ abstract class Tank extends Moveable {
         }
       //Todo Enemy tanks
       case "tutorial":
-        t = new EnemyTank(x, y, 2, 2, direction, game, 0, 2, "", "easyEnemy");
+        t = new EnemyTank(x, y, 2, 2, direction, game, 0, 2, "", "easyEnemy", 10);
         break;
       case "easy1":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 20, 2, "default", "easyEnemy");
+              x, y, 2, 2, direction, game, 20, 2, "default", "easyEnemy", 50);
           break;
         }
       case "easy2":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 10, 2, "default", "easyEnemy");
+          t = new EnemyTank(x, y, 2, 2, direction, game, 10, 2, "default", "easyEnemy", 100);
           break;
         }
       case "easy3":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 3, "default", "easyEnemy");
+          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 3, "default", "easyEnemy", 200);
           break;
         }
       case "easy4":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 4, "default", "easyEnemy");
+          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 4, "default", "easyEnemy", 250);
           break;
         }
     }
@@ -64,13 +65,15 @@ abstract class Tank extends Moveable {
     return health.toString();
   }
 
-  /**
-   * @return true if destroyed else false;
-   */
-  hit(int dmg) {
+
+  hit(int dmg, Moveable causedBy) {
+    if(game.toRemove.contains(this))return;
     health -= dmg;
     if (health <= 0) {
       game.toRemove.add(this);
+      if(causedBy is PlayerTank){
+        game.score += this.score;
+      }
       if (this is! PlayerTank) {
         game.level.gamefield.enemyCount--;
       }
@@ -132,8 +135,8 @@ abstract class Tank extends Moveable {
           f.ground.activate(this);
           if (f.moveable is Bullet) {
             Bullet b = f.moveable;
-            this.hit(b.damage);
-            b.hit(b.damage);
+            this.hit(b.damage, b.owner);
+            b.hit(b.damage, b);
           }
         }));
   }

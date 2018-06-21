@@ -7,8 +7,8 @@ import 'dart:math';
 
 class EnemyTank extends Tank {
   EnemyTank(int x, int y, int width, int height, Directions direction,
-      Game game, int speed, int health, String bulletType, String type)
-      : super(x, y, width, height, direction, game, speed, health, bulletType, type){
+      Game game, int speed, int health, String bulletType, String type, int score)
+      : super(x, y, width, height, direction, game, speed, health, bulletType, type, score){
    game.level.gamefield.enemyCount++;
   }
 

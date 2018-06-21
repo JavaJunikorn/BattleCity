@@ -15,6 +15,7 @@ class Game {
   Set<Moveable> toRemove = new Set();
   int speedCount = 0;
   Function function;
+  int score = 0;
 
   Game(void this.function(String reason)) {
   }
@@ -29,7 +30,6 @@ class Game {
   Future loadNextLevel() {
     return LevelLoader.load(currentLevel, this, (level) {
       this.level = level;
-      print("level = " + currentLevel.toString());
     });
   }
 
@@ -65,6 +65,8 @@ class Game {
       level.gamefield.moveables.remove(toRemove.elementAt(i));
     }
 
+    //Todo remove
+    print("Score: $score");
 
     toRemove = new Set();
     _checkWinLose();

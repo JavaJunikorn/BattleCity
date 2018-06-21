@@ -10,6 +10,7 @@ import 'Tank.dart';
 class Bullet extends Moveable {
   int damage = 1;
   bool _destroyed = false;
+  Tank owner;
 
   /**
    * @param gamefield a reference to the field the bullet is in
@@ -18,7 +19,7 @@ class Bullet extends Moveable {
    * @param x the x position of the top left field of the Bullet
    */
   Bullet._internal(int x, int y, int width, int height, Directions direction,
-      Game game, int speed, int this.damage, String type)
+      Game game, int speed, int this.damage, String type, Tank this.owner)
       : super(x, y, width, height, direction, game, speed, type){
     doCollisions();
   }
@@ -44,11 +45,11 @@ class Bullet extends Moveable {
           Point p = getStartPosition(tank, direction, 2, 1);
           if (direction == Directions.up || direction == Directions.down) {
             b = new Bullet._internal(
-                p.x, p.y, 2, 1, direction, game, 5, 1, "bullet");
+                p.x, p.y, 2, 1, direction, game, 5, 1, "bullet", tank);
           } else if (direction == Directions.left ||
               direction == Directions.right) {
             b = new Bullet._internal(
-                p.x, p.y, 1, 2, direction, game, 5, 1, "bullet");
+                p.x, p.y, 1, 2, direction, game, 5, 1, "bullet", tank);
           }
         }
     }
@@ -98,7 +99,7 @@ class Bullet extends Moveable {
   }
 
   @override
-  void hit(int dmg) {
+  void hit(int dmg, Moveable causedBy) {
     this._destroyed = true;
     game.toRemove.add(this);
   }
@@ -180,7 +181,7 @@ class Bullet extends Moveable {
 
         f.ground.activate(this);
         if (!f.ground.permeable) {
-          this.hit(damage);
+          this.hit(damage, this);
         }
         if (f.ground.destroyable) {
           if(f.ground is Goal)
@@ -189,8 +190,8 @@ class Bullet extends Moveable {
 
         }
           if (f.moveable != null && f.moveable != this && !hit.contains(f.moveable)) {
-            f.moveable.hit(this.damage);
-            this.hit(damage);
+            f.moveable.hit(this.damage, owner);
+            this.hit(damage, f.moveable);
             hit.add(f.moveable);
           }
         }

@@ -363,7 +363,6 @@ class View {
       case 1:
         _loadSecondHelpPart();
         tutorialPart++;
-        print("Tutorial part  = $tutorialPart");
         break;
       case 2:
         _loadThirdHelpPart();

@@ -22,9 +22,13 @@ class Controller {
   }
 
   void gamepaused(String reason) {
+
+
     listeners.pauseListening();
     if (reason == "lose") {
       view.showLose();
+      game.score = 0;
+
     } else if (reason == "winLevel") {
       if (game.currentLevel >= game.levelCount)
         view.showCongrats();

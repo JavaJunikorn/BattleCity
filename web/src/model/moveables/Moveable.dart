@@ -107,7 +107,7 @@ abstract class Moveable {
     }
   }
 
-  void hit(int dmg);
+  void hit(int dmg, Moveable causedBy);
 
   void doCollisions();
 
