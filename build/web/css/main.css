@@ -10,6 +10,11 @@ body {
     font-size: 1.3vh;
 }
 
+.btn {
+    font-size: 1.3vh;
+}
+
+
 table {
     border-spacing: 0;
     border-collapse: separate;
@@ -21,63 +26,100 @@ table td {
     height: 2vh;
 }
 
-/*** Overwritten Bootstrap Classes ***/
-.card-body {
-    padding: 0.2rem 0.2rem 0.2rem 0.7rem;
-
-}
-
-.btn {
-    font-size: 1.3vh;
-}
-
-.btn-primary {
-    background-color: orange;
-}
-
-/*** Background-Colors ***/
 .bg-black {
     background-color: black;
 }
 .bg-grey {
     background-color: #5a6268;
 }
-
-/*** Fields-Classes ***/
-.bg-brick, .bg-bush,
-.bg-steel, .bg-water, .bg-goal {
+/*
+.bg-black {
+    background-color: black;
+}
+*/
+.bg-brick {
+    background-image: url("../img/fields/bg-brick-field.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.bg-brick {
-    background-image: url("../img/fields/bg-brick-field.png");
-}
-
 .bg-water {
     background-image: url("../img/fields/bg-water-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-bush {
     background-image: url("../img/fields/bg-bush-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0.8;
 }
 
 .bg-steel {
     background-image: url("../img/fields/bg-steel-field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-goal {
-    background-image: url("../img/fields/bg-goal-field.png");
-}
-
-
-.bg-easyEnemy-left-1, .bg-easyEnemy-right-1, .bg-easyEnemy-up-1, .bg-easyEnemy-down-1,
-.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2,
-.bg-medEnemy-right-2 {
     position: relative;
 }
 
+.bg-goal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -30px;
+    bottom: -13px;
+    background-image: url("../img/fields/bg-goal-field.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bg-base-field {
+    position: relative;
+}
+
+.bg-base-field:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -30px;
+    bottom: -13px;
+    background-image: url("../img/base-field.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.bg-easyEnemy-left-1, .bg-easyEnemy-right-1,
+.bg-easyEnemy-up-1, .bg-easyEnemy-down-1,
+.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2, .bg-tank {
+    position: relative;
+}
+
+.bg-tank:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -1.7vh;
+    bottom: -1.7vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 
 
@@ -191,19 +233,6 @@ table td {
     right: -15px;
     bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-medEnemy-right-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-medEnemy-right-2.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -347,7 +376,27 @@ table td {
     animation:         invalid 1s infinite; /* IE 10+ */
 }
 
+.speech-bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+    /*display: inline-block; */
+}
 
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-right-color: #00aabb;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}
 
 /* Classes for animations */
 .swipe img {
@@ -363,6 +412,7 @@ table td {
 
 .swipe-animation-0 {
     animation: move-to-left 5s infinite;
+
 }
 
 .swipe-animation-1 {
@@ -378,7 +428,7 @@ table td {
     animation: move-to-up 5s infinite;
 }
 
-/*** Animation rules ***/
+
 @keyframes move-to-right {
     from { left: 60%;}
     to { left: 0%; }
@@ -400,16 +450,6 @@ table td {
     to { top: 0rem;}
 }
 
-@-webkit-keyframes animatetop {
-    from {top: 50vh; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top: 50vh; opacity:0}
-    to {top:0; opacity:1}
-}
-
 
 
 @font-face {
@@ -421,6 +461,12 @@ table td {
     font-family: blade-runner;
 }
 
+
+
+.card-body {
+    padding: 0.2rem 0.2rem 0.2rem 0.7rem;
+
+}
 
 .bg-city-at-night {
     background: url("../img/background/city-at-night.jpg");
@@ -466,7 +512,7 @@ table td {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 50vh;
+    width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -474,7 +520,16 @@ table td {
     animation-duration: 0.4s
 }
 
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
 
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
 
 /* The Close Button */
 .close {
@@ -493,10 +548,8 @@ table td {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: black;
+    background-color: #007bff;
     color: white;
-    border: 5px dotted darkgoldenrod;
-    box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
 }
 
 .modal-header img {
@@ -541,6 +594,14 @@ table td {
 
 .main-menu {
     list-style: none;
-    text-align: center;
-    padding: 0;
+}
+
+.main-menu li {
+    padding: 2vh;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.main-menu li i {
+    padding-right: 0.5vh;
 }

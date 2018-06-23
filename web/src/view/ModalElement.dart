@@ -48,7 +48,7 @@ class ModalElement {
     modalBody.setAttribute("class", "modal-body");
 
 
-    nextBtn.id = "1";
+    nextBtn.id = "next";
     nextBtn.setAttribute("class", "btn btn-primary btn-block");
     nextBtn.text= "weiter";
     nextBtn.style.display = "none";

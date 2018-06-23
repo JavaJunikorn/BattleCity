@@ -103,7 +103,7 @@ class View {
         }
       }
       if (model.currentLevel == 0 && tutorialSubgoals.length != 0) {
-        //updateTutorialSpeech();
+        updateTutorialSpeech();
       } else {
         updateLevelStatSpeech();
       }
@@ -239,34 +239,16 @@ class View {
 
   void showMainMenu() {
     var logo = new ImageElement();
-    var startGame = new ImageElement();
-    var about = new ImageElement();
-
     logo.src = "../img/brand/battle-city-logo.png";
-    startGame.src = "../img/etc/start-banner.png";
-    about.src = "../img/etc/about-banner.png";
-
     logo.style.width = "100%";
-    startGame.style.width = "50%";
-    about.style.width = "50%";
-
-
 
     var startMenu = new UListElement();
-    startMenu.setAttribute("class", "main-menu");
-
     var playButton = new LIElement();
-    var aboutButton = new LIElement();
-
-
 
     playButton.id = "play";
-    playButton.children.add(startGame);
-    aboutButton.children.add(about);
-
+    playButton.innerHtml = "<i class='fa fa-hand-o-right'></i> Start game!";
 
     startMenu.children.add(playButton);
-    startMenu.children.add(aboutButton);
 
     modal.setModalbodyChildren(startMenu);
 
