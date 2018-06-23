@@ -9,6 +9,7 @@ class Listeners {
   Point first, last;
   Game game;
   bool _listen = true;
+  int i = 0;
 
   Listeners(Controller this.controller, Game this.game){
    _startListeners();
@@ -101,14 +102,17 @@ class Listeners {
 
     document.getElementById("pause").onClick.listen((ev) {
       controller.view.showPause();
+      controller.pause();
     });
 
     document.getElementById("controlls").onClick.listen((ev) {
       controller.view.showControlls();
+      controller.pause();
     });
 
     document.getElementById("help").onClick.listen((ev) {
       controller.view.showTutorial();
+      controller.pause();
     });
 
     controller.view.modal.nextBtn.onClick.listen((ev) {
@@ -117,6 +121,7 @@ class Listeners {
 
     document.getElementById("qr").onClick.listen((ev) {
       controller.view.showQrCode();
+      controller.pause();
     });
 
     controller.view.modal.closeButton.onClick.listen((ev) {
@@ -124,6 +129,7 @@ class Listeners {
       controller.view.hideQrCode();
       controller.view.hideTutorial();
       controller.view.hidePause();
+      controller.resume();
     });
 
     document.getElementById("backToMenuBtn").onClick.listen((e) {
