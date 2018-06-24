@@ -13,8 +13,9 @@ abstract class Tank extends Moveable {
   int health;
   String bulletType;
   bool readyToShoot = true;
-  int shootSpeed = 500; //lower means shooting can be done more often
+  int shootSpeed = 1000; //lower means shooting can be done more often
   int score;
+  Bullet bullet;
 
   Tank(int x, int y, int width, int height, Directions direction, Game game,
       int this.speed, int this.health, String this.bulletType, String type, int this.score)
@@ -22,37 +23,46 @@ abstract class Tank extends Moveable {
   }
 
   factory Tank.factory(
-      String tankType, int x, int y, Directions direction, Game game) {
+      String tankType, int x, int y, Directions direction, Game game, int health) {
     Tank t;
     switch (tankType) {
       case "player":
         {
-          t = new PlayerTank(x, y, 2, 2, direction, game, 7, 2, "default");
+          t = new PlayerTank(x, y, 2, 2, direction, game, 7, health, "default");
           break;
         }
       //Todo Enemy tanks
       case "tutorial":
-        t = new EnemyTank(x, y, 2, 2, direction, game, 0, 2, "", "easyEnemy", 10);
+        t = new EnemyTank(x, y, 2, 2, direction, game, 0, health, "", "easyEnemy", 10);
         break;
-      case "easy1":
+      case "easy":
+      {
+        t = new EnemyTank(
+            x, y, 2, 2, direction, game, 15, health, "default", "easyEnemy", 50);
+        break;
+      }
+      case "med":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 20, 2, "default", "easyEnemy", 50);
+              x, y, 2, 2, direction, game, 10, health, "weak", "medEnemy", 50);
           break;
         }
-      case "easy2":
+      case "strong":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 10, 2, "default", "easyEnemy", 100);
+          t = new EnemyTank(
+              x, y, 2, 2, direction, game, 7, health, "med", "strongEnemy", 50);
           break;
         }
-      case "easy3":
+      case "veryStrong":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 3, "default", "easyEnemy", 200);
+          t = new EnemyTank(
+              x, y, 2, 2, direction, game, 4, health, "strong", "veryStrongEnemy", 50);
           break;
         }
-      case "easy4":
+      case "invisible":
         {
-          t = new EnemyTank(x, y, 2, 2, direction, game, 5, 4, "default", "easyEnemy", 250);
+          t = new EnemyTank(
+              x, y, 2, 2, direction, game, 7, health, "default", "invisibleEnemy", 50);
           break;
         }
     }
@@ -142,6 +152,7 @@ abstract class Tank extends Moveable {
   }
 
   void shoot() {
+
     if (readyToShoot) {
       readyToShoot = false;
       new Bullet(this.bulletType, this, game);

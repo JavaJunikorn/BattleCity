@@ -21,6 +21,11 @@ table td {
     height: 2vh;
 }
 
+#gamefield {
+    margin-top: 10vh;
+    margin-bottom: 21vh;
+}
+
 /*** Overwritten Bootstrap Classes ***/
 .card-body {
     padding: 0.2rem 0.2rem 0.2rem 0.7rem;
@@ -71,255 +76,362 @@ table td {
     background-image: url("../img/fields/bg-goal-field.png");
 }
 
-
-.bg-easyEnemy-left-1, .bg-easyEnemy-right-1, .bg-easyEnemy-up-1, .bg-easyEnemy-down-1,
-.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2,
-.bg-medEnemy-right-2 {
+.bg-moveable {
     position: relative;
 }
 
-
-
-
-.bg-easyEnemy-left-1:before {
+.bg-moveable:before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-easyEnemy-right-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-.bg-easyEnemy-up-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-easyEnemy-down-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-easyEnemy-down-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-
-.bg-easyEnemy-left-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-easyEnemy-right-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-.bg-easyEnemy-up-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-.bg-easyEnemy-down-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-medEnemy-right-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
-    background-image: url("../img/moveables/bg-medEnemy-right-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-bullet-up-1, .bg-bullet-down-1, .bg-bullet-left-1, .bg-bullet-right-1,
-.bg-player-up-, .bg-player-down-, .bg-player-left-, .bg-player-right- {
-    position: relative;
-}
-
-.bg-player-up-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
     right: -1.7vh;
     bottom: -1.7vh;
-    background-image: url("../img/moveables/bg-player-up-.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
+}
+
+/* easy 1hp*/
+.bg-easyEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
+}
+.bg-easyEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
+}
+.bg-easyEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
+}
+.bg-easyEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
+}
+
+
+/*easy 2hp*/
+.bg-easyEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
+}
+.bg-easyEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
+}
+.bg-easyEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
+}
+.bg-easyEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
+}
+
+/*easy 3hp*/
+.bg-easyEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-3.png");
+}
+.bg-easyEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-3.png");
+}
+.bg-easyEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-3.png");
+}
+.bg-easyEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-3.png");
+}
+
+/*easy 4hp*/
+.bg-easyEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-4.png");
+}
+.bg-easyEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-4.png");
+}
+.bg-easyEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-4.png");
+}
+.bg-easyEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-4.png");
+}
+
+/* med 1hp*/
+.bg-medEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-1.png");
+}
+.bg-medEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-1.png");
+}
+.bg-medEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-1.png");
+}
+.bg-medEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-1.png");
+}
+
+
+/*med 2hp*/
+.bg-medEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-2.png");
+}
+.bg-medEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-2.png");
+}
+.bg-medEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-2.png");
+}
+.bg-medEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-2.png");
+}
+
+/*med 3hp*/
+.bg-medEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-3.png");
+}
+.bg-medEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-3.png");
+}
+.bg-medEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-3.png");
+}
+.bg-medEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-3.png");
+}
+
+/*med 4hp*/
+.bg-medEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-4.png");
+}
+.bg-medEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-4.png");
+}
+.bg-medEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-4.png");
+}
+.bg-medEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-4.png");
+}
+
+/* strong 1hp*/
+.bg-strongEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-1.png");
+}
+.bg-strongEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-1.png");
+}
+.bg-strongEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-1.png");
+}
+.bg-strongEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-1.png");
+}
+
+
+/*strong 2hp*/
+.bg-strongEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-2.png");
+}
+.bg-strongEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-2.png");
+}
+.bg-strongEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-2.png");
+}
+.bg-strongEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-2.png");
+}
+
+/*strong 3hp*/
+.bg-strongEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-3.png");
+}
+.bg-strongEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-3.png");
+}
+.bg-strongEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-3.png");
+}
+.bg-strongEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-3.png");
+}
+
+/*strong 4hp*/
+.bg-strongEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-4.png");
+}
+.bg-strongEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-4.png");
+}
+.bg-strongEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-4.png");
+}
+.bg-strongEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-4.png");
+}
+
+
+/* veryStrong 1hp*/
+.bg-veryStrongEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-1.png");
+}
+.bg-veryStrongEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-1.png");
+}
+.bg-veryStrongEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-1.png");
+}
+.bg-veryStrongEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-1.png");
+}
+
+
+/*veryStrong 2hp*/
+.bg-veryStrongEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-2.png");
+}
+.bg-veryStrongEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-2.png");
+}
+.bg-veryStrongEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-2.png");
+}
+.bg-veryStrongEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-2.png");
+}
+
+/*veryStrong 3hp*/
+.bg-veryStrongEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-3.png");
+}
+.bg-veryStrongEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-3.png");
+}
+.bg-veryStrongEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-3.png");
+}
+.bg-veryStrongEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-3.png");
+}
+
+/*veryStrong 4hp*/
+.bg-veryStrongEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-4.png");
+}
+.bg-veryStrongEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-4.png");
+}
+.bg-veryStrongEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-4.png");
+}
+.bg-veryStrongEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-4.png");
+}
+
+
+/* invisible 1hp*/
+.bg-invisibleEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
+    opacity: 0.1;
+}
+
+
+/*invisible 2hp*/
+.bg-invisibleEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
+    opacity: 0.1;
+}
+
+/*invisible 3hp*/
+.bg-invisibleEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-3.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-3.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-3.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-3.png");
+    opacity: 0.1;
+}
+
+/*invisible 4hp*/
+.bg-invisibleEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-4.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-4.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-4.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-4.png");
+    opacity: 0.1;
+}
+
+
+/*player*/
+
+.bg-player-up-:before {
+    background-image: url("../img/moveables/bg-player-up-.png");
 }
 
 .bg-player-left-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-left-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-player-right-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-right-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-player-down-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-down-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 
 
 .bg-bullet-up-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-up-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 
 
 .bg-bullet-down-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-down-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-bullet-left-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-left-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-bullet-right-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-right-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 

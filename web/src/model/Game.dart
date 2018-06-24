@@ -11,11 +11,12 @@ class Game {
   Level level;
   Timer t;
   int levelCount = 0;
-  int currentLevel = 3;
+  int currentLevel = 6;
   Set<Moveable> toRemove = new Set();
   int speedCount = 0;
   Function function;
   int score = 0;
+  bool _running = false;
 
   Game(void this.function(String reason)) {
   }
@@ -34,12 +35,15 @@ class Game {
   }
 
   void startLoop() {
+    if(_running) return;
+    _running = true;
     this.t = new Timer.periodic(new Duration(milliseconds: delay), (t) {
       this.levelLoop();
     });
   }
 
   void stopLoop() {
+    _running = false;
     this.t.cancel();
   }
 

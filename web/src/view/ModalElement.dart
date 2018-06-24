@@ -128,6 +128,7 @@ class ModalElement {
 
     modalHeader.setAttribute("class", "modal-header");
     modalHeader.setAttribute("style", "");
+    modalHeading.setAttribute("styke", "");
 
     closeButton.setAttribute("class", "close fa fa-times");
     backToMenuBtn.style.display ="none";

@@ -36,7 +36,7 @@ class Bullet extends Moveable {
     }
 
     switch (bulletType) {
-      case "weak":
+      case "wak":
         {
           break;
         }
@@ -100,6 +100,7 @@ class Bullet extends Moveable {
 
   @override
   void hit(int dmg, Moveable causedBy) {
+    owner.bullet = null;
     this._destroyed = true;
     game.toRemove.add(this);
   }

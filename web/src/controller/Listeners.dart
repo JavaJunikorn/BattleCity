@@ -10,6 +10,8 @@ class Listeners {
   Game game;
   bool _listen = true;
   int i = 0;
+  StreamSubscription qr;
+  StreamSubscription next;
 
   Listeners(Controller this.controller, Game this.game){
    _startListeners();
@@ -53,6 +55,7 @@ class Listeners {
 
   void _startListeners() {
 
+    startModalListeners();
     window.onTouchStart.listen((ev) {
       last = null;
       if (!_listen) return;
@@ -93,12 +96,16 @@ class Listeners {
     });
   }
 
-  void starMenuListeners() {
+  void startMenuListeners(){
     document.getElementById("play").onClick.listen((ev) {
       controller.view.closeMainMenu();
       controller.listeners.resumeListening();
       controller.startLevel();
     });
+  }
+
+  void startModalListeners() {
+
 
     document.getElementById("pause").onClick.listen((ev) {
       controller.view.showPause();
@@ -136,5 +143,7 @@ class Listeners {
       controller.view.hideLosee();
       controller.mainMenu();
     });
+
   }
+
 }

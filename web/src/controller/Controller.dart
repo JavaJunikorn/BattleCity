@@ -25,14 +25,16 @@ class Controller {
     view.pauseLoop();
     listeners.pauseListening();
     if (reason == "lose") {
+      game.currentLevel = 1;
       view.showLose();
       game.score = 0;
 
     } else if (reason == "win") {
-      if (game.currentLevel >= game.levelCount)
+      if (game.currentLevel >= game.levelCount) {
         //Todo replace with win screen
-        mainMenu();
-      else {
+        view.showCongrats();
+        game.currentLevel = 1;
+      } else {
         startLevel();
       }
     }
@@ -40,7 +42,7 @@ class Controller {
 
   void mainMenu() {
     view.showMainMenu();
-    listeners.starMenuListeners();
+    listeners.startMenuListeners();
   }
 
   void startLevel() {
@@ -50,21 +52,6 @@ class Controller {
       view.startLoop();
       listeners.resumeListening();
       game.startLoop();
-
-    });
-  }
-
-  void restartGame() {
-    game = new Game((String reason) {
-      {
-        gamepaused(reason);
-      }
-    });
-    view = new View(game, this);
-    listeners = new Listeners(this, game);
-    game.loadMeta().whenComplete(() {
-      mainMenu();
-      listeners.starMenuListeners();
     });
   }
 
@@ -77,5 +64,6 @@ class Controller {
     view.pauseLoop();
     listeners.pauseListening();
     game.stopLoop();
+
   }
 }

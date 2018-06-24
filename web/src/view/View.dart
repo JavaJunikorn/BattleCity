@@ -20,9 +20,8 @@ class View {
   Timer timer;
   var tutorialPart = 0;
   var tutorialSubgoals = [
-    new Point(0, 25), new Point(6, 25),
-    new Point(21, 17), new Point(25, 9),
-    new Point(4, 5), new Point(12, 5)
+    new Point(4, 22), new Point(18, 14),
+    new Point(5, 11), new Point(22, 7)
   ];
   var speechText = [
     "Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels."
@@ -78,6 +77,7 @@ class View {
     }
 
     table.setAttribute("class", "bg-black");
+    table.id = "gamefield";
     return table;
   }
 
@@ -112,7 +112,7 @@ class View {
         StringBuffer buffer = new StringBuffer("bg-");
         buffer.write(
             model.level.gamefield.getField(m.positions[0][0]).ground.type);
-        buffer.write(" bg-");
+        buffer.write(" bg-moveable bg-");
         buffer.write(m.type);
         buffer.write("-");
         buffer.write(Moveable.directionOf(m));
@@ -137,13 +137,6 @@ class View {
 
   }
 
-  void setAttributeTo(Point destination, String name, String value) {
-    rows
-        .elementAt(destination.y)
-        .children
-        .elementAt(destination.x)
-        .setAttribute(name, value);
-  }
 
   void updateTutorialSpeech() {
     Point playerPos = model.level.player.positions[0][0];
@@ -223,9 +216,15 @@ class View {
   }
 
   void showCongrats() {
+    var loseImg = new ImageElement();
+    loseImg.src = "../img/etc/win-banner.png";
+    loseImg.style.width = "100%";
 
-    //Todo showCongrats
-    //Todo addListeners
+    modal.setModalbodyChildren(loseImg);
+    modal.hideHeader();
+    modal.showModalFooter();
+    modal.backToMenuBtn.style.display = "block";
+    modal.showModal();
   }
 
   static void showCredits() {
@@ -271,14 +270,17 @@ class View {
     modal.setModalbodyChildren(startMenu);
 
     modal.modalHeader.style.padding = "4vh";
+    modal.modalHeader.style.border = "0";
     modal.modalHeader.children.add(logo);
+    modal.modalBody.style.backgroundColor = "black";
+    modal.modalContent.style.border = "5px dotted black";
 
 
     modal.modalWrapper.style.backgroundColor = "orange";
     modal.modalWrapper.setAttribute("class", "modal bg-img");
 
     modal.hideCloseButton();
-
+    modal.hideHeading();
     modal.showModal();
 
   }
@@ -551,13 +553,6 @@ class View {
   }
 
   void showLoading() {
-   querySelector(".main-container").children.clear();
-   ButtonElement button = new ButtonElement();
-   button.setInnerHtml("next Level");
-   button.onClick.listen((e){
-
-   });
-   querySelector(".main-container").children.add(button);
   }
 
 

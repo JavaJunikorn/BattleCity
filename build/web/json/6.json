@@ -10,25 +10,25 @@
       "direction": "up"
     },
     {
-      "type": "easy1",
+      "type": "tutorial",
       "row": 0,
       "col": 1,
       "direction": "down"
     },
     {
-      "type": "easy1",
+      "type": "tutorial",
       "row": 0,
       "col": 6,
       "direction": "down"
     },
     {
-      "type": "easy1",
+      "type": "tutorial",
       "row": 0,
       "col": 16,
       "direction": "down"
     },
     {
-      "type": "easy1",
+      "type": "tutorial",
       "row": 0,
       "col": 20,
       "direction": "down"

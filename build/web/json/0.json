@@ -7,12 +7,14 @@
       "type": "player",
       "row": 22,
       "col": 0,
+      "health": 1,
       "direction": "right"
     },
     {
       "type": "tutorial",
       "row": 7,
       "col": 4,
+      "health": 2,
       "direction": "right"
     }
   ],
@@ -1282,14 +1284,14 @@
         "row": 7,
         "col": 12
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 7,
         "col": 13
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
@@ -1450,14 +1452,14 @@
         "row": 8,
         "col": 12
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {
         "row": 8,
         "col": 13
       },
-      "type": "road"
+      "type": "water"
     },
     {
       "position": {

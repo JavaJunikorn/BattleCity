@@ -21,6 +21,11 @@ table td {
     height: 2vh;
 }
 
+#gamefield {
+    margin-top: 10vh;
+    margin-bottom: 21vh;
+}
+
 /*** Overwritten Bootstrap Classes ***/
 .card-body {
     padding: 0.2rem 0.2rem 0.2rem 0.7rem;
@@ -71,255 +76,96 @@ table td {
     background-image: url("../img/fields/bg-goal-field.png");
 }
 
-
-.bg-easyEnemy-left-1, .bg-easyEnemy-right-1, .bg-easyEnemy-up-1, .bg-easyEnemy-down-1,
-.bg-easyEnemy-left-2, .bg-easyEnemy-right-2, .bg-easyEnemy-up-2, .bg-easyEnemy-down-2,
-.bg-medEnemy-right-2 {
+.bg-moveable {
     position: relative;
 }
 
+.bg-moveable:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -1.7vh;
+    bottom: -1.7vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 
 
 .bg-easyEnemy-left-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-easyEnemy-right-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 .bg-easyEnemy-up-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-easyEnemy-down-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-easyEnemy-down-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 
 .bg-easyEnemy-left-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-easyEnemy-right-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 .bg-easyEnemy-up-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 .bg-easyEnemy-down-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-medEnemy-right-2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-medEnemy-right-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.bg-bullet-up-1, .bg-bullet-down-1, .bg-bullet-left-1, .bg-bullet-right-1,
-.bg-player-up-, .bg-player-down-, .bg-player-left-, .bg-player-right- {
-    position: relative;
 }
 
 .bg-player-up-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-up-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-player-left-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-left-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-player-right-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-right-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-player-down-:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -1.7vh;
-    bottom: -1.7vh;
     background-image: url("../img/moveables/bg-player-down-.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 
 
 .bg-bullet-up-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-up-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 
 
 .bg-bullet-down-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-down-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-bullet-left-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-left-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .bg-bullet-right-1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -15px;
-    bottom: -15px;
     background-image: url("../img/moveables/bg-bullet-right-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 
 

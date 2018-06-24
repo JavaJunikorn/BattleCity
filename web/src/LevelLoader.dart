@@ -54,7 +54,7 @@ class LevelLoader {
     for(int i = 0; i < list.length; i++){
       Map tank = list[i];
       Directions direction = Moveable.stringToDirection(tank["direction"]);
-      new Tank.factory(tank["type"], tank["row"], tank["col"], direction, game);
+      new Tank.factory(tank["type"], tank["row"], tank["col"], direction, game, tank["health"]);
     }
   }
 
