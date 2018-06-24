@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="809b3f2b-d635-4e8c-898a-19e410f1f623" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/web/src/controller/Listeners.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Listeners.dart" afterDir="false" />
-    </list>
+    <list default="true" id="809b3f2b-d635-4e8c-898a-19e410f1f623" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -74,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/web/src/controller/Listeners.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
-              <caret line="125" column="63" selection-start-line="125" selection-start-column="63" selection-end-line="125" selection-end-column="63" />
+              <caret line="125" column="56" selection-start-line="125" selection-start-column="56" selection-end-line="125" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -350,16 +348,15 @@
       <workItem from="1529757037229" duration="4079000" />
       <workItem from="1529762388482" duration="19965000" />
       <workItem from="1529820832225" duration="3909000" />
-      <workItem from="1529824961757" duration="39415000" />
+      <workItem from="1529824961757" duration="39685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271242000" />
+    <option name="totallyTimeSpent" value="271512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.33300394" />
@@ -670,7 +667,7 @@
     <entry file="file://$PROJECT_DIR$/web/src/controller/Listeners.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="125" column="63" selection-start-line="125" selection-start-column="63" selection-end-line="125" selection-end-column="63" />
+          <caret line="125" column="56" selection-start-line="125" selection-start-column="56" selection-end-line="125" selection-end-column="56" />
         </state>
       </provider>
     </entry>

@@ -4855,7 +4855,7 @@ z.b.bK()
 z.ad(0)}},hQ:{"^":"b:0;a",
 $1:function(a){var z,y
 z=this.a.a.b
-y=document.body
+y=document.querySelector(".main-container")
 z.toString
 O.jb(y,["requestFullscreen","webkitRequestFullscreen","mozRequestFullScreen","msRequestFullscreen","oRequestFullscreen"])}},hR:{"^":"b:0;a",
 $1:function(a){this.a.a.b.bK()}},hS:{"^":"b:0;a",
