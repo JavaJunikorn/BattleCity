@@ -1,6 +1,7 @@
 html, body {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -493,23 +494,23 @@ table td {
 /*** Animation rules ***/
 @keyframes move-to-right {
     from { left: 60%;}
-    to { left: 0%; }
+    to { left: 0; }
 }
 
 
 @keyframes move-to-left {
-    from { left: 0%; }
+    from { left: 0; }
     to { left: 60%;}
 }
 
 @keyframes move-to-down {
-    from { top: 0rem; }
+    from { top: 0; }
     to { top: 3rem;}
 }
 
 @keyframes move-to-up {
     from { top: 4rem; }
-    to { top: 0rem;}
+    to { top: 0;}
 }
 
 @-webkit-keyframes animatetop {
@@ -541,7 +542,7 @@ table td {
 .bg-img {
     background: url("http://www.clker.com/cliparts/r/q/r/j/F/K/black-and-white-skyline-md.png") bottom;
     background-color: orange;
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-y;
 }
 /*
 #warning-message { display: none; }
