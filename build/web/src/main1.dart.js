@@ -4492,6 +4492,7 @@ y=new A.hH(this,null,null,this.a,!0,0,null,null)
 y.en()
 y.e=!1
 this.c=y
+C.W.d2(window,0,1)
 this.a.f3().ar(new B.fs(this))},
 t:{
 fq:function(){var z=new B.fp(null,null,null)
@@ -4539,8 +4540,7 @@ w.display="block"
 y=y.a.style
 y.display="block"
 z.a.e=1}else z.bL()}}},fs:{"^":"b:1;a",
-$0:function(){C.W.d2(window,0,1)
-var z=this.a
+$0:function(){var z=this.a
 z.b.bJ()
 z.c.bN()}},ft:{"^":"b:1;a",
 $0:function(){var z,y,x,w
