@@ -16,7 +16,7 @@ class Controller {
     });
     view = new View(game, this);
     listeners = new Listeners(this, game);
-    window.scrollTo(0, 1);
+    window.scrollTo(0, 500);
     game.loadMeta().whenComplete(() {
       mainMenu();
     });

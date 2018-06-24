@@ -4492,7 +4492,7 @@ y=new A.hH(this,null,null,this.a,!0,0,null,null)
 y.en()
 y.e=!1
 this.c=y
-C.W.d2(window,0,1)
+C.W.d2(window,0,500)
 this.a.f3().ar(new B.fs(this))},
 t:{
 fq:function(){var z=new B.fp(null,null,null)
