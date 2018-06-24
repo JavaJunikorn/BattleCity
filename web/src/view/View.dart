@@ -567,7 +567,7 @@ class View {
     int levelNr = model.currentLevel;
     document.getElementById("levelNr").text = "level $levelNr";
   }
-
+  /*
   void requestFullscreenOn(Element element) {
     var elem = new JsObject.fromBrowserObject(element);
 
@@ -587,7 +587,7 @@ class View {
         }
       }
     }
-  }
+  }*/
 
 
 
@@ -617,5 +617,26 @@ class View {
       uList.children.add(listEntry);
     }
     return uList;
+  }
+
+
+  void requestFullscreen(Element element) {
+    _callMethods(element, [
+      'requestFullscreen',
+      'webkitRequestFullscreen',
+      'mozRequestFullScreen',
+      'msRequestFullscreen',
+      'oRequestFullscreen'
+    ]);
+  }
+
+  static _callMethods(browserObject, List methods) {
+    var jsElem = new JsObject.fromBrowserObject(browserObject);
+
+    for (String methodName in methods) {
+      if (jsElem.hasProperty(methodName)) {
+        return jsElem.callMethod(methodName);
+      }
+    }
   }
 }
