@@ -7,31 +7,50 @@
       "type": "player",
       "row": 20,
       "col": 10,
+      "health":4,
       "direction": "up"
     },
     {
-      "type": "tutorial",
+      "type": "strong",
       "row": 0,
       "col": 1,
+      "health":4,
       "direction": "down"
     },
     {
-      "type": "tutorial",
+      "type": "strong",
+      "row": 0,
+      "col": 22,
+      "health":4,
+      "direction": "down"
+    },
+    {
+      "type": "veryStrong",
       "row": 0,
       "col": 6,
+      "health":3,
       "direction": "down"
     },
     {
-      "type": "tutorial",
+      "type": "veryStrong",
       "row": 0,
       "col": 16,
+      "health":3,
       "direction": "down"
     },
     {
-      "type": "tutorial",
-      "row": 0,
+      "type": "invisible",
+      "row": 13,
+      "col": 12,
+      "health":2,
+      "direction": "up"
+    },
+    {
+      "type": "invisible",
+      "row":16 ,
       "col": 20,
-      "direction": "down"
+      "health":2,
+      "direction": "left"
     }
   ],
   "gameFields": [

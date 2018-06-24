@@ -5,16 +5,54 @@
   "tanks": [
     {
       "type": "player",
-      "row": 11,
+      "row": 20,
+      "col": 11,
+      "health": 3,
+      "direction": "up"
+    },
+    {
+      "type": "med",
+      "row": 0,
       "col": 0,
+      "health": 3,
+      "direction": "down"
+    },
+    {
+      "type": "med",
+      "row": 0,
+      "col": 12,
+      "health": 3,
+      "direction": "down"
+    },
+    {
+      "type": "med",
+      "row": 14,
+      "col": 6,
+      "health": 3,
+      "direction": "up"
+    },
+    {
+      "type": "strong",
+      "row": 0,
+      "col": 22,
+      "health": 3,
+      "direction": "down"
+    },
+    {
+      "type": "strong",
+      "row": 12,
+      "col": 16,
+      "health": 3,
       "direction": "right"
     },
     {
-      "type": "tutorial",
-      "row": 11,
-      "col": 15,
-      "direction": "down"
+      "type": "invisible",
+      "row": 8,
+      "col": 6,
+      "health": 3,
+      "direction": "up"
     }
+
   ],
   "gameFields": [
     {

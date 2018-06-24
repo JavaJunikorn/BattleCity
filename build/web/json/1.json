@@ -7,7 +7,7 @@
       "type": "player",
       "row": 20,
       "col": 11,
-      "health:": 3,
+      "health": 2,
       "direction": "right"
     },
     {
@@ -21,7 +21,7 @@
       "type": "easy",
       "row": 0,
       "col": 22,
-      "health:": 2,
+      "health": 2,
       "direction": "down"
     },
     {

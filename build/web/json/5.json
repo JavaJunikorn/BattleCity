@@ -7,31 +7,50 @@
       "type": "player",
       "row": 20,
       "col": 11,
+      "health":4,
       "direction": "up"
     },
     {
-      "type": "easy1",
+      "type": "strong",
       "row": 3,
       "col": 9,
+      "health":3,
       "direction": "left"
     },
     {
-      "type": "easy1",
+      "type": "strong",
       "row": 3,
-      "col": 14,
+      "col": 13,
+      "health":3,
       "direction": "right"
     },
     {
-      "type": "easy1",
-      "row": 7,
-      "col": 7,
+      "type": "strong",
+      "row": 13,
+      "col": 0,
+      "health":3,
       "direction": "right"
     },
     {
-      "type": "easy1",
-      "row": 7,
-      "col": 15,
+      "type": "strong",
+      "row": 13,
+      "col": 22,
+      "health":3,
       "direction": "left"
+    } ,
+    {
+      "type": "invisible",
+      "row": 7,
+      "col": 9,
+      "health":2,
+      "direction": "down"
+    },
+    {
+      "type": "invisible",
+      "row": 7,
+      "col": 13,
+      "health":2,
+      "direction": "down"
     }
   ],
   "gameFields": [
@@ -271,28 +290,28 @@
         "row": 1,
         "col": 9
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 1,
         "col": 10
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 1,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 1,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -439,28 +458,28 @@
         "row": 2,
         "col": 9
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 2,
         "col": 10
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 2,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 2,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -621,14 +640,14 @@
         "row": 3,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 3,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -789,14 +808,14 @@
         "row": 4,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 4,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -894,21 +913,21 @@
         "row": 5,
         "col": 2
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 5,
         "col": 3
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 5,
         "col": 4
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -957,14 +976,14 @@
         "row": 5,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 5,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1013,21 +1032,21 @@
         "row": 5,
         "col": 19
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 5,
         "col": 20
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 5,
         "col": 21
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1062,21 +1081,21 @@
         "row": 6,
         "col": 2
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 6,
         "col": 3
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 6,
         "col": 4
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1125,14 +1144,14 @@
         "row": 6,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 6,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1181,21 +1200,21 @@
         "row": 6,
         "col": 19
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 6,
         "col": 20
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 6,
         "col": 21
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1251,14 +1270,14 @@
         "row": 7,
         "col": 5
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 7,
         "col": 6
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1293,14 +1312,14 @@
         "row": 7,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 7,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1335,14 +1354,14 @@
         "row": 7,
         "col": 17
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 7,
         "col": 18
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1419,14 +1438,14 @@
         "row": 8,
         "col": 5
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 8,
         "col": 6
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1461,14 +1480,14 @@
         "row": 8,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 8,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1503,14 +1522,14 @@
         "row": 8,
         "col": 17
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 8,
         "col": 18
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1601,14 +1620,14 @@
         "row": 9,
         "col": 7
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 9,
         "col": 8
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1657,14 +1676,14 @@
         "row": 9,
         "col": 15
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 9,
         "col": 16
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1769,14 +1788,14 @@
         "row": 10,
         "col": 7
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 10,
         "col": 8
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1825,14 +1844,14 @@
         "row": 10,
         "col": 15
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 10,
         "col": 16
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -1888,14 +1907,14 @@
         "row": 11,
         "col": 0
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 11,
         "col": 1
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2042,28 +2061,28 @@
         "row": 11,
         "col": 22
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 11,
         "col": 23
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 12,
         "col": 0
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 12,
         "col": 1
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2210,14 +2229,14 @@
         "row": 12,
         "col": 22
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 12,
         "col": 23
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2287,14 +2306,14 @@
         "row": 13,
         "col": 9
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 13,
         "col": 10
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2315,14 +2334,14 @@
         "row": 13,
         "col": 13
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 13,
         "col": 14
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2441,14 +2460,14 @@
         "row": 14,
         "col": 7
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 14,
         "col": 8
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2497,14 +2516,14 @@
         "row": 14,
         "col": 15
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 14,
         "col": 16
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2609,14 +2628,14 @@
         "row": 15,
         "col": 7
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 15,
         "col": 8
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2665,14 +2684,14 @@
         "row": 15,
         "col": 15
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 15,
         "col": 16
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2777,14 +2796,14 @@
         "row": 16,
         "col": 7
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 16,
         "col": 8
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2805,14 +2824,14 @@
         "row": 16,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 16,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2833,14 +2852,14 @@
         "row": 16,
         "col": 15
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 16,
         "col": 16
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2931,14 +2950,14 @@
         "row": 17,
         "col": 5
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 6
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -2973,14 +2992,14 @@
         "row": 17,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -3015,14 +3034,14 @@
         "row": 17,
         "col": 17
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 17,
         "col": 18
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -3099,14 +3118,14 @@
         "row": 18,
         "col": 5
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 6
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -3141,14 +3160,14 @@
         "row": 18,
         "col": 11
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 12
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -3183,14 +3202,14 @@
         "row": 18,
         "col": 17
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
         "row": 18,
         "col": 18
       },
-      "type": "steel"
+      "type": "water"
     },
     {
       "position": {
@@ -3757,14 +3776,14 @@
         "row": 22,
         "col": 3
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 4
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
@@ -3869,14 +3888,14 @@
         "row": 22,
         "col": 19
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 22,
         "col": 20
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
@@ -3925,14 +3944,14 @@
         "row": 23,
         "col": 3
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 23,
         "col": 4
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
@@ -4037,14 +4056,14 @@
         "row": 23,
         "col": 19
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
         "row": 23,
         "col": 20
       },
-      "type": "steel"
+      "type": "road"
     },
     {
       "position": {
