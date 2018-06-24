@@ -123,7 +123,7 @@ class Listeners {
     });
 
     document.getElementById("fullscreen").onClick.listen((ev) {
-      controller.view.requestFullscreen(document.body);
+      controller.view.requestFullscreen(querySelector(".main-container"));
     });
 
     controller.view.modal.nextBtn.onClick.listen((ev) {
