@@ -16,7 +16,7 @@ class Controller {
     });
     view = new View(game, this);
     listeners = new Listeners(this, game);
-    window.scrollTo(0, 500);
+
     game.loadMeta().whenComplete(() {
       mainMenu();
     });
@@ -49,6 +49,7 @@ class Controller {
   void startLevel() {
     //showloading
     game.loadNextLevel().whenComplete(() {
+      window.scrollTo(0, 500);
       //hideloading
       view.startLoop();
       listeners.resumeListening();

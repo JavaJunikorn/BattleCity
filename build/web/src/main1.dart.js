@@ -4492,7 +4492,6 @@ y=new A.hH(this,null,null,this.a,!0,0,null,null)
 y.en()
 y.e=!1
 this.c=y
-C.W.d2(window,0,500)
 this.a.f3().ar(new B.fs(this))},
 t:{
 fq:function(){var z=new B.fp(null,null,null)
@@ -4544,6 +4543,7 @@ $0:function(){var z=this.a
 z.b.bJ()
 z.c.bN()}},ft:{"^":"b:1;a",
 $0:function(){var z,y,x,w
+C.W.d2(window,0,500)
 z=this.a
 y=z.b
 y.toString
