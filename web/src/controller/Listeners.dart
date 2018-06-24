@@ -122,6 +122,10 @@ class Listeners {
       controller.pause();
     });
 
+    document.getElementById("fullscreen").onClick.listen((ev) {
+      controller.view.requestFullscreenOn(document.body);
+    });
+
     controller.view.modal.nextBtn.onClick.listen((ev) {
       controller.view.showTutorial();
     });

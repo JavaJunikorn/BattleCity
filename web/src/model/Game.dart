@@ -11,7 +11,7 @@ class Game {
   Level level;
   Timer t;
   int levelCount = 0;
-  int currentLevel = 6;
+  int currentLevel = 0;
   Set<Moveable> toRemove = new Set();
   int speedCount = 0;
   Function function;

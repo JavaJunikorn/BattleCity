@@ -2,48 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="809b3f2b-d635-4e8c-898a-19e410f1f623" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/json/4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/json/5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pub/transformers/manifest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.pub/transformers/manifest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pub/transformers/transformers.snapshot" beforeDir="false" afterPath="$PROJECT_DIR$/.pub/transformers/transformers.snapshot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/first-lvl.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/first-lvl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/first-lvl_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/first-lvl_b.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/index_backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/index_backup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/html/test_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/html/test_b.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/img/etc/sieg-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/json/0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/json/1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/1_old.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/json/3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/json/6.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/json/6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/browser/dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/packages/browser/dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/packages/browser/interop.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/packages/browser/interop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/main1.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/src/main1.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/packages/browser/dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/src/packages/browser/dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/web/src/packages/browser/interop.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/src/packages/browser/interop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/etc/sieg-banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/etc/win-banner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/1_old.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/json/6.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/json/6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/LevelLoader.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/LevelLoader.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/controller/Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/controller/Listeners.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/controller/Listeners.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/model/Game.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/Game.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/Bullet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/Bullet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/model/moveables/Tank.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/view/ModalElement.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/view/ModalElement.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/view/View.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/view/View.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,20 +25,50 @@
       <file leaf-file-name="Controller.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/controller/Controller.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="341">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/html/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="281" column="52" selection-start-line="281" selection-start-column="52" selection-end-line="281" selection-end-column="52" />
+            <state relative-caret-position="195">
+              <caret line="563" lean-forward="true" selection-start-line="563" selection-end-line="563" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Listeners.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/controller/Listeners.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="649">
+              <caret line="126" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
         </entry>
@@ -86,8 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;col&quot;:3},&quot;type&quot;:&quot;brick&quot;</find>
-      <find>&quot;col&quot;:9},&quot;type&quot;:&quot;brick&quot;</find>
       <find>&quot;col&quot;:15},&quot;type&quot;:&quot;steel&quot;</find>
       <find>Next</find>
       <find>modal-head</find>
@@ -116,6 +105,8 @@
       <find>2</find>
       <find>23</find>
       <find>steel</find>
+      <find>full</find>
+      <find>Timer</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;col&quot;:2},&quot;type&quot;:&quot;brick&quot;</replace>
@@ -164,11 +155,9 @@
         <option value="$PROJECT_DIR$/web/src/main1.dart" />
         <option value="$PROJECT_DIR$/web/json/blank.json" />
         <option value="$PROJECT_DIR$/web/src/view/ModalElement.dart" />
-        <option value="$PROJECT_DIR$/web/html/test.html" />
         <option value="$PROJECT_DIR$/web/json/0.json" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/web/src/LevelLoader.dart" />
-        <option value="$PROJECT_DIR$/web/src/controller/Listeners.dart" />
         <option value="$PROJECT_DIR$/web/json/1.json" />
         <option value="$PROJECT_DIR$/web/json/2.json" />
         <option value="$PROJECT_DIR$/web/src/model/moveables/Bullet.dart" />
@@ -180,6 +169,8 @@
         <option value="$PROJECT_DIR$/web/json/6.json" />
         <option value="$PROJECT_DIR$/web/src/model/Game.dart" />
         <option value="$PROJECT_DIR$/web/src/view/View.dart" />
+        <option value="$PROJECT_DIR$/web/html/test.html" />
+        <option value="$PROJECT_DIR$/web/src/controller/Listeners.dart" />
       </list>
     </option>
   </component>
@@ -254,7 +245,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="showMain&#9;null&#9;null&#10;mainMe&#9;null&#9;null&#10;ModalE&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;view&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;6.j&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/6.json&#10;6&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/6.json&#10;Con&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;5&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/5.json&#10;met&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/meta.json&#10;4&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/4.json&#10;Tank&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;player&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/PlayerTank.dart&#10;Ga&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;3&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/3.json&#10;ga&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;level&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;2.jso&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/2.json&#10;2&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/img/2018-04-18_Battle-City-Ressources.png&#10;lis&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart&#10;tank&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;1&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;cont&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;0&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/0.json&#10;levell&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;upda&#9;null&#9;null&#10;gam&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;Bulle&#9;null&#9;null&#10;bullt&#9;null&#9;null&#10;j&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;css&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;leve&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;View&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;update&#9;null&#9;null&#10;Ta&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;Game&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;pl&#9;null&#9;null&#10;Contr&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;menul&#9;null&#9;null&#10;mainMenu&#9;null&#9;null&#10;y&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;is&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart&#10;showTu&#9;null&#9;null&#10;Liste&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart&#10;V&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;ma&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;vie&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;yam&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;Listen&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart" />
+    <property name="SearchEverywhereHistoryKey" value="fulls&#9;null&#9;null&#10;Liste&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart&#10;start&#9;null&#9;null&#10;Game&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;showMai&#9;null&#9;null&#10;test&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/html/test.html&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;showMain&#9;null&#9;null&#10;mainMe&#9;null&#9;null&#10;ModalE&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/ModalElement.dart&#10;view&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;6.j&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/6.json&#10;6&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/6.json&#10;Con&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;5&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/5.json&#10;met&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/meta.json&#10;4&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/4.json&#10;Tank&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;player&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/PlayerTank.dart&#10;Ga&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;3&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/3.json&#10;ga&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;level&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;2.jso&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/2.json&#10;2&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/img/2018-04-18_Battle-City-Ressources.png&#10;lis&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart&#10;tank&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;1&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;cont&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;0&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/0.json&#10;levell&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;upda&#9;null&#9;null&#10;gam&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/Game.dart&#10;Bulle&#9;null&#9;null&#10;bullt&#9;null&#9;null&#10;j&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/json/1.json&#10;css&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;main&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/css/main.css&#10;leve&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/LevelLoader.dart&#10;View&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart&#10;update&#9;null&#9;null&#10;Ta&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/model/moveables/Tank.dart&#10;pl&#9;null&#9;null&#10;Contr&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Controller.dart&#10;menul&#9;null&#9;null&#10;mainMenu&#9;null&#9;null&#10;y&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/pubspec.yaml&#10;is&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/controller/Listeners.dart&#10;showTu&#9;null&#9;null&#10;V&#9;FILE&#9;file://P:/_Studium/02. Projekte/04. Projektarbeit-Webtechnologien Projekt/BattleCity/web/src/view/View.dart" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/html/test.html" />
@@ -337,12 +328,12 @@
       <workItem from="1529757037229" duration="4079000" />
       <workItem from="1529762388482" duration="19965000" />
       <workItem from="1529820832225" duration="3909000" />
-      <workItem from="1529824961757" duration="36326000" />
+      <workItem from="1529824961757" duration="37602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268153000" />
+    <option name="totallyTimeSpent" value="269429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -354,8 +345,8 @@
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3297587" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34375" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34288538" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Dart Dev Server" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32806325" />
@@ -469,13 +460,6 @@
     <entry file="file://$PROJECT_DIR$/web/src/model/GameField.dart">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -531,13 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="398" column="10" lean-forward="true" selection-start-line="398" selection-start-column="10" selection-end-line="398" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/controller/Listeners.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>
@@ -617,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/model/moveables/Tank.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -646,18 +613,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/controller/Controller.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="341">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/model/Game.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/view/View.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="281" column="52" selection-start-line="281" selection-start-column="52" selection-end-line="281" selection-end-column="52" />
+        <state relative-caret-position="195">
+          <caret line="563" lean-forward="true" selection-start-line="563" selection-end-line="563" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/controller/Listeners.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>

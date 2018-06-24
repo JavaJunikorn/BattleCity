@@ -86,6 +86,11 @@ class View {
   void startLoop() {
     querySelector(".main-container").children.clear();
     _resetSpeech();
+    if (model.currentLevel == 0) {
+      document.getElementById("lvlTitle").text = "Tutorial";
+    } else {
+      document.getElementById("lvlTitle").text = "level " + model.currentLevel.toString();
+    }
     querySelector(".main-container").children.add(toHTMLTable(model));
     resumeLoop();
   }
@@ -279,6 +284,7 @@ class View {
     modal.modalWrapper.style.backgroundColor = "orange";
     modal.modalWrapper.setAttribute("class", "modal bg-img");
 
+    modal.hideFooter();
     modal.hideCloseButton();
     modal.hideHeading();
     modal.showModal();
