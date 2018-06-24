@@ -126,6 +126,10 @@ class Listeners {
       controller.view.requestFullscreen(querySelector(".main-container"));
     });
 
+    document.onTouchMove.listen((e) {
+      e.preventDefault();
+    });
+
     controller.view.modal.nextBtn.onClick.listen((ev) {
       controller.view.showTutorial();
     });
