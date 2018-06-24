@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -542,7 +541,7 @@ table td {
 .bg-img {
     background: url("http://www.clker.com/cliparts/r/q/r/j/F/K/black-and-white-skyline-md.png") bottom;
     background-color: orange;
-    background-repeat: repeat-y;
+    background-repeat: repeat-x;
 }
 /*
 #warning-message { display: none; }
