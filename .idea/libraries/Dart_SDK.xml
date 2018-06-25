@@ -20,7 +20,6 @@
       <root url="file://C:/tools/dart-sdk/lib/web_gl" />
       <root url="file://C:/tools/dart-sdk/lib/web_sql" />
     </CLASSES>
-    <JAVADOC />
     <SOURCES />
   </library>
 </component>
