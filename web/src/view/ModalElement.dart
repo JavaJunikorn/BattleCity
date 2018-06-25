@@ -11,6 +11,7 @@ class ModalElement {
   DivElement modalFooter;
   ButtonElement nextBtn;
   ButtonElement  backToMenuBtn;
+  ButtonElement nextLevelBtn;
 
 
 
@@ -24,6 +25,7 @@ class ModalElement {
     modalFooter = new DivElement();
     nextBtn = new ButtonElement();
     backToMenuBtn = new ButtonElement();
+    nextLevelBtn = new ButtonElement();
 
     modalWrapper.id = "showModal";
     modalWrapper.setAttribute("class", "modal");
@@ -41,6 +43,13 @@ class ModalElement {
     backToMenuBtn.setAttribute("class", "btn btn-primary btn-block");
     backToMenuBtn.style.display ="none";
     backToMenuBtn.text= "Zurück zum Menü";
+
+
+
+    nextLevelBtn.id = "nextLvl";
+    nextLevelBtn.text = "Spielen";
+    nextLevelBtn.style.display = "none";
+    nextLevelBtn.setAttribute("class", "btn btn-primary btn-block");
 
 
 
@@ -65,6 +74,7 @@ class ModalElement {
 
     modalFooter.children.add(nextBtn);
     modalFooter.children.add(backToMenuBtn);
+    modalFooter.children.add(nextLevelBtn);
 
     modalWrapper.children.add(modalContent);
 
@@ -128,11 +138,15 @@ class ModalElement {
 
     modalHeader.setAttribute("class", "modal-header");
     modalHeader.setAttribute("style", "");
-    modalHeading.setAttribute("styke", "");
+    modalHeading.setAttribute("style", "");
+
+    modalFooter.setAttribute("style", "");
 
     closeButton.setAttribute("class", "close fa fa-times");
     backToMenuBtn.style.display ="none";
     nextBtn.style.display = "none";
+    nextLevelBtn.style.display = "none";
+    nextLevelBtn.style.fontSize = "2vh";
 
     modalBody.id = "modalBody";
     modalBody.setAttribute("class", "modal-body");

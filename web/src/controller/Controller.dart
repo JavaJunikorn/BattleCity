@@ -32,7 +32,6 @@ class Controller {
 
     } else if (reason == "win") {
       if (game.currentLevel >= game.levelCount) {
-        //Todo replace with win screen
         view.showCongrats();
         game.currentLevel = 1;
       } else {
@@ -47,14 +46,13 @@ class Controller {
   }
 
   void startLevel() {
-    //showloading
+    view.showLoading();
     game.loadNextLevel().whenComplete(() {
-      window.scrollTo(0, 500);
-      //hideloading
+
       view.startLoop();
       listeners.resumeListening();
       game.startLoop();
-    });
+    }).whenComplete(() { pause();});
   }
 
   void resume() {

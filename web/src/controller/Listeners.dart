@@ -102,6 +102,11 @@ class Listeners {
       controller.listeners.resumeListening();
       controller.startLevel();
     });
+
+    document.getElementById("menuQr").onClick.listen((ev) {
+      controller.view.closeMainMenu();
+      controller.view.showMenuQr();
+    });
   }
 
   void startModalListeners() {
@@ -122,8 +127,10 @@ class Listeners {
       controller.pause();
     });
 
-    document.getElementById("fullscreen").onClick.listen((ev) {
-      controller.view.requestFullscreen(querySelector(".main-container"));
+
+    document.getElementById("nextLvl").onClick.listen((ev) {
+      controller.view.hideLoading();
+      controller.resume();
     });
 
     controller.view.modal.nextBtn.onClick.listen((ev) {

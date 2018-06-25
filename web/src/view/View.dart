@@ -20,8 +20,9 @@ class View {
   Timer timer;
   var tutorialPart = 0;
   var tutorialSubgoals = [
-    new Point(4, 22), new Point(18, 14),
-    new Point(5, 11), new Point(22, 7)
+    new Point(0,22), new Point(4, 22),
+    new Point(18, 14), new Point(4, 11),
+    new Point(22, 7), new Point(14, 7)
   ];
   var speechText = [
     "Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels."
@@ -29,22 +30,31 @@ class View {
     "Die Inhalte dieses Tutorials und mehr Info zum Spiel findest du unter der Taste (<i class=\"fa fa-question\"></i>).",
 
     "Perfekt!</br> "
-    "Jetzt hast Stahlhindernis (<img src=\"../img/fields/bg-steel-field.png\">) vor dir!"
-    "Sie ist nicht zestörbard, durchfahrbar oder kugeldurchlässig!"
-    "Überhole sie und bewege dich zum nächsten Ziel!",
+    "Achtung! Du hast Stahlhindernis (<img src=\"../img/fields/bg-steel-field.png\">) vor dir!"
+    " Sie ist nicht zestörbard, durchfahrbar oder kugeldurchlässig!"
+    " Überhole sie und bewege dich zum nächsten Ziel!",
 
-    "Perfekt!</br> "
-    "Link vor dir ligt ein Wasserhindernis (<img src=\"../img/fields/bg-water-field.png\">)!"
-    "Sie ist nicht zestörbard oder durchfahrbar, aberkugeldurchlässig (d.h, dass die Kugeln über"
-    " das Wasser fliegen können."
-    "Überhole sie und bewege dich zum nächsten Ziel!",
+    "Gut gemacht!</br> "
+    "Links von dir liegt ein Wasserhindernis (<img src=\"../img/fields/bg-water-field.png\">)!"
+    " Sie ist nicht zestörbard oder durchfahrbar, aber kugeldurchlässig. "
+    " Überhole sie und bewege dich zum nächsten Ziel!",
 
 
-    "Du hast Busch vor dir",
+    "Prima!</br> "
+        "Rechts von dir liegt eine Busche (<img src=\"../img/fields/bg-bush-field.png\">)!"
+        " Sie ist nicht zestörbard, aber durchfahrbar und kugeldurchlässig. In der "
+        "Busche sind Panzer versteckt!"
+        "Fahre Sie durch bis zum nächsten Ziel!",
 
-    "Du hast Brick vor dir",
+    "Hervorragend!</br> "
+        "Links von dir liegt ein Ziegel (<img src=\"../img/fields/bg-brick-field.png\">)!"
+        "Er ist zestörbard, nicht durchfahrbar oder kugeldurchlässig"
+        " Zerstöre ihn und bewege dich zum nächsten Ziel!"
+    ,
 
-    "Hinter dem Brick ist..."
+    "Ich sehe den Gegner auf der anderen Seite"
+        " Mit einem Tap auf dem Bildschrirm kannst du schießen."
+        " Zerstöre das gegnerische Fahrzeug!!!"
   ];
 
 
@@ -108,7 +118,7 @@ class View {
         }
       }
       if (model.currentLevel == 0 && tutorialSubgoals.length != 0) {
-        //updateTutorialSpeech();
+        updateTutorialSpeech();
       } else {
         updateLevelStatSpeech();
       }
@@ -145,6 +155,7 @@ class View {
 
   void updateTutorialSpeech() {
     Point playerPos = model.level.player.positions[0][0];
+    document.getElementById("speech").style.fontSize = "1.6vh";
 
     if (tutorialSubgoals.length == 0)
       return;
@@ -195,6 +206,10 @@ class View {
     document.getElementById("speech").children.clear();
     document.getElementById("speech").text = "Lebenspunkte:";
     document.getElementById("speech").style.fontSize = "2vh";
+    document.getElementById("speech").style.marginBottom = "0";
+    document.getElementById("scoreStat").style.fontSize = "2vh";
+    document.getElementById("scoreStat").style.marginBottom = "2vh";
+    document.getElementById("scoreStat").text = "Erreichte Punkte: " + model.score.toString();
     for (int i = 0; i < model.level.player.health; i++) {
       var  health = new SpanElement();
       health.setAttribute("class", "fa fa-heart");
@@ -205,6 +220,7 @@ class View {
     document.getElementById("enemiesStat").children.clear();
     document.getElementById("enemiesStat").text = "Verbliebende Gegner: ";
     document.getElementById("enemiesStat").style.fontSize = "2vh";
+    document.getElementById("enemiesStat").style.marginBottom = "0";
     for (int i = 0; i < model.level.gamefield.enemyCount; i++) {
       var  enemy = new ImageElement();
       enemy.src = "../img/etc/enemy-stat.png";
@@ -218,14 +234,24 @@ class View {
   void _resetSpeech() {
     document.getElementById("speech").children.clear();
     document.getElementById("enemiesStat").children.clear();
+    document.getElementById("speech").setAttribute("style", "");
   }
 
   void showCongrats() {
+    var winContainer = new Element.p();
+    var scoreContainer = new Element.p();
+
+    scoreContainer.text = "Du hast " + model.score.toString() + " Punkte erreicht";
+    scoreContainer.style.fontSize = "2.5vh";
+    scoreContainer.setAttribute("class", "top-secret-font text-center");
+
     var loseImg = new ImageElement();
     loseImg.src = "../img/etc/win-banner.png";
     loseImg.style.width = "100%";
-
-    modal.setModalbodyChildren(loseImg);
+    modal.modalFooter.style.border = "0";
+    winContainer.children.add(loseImg);
+    modal.setModalbodyChildren(winContainer);
+    modal.setModalbodyChildren(scoreContainer);
     modal.hideHeader();
     modal.showModalFooter();
     modal.backToMenuBtn.style.display = "block";
@@ -244,15 +270,15 @@ class View {
   void showMainMenu() {
     var logo = new ImageElement();
     var startGame = new ImageElement();
-    var about = new ImageElement();
+    var qrButton = new ImageElement();
 
     logo.src = "../img/brand/battle-city-logo.png";
     startGame.src = "../img/etc/start-banner.png";
-    about.src = "../img/etc/about-banner.png";
+    qrButton.src = "../img/etc/qr-banner.png";
 
     logo.style.width = "100%";
     startGame.style.width = "50%";
-    about.style.width = "50%";
+    qrButton.style.width = "50%";
 
 
 
@@ -265,8 +291,10 @@ class View {
 
 
     playButton.id = "play";
+    qrButton.id = "menuQr";
+
     playButton.children.add(startGame);
-    aboutButton.children.add(about);
+    aboutButton.children.add(qrButton);
 
 
     startMenu.children.add(playButton);
@@ -303,11 +331,16 @@ class View {
 
   void showPause() {
     modal.modalHeading.text = "Das Spiel ist pausiert";
-    modal.modalBody.text = "Auch der Panzerfahrer braucht ab und zu Pausen ;)";
+    modal.modalBody.text = "Pause";
+    modal.modalBody.style.fontFamily = "top-secret";
+    modal.modalBody.style.fontSize = "5vh";
+    modal.modalBody.style.textAlign = "center";
     document.getElementById("pause").children.first.setAttribute("class", "nav-link btn btn-primary ml-1");
 
+    modal.hideHeader();
+    modal.nextLevelBtn.style.display = "block";
     modal.showCloseButton();
-    modal.showHeading();
+    modal.showModalFooter();
     modal.showModal();
   }
 
@@ -376,6 +409,28 @@ class View {
   void hideQrCode() {
     document.getElementById("qr").children.first.setAttribute("class", "nav-link btn btn-secondary ml-1");
     modal.hideModal();
+  }
+
+  void showMenuQr() {
+    modal.modalHeading.text = "Teile unser spiel mit!";
+    modal.modalHeading.style.fontFamily = "top-secret";
+
+    var img = new ImageElement();
+    img.src = "../img/qr.svg";
+
+    modal.modalHeader.style.padding = "4vh";
+    modal.modalHeader.style.border = "0";
+    modal.modalContent.style.border = "5px dotted black";
+
+
+    modal.modalWrapper.style.backgroundColor = "orange";
+    modal.modalWrapper.setAttribute("class", "modal bg-img");
+
+    modal.modalBody.children.add(img);
+    modal.hideCloseButton();
+    modal.showModal();
+    modal.showModalFooter();
+    modal.backToMenuBtn.style.display = "block";
   }
 
 
@@ -543,11 +598,20 @@ class View {
 
   void showLose() {
 
+    var loseContainer = new Element.p();
+    var scoreContainer = new Element.p();
+
+    scoreContainer.text = "Du hast " + model.score.toString() + " Punkte erreicht";
+    scoreContainer.style.fontSize = "2.5vh";
+    scoreContainer.setAttribute("class", "top-secret-font text-center");
+
     var loseImg = new ImageElement();
     loseImg.src = "../img/etc/lose-banner.png";
     loseImg.style.width = "100%";
-
-    modal.setModalbodyChildren(loseImg);
+    modal.modalFooter.style.border = "0";
+    loseContainer.children.add(loseImg);
+    modal.setModalbodyChildren(loseContainer);
+    modal.setModalbodyChildren(scoreContainer);
     modal.hideHeader();
     modal.showModalFooter();
     modal.backToMenuBtn.style.display = "block";
@@ -559,6 +623,42 @@ class View {
   }
 
   void showLoading() {
+    modal.backToMenuBtn.style.display = "none";
+    modal.nextBtn.style.display = "none";
+    modal.nextLevelBtn.style.display = "block";
+
+    modal.modalBody.style.backgroundColor = "black";
+    modal.modalContent.style.border = "5px dotted black";
+    modal.modalFooter.style.background = "black";
+
+    modal.modalHeader.style.border = "0";
+    modal.modalWrapper.style.backgroundColor = "orange";
+    modal.modalWrapper.setAttribute("class", "modal bg-img");
+
+    modal.modalBody.style.color = "white";
+    modal.modalBody.style.fontSize = "5vh";
+    modal.modalBody.setAttribute("class", "modal-body text-center blade-runner-font");
+    if (model.currentLevel == 0) {
+      modal.modalBody.text = "tutorial";
+    } else {
+      modal.modalBody.text = "level " + model.currentLevel.toString();
+    }
+
+
+
+    modal.modalFooter.style.backgroundColor = "black";
+    modal.modalFooter.style.border = "0";
+
+
+    modal.hideHeader();
+    modal.hideCloseButton();
+    modal.showModalFooter();
+    modal.showModal();
+  }
+
+  void hideLoading() {
+    modal.hideFooter();
+    modal.hideModal();
   }
 
 
@@ -567,27 +667,6 @@ class View {
     int levelNr = model.currentLevel;
     document.getElementById("levelNr").text = "level $levelNr";
   }
-  /*
-  void requestFullscreenOn(Element element) {
-    var elem = new JsObject.fromBrowserObject(element);
-
-    if (elem.hasProperty("requestFullscreen")) {
-      elem.callMethod("requestFullscreen");
-    }
-    else {
-      List<String> vendors = ['moz', 'webkit', 'ms', 'o'];
-      for (String vendor in vendors) {
-        String vendorFullscreen = "${vendor}RequestFullscreen";
-        if (vendor == 'moz') {
-          vendorFullscreen = "${vendor}RequestFullScreen";
-        }
-        if (elem.hasProperty(vendorFullscreen)) {
-          elem.callMethod(vendorFullscreen);
-          return;
-        }
-      }
-    }
-  }*/
 
 
 

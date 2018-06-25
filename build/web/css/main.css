@@ -38,7 +38,7 @@ table td {
 }
 
 .btn-primary {
-    background-color: orange;
+    background-color: orange !important;
 }
 
 /*** Background-Colors ***/
@@ -530,10 +530,18 @@ table td {
     src: url('../fonts/bladerunner.TTF'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'top-secret'; /*a name to be used later*/
+    src: url('../fonts/topsecret.ttf'); /*URL to font*/
+}
+
 .blade-runner-font {
     font-family: blade-runner;
 }
 
+.top-secret-font {
+    font-family: top-secret;
+}
 
 .bg-city-at-night {
     background: url("../img/background/city-at-night.jpg");
