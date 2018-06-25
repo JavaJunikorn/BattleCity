@@ -34,7 +34,7 @@ abstract class Tank extends Moveable {
         }
       //Todo Enemy tanks
       case "tutorial":
-        t = new EnemyTank(x, y, 2, 2, direction, game, 0, health, "", "easyEnemy", 10);
+        t = new EnemyTank(x, y, 2, 2, direction, game, 0, health, "", "easyEnemy", 0);
         break;
       case "easy":
       {

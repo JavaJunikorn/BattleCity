@@ -1,7 +1,7 @@
-html, body {
+html {
     margin: 0;
-    overflow: hidden;
-    position: relative;
+    overflow-x: hidden;
+
 }
 
 body {
@@ -9,6 +9,7 @@ body {
     position: relative;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.3vh;
+    position: relative;
 }
 
 table {
