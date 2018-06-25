@@ -130,6 +130,7 @@ class Listeners {
 
     document.getElementById("nextLvl").onClick.listen((ev) {
       controller.view.hideLoading();
+      controller.view.hidePause();
       controller.resume();
     });
 

@@ -32,7 +32,6 @@ abstract class Tank extends Moveable {
           t = new PlayerTank(x, y, 2, 2, direction, game, 7, health, "default");
           break;
         }
-      //Todo Enemy tanks
       case "tutorial":
         t = new EnemyTank(x, y, 2, 2, direction, game, 0, health, "", "easyEnemy", 0);
         break;
@@ -45,25 +44,25 @@ abstract class Tank extends Moveable {
       case "med":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 10, health, "weak", "medEnemy", 50);
+              x, y, 2, 2, direction, game, 10, health, "weak", "medEnemy", 100);
           break;
         }
       case "strong":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 7, health, "med", "strongEnemy", 50);
+              x, y, 2, 2, direction, game, 7, health, "med", "strongEnemy", 150);
           break;
         }
       case "veryStrong":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 4, health, "strong", "veryStrongEnemy", 50);
+              x, y, 2, 2, direction, game, 4, health, "strong", "veryStrongEnemy", 200);
           break;
         }
       case "invisible":
         {
           t = new EnemyTank(
-              x, y, 2, 2, direction, game, 7, health, "default", "invisibleEnemy", 50);
+              x, y, 2, 2, direction, game, 7, health, "default", "invisibleEnemy", 100);
           break;
         }
     }

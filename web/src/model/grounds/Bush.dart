@@ -12,6 +12,5 @@ class Bush extends Ground{
 
   @override
   void activate(Moveable m) {
-    // TODO: implement activate
   }
 }

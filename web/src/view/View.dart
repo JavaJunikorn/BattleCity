@@ -412,7 +412,8 @@ class View {
   }
 
   void showMenuQr() {
-    modal.modalHeading.text = "Teile unser spiel mit!";
+    modal.modalHeader.style.textAlign = "center";
+    modal.modalHeading.text = "Teile unser Spiel!";
     modal.modalHeading.style.fontFamily = "top-secret";
 
     var img = new ImageElement();
@@ -451,7 +452,7 @@ class View {
         tutorialPart++;
         break;
       case 3:
-        _loadFirthHelpPart();
+        _loadForthHelpPart();
         tutorialPart++;
         break;
       case 4:
@@ -470,14 +471,13 @@ class View {
 
     modal.modalHeading.text = "Anleitung (1/5): Info zum Spiel";
 
-    text.innerHtml = "Battle city beinhaltet zurzeit 7 level (inklusive Tutorial). "
-        "Die Level stellen Schlachtfelder aus der Vogelperspektive dar und "
+    text.innerHtml = "Die Level stellen Schlachtfelder aus der Vogelperspektive dar und "
         "enthalten immer folgende Elemente: Das Hauptquartier, den eigenen Panzer, "
         "feindliche Panzer und Hindernisse, wie z.B. Mauern oder Wasserflächen. "
-        "Das Hauptquartier, symbolisiert durch einen Wappenadler, befindet sich "
+        "Das Hauptquartier, symbolisiert durch einen Wappenadler, befindet sich meist "
         "mittig am unteren Bildschirmrand und ist von einer Schutzmauer umgeben. "
         "Wird diese Mauer durch gegnerische oder eigene Schüsse zerstört und der "
-        "Adler getroffen, geht das Spiel verloren. Verliert der Spieler alle Leben, "
+        "Adler getroffen, ist das Spiel verloren. Verliert der Spieler alle Leben, "
         "führt dies ebenfalls zum Spielende. Die Steuerungshilfe (<i class='fa fa-gamepad'></i>) und "
         "diese Anleitung (<i class='fa fa-question'></i>) kannst du dir zu jeder Zeit anzeigen lassen";
 
@@ -525,9 +525,9 @@ class View {
 
     modal.modalHeading.text = "Anleitung (3/5): Gegner und level";
 
-    text.text = "Die Gegner erscheinen auf dem Spielfeld an drei in Level definierten Plätzen. "
+    text.text = "Die Gegner erscheinen auf dem Spielfeld an fest definierten Plätzen. "
         "Mit fortschreitendem Spielverlauf kämpft der Spieler gegen schnellere und "
-        "besser gepanzerte Feindpanzer (insgesamt vier Typen) und manövriert an unterschiedlichen "
+        "besser gepanzerte Feindpanzer (insgesamt fünf Panzertypen) und manövriert an unterschiedlichen "
         "Hindernissen wie Backstein- und Stahlmauern oder Gewässern vorbei bzw. zerschießt sie. "
         "Je nach Level variiert die Menge der jeweiligen Panzertypen. Viel Erfolg auf dem Schlachtfeld!";
 
@@ -536,40 +536,42 @@ class View {
     modal.modalBody.children.add(text);
   }
 
-  void _loadFirthHelpPart() {
+  void _loadForthHelpPart() {
     modal.modalHeading.text = "Anleitung (4/5): Panzertypen";
 
-    var enemiesTable = _generateTable(4, 2, "enemyTypes");
-    var enemyNames = [ "easyEnemy", "medEnemy", "strongEnemy", "veryStrongEnemy"];
+    var enemiesTable = _generateTable(5, 2, "enemyTypes");
+    var enemyNames = [ "easyEnemy", "medEnemy", "strongEnemy", "veryStrongEnemy", "easyEnemy"];
     var enemyProperties = [
-      ["Gesundheit: ", "Geschwindigkeit: ", "Kugelschaden: ", "Punkte: "],
-      ["Gesundheit: ", "Geschwindigkeit: ", "Kugelschaden: ", "Punkte: "],
-      ["Gesundheit: ", "Geschwindigkeit: ", "Kugelschaden: ", "Punkte: "],
-      ["Gesundheit: ", "Geschwindigkeit: ", "Kugelschaden: ", "Punkte: "],
+      ["Geschwindigkeit: lansam ", "Punkte: 50 * Leben "],
+      ["Geschwindigkeit: mittel",  "Punkte: 100 * Leben "],
+      ["Geschwindigkeit: schnell", "Punkte: 150 * Leben"],
+      ["Geschwindigkeit: sehr schnell","Punkte: 100 * Leben"],
+      ["Geschwindigkeit: schnell","Punkte: 100 * Leben"]
     ];
 
-    var easyEnemy = new ImageElement();
-    var medEnemy = new ImageElement();
-    var strongEnemy = new ImageElement();
-    var veryStrongEnemy = new ImageElement();
+var enemies= [
+    new ImageElement(),
+    new ImageElement(),
+    new ImageElement(),
+    new ImageElement(),
+    new ImageElement()
+  ];
 
-    easyEnemy.src = "../img/moveables/bg-easyEnemy-right-1.png";
-    medEnemy.src = "../img/moveables/bg-medEnemy-right-1.png";
-    strongEnemy.src = "../img/moveables/bg-strongEnemy-right-1.png";
-    veryStrongEnemy.src = "../img/moveables/bg-veryStrongEnemy-right-1.png";
+
+    enemies[0].src = "../img/moveables/bg-easyEnemy-right-1.png";
+    enemies[1].src = "../img/moveables/bg-medEnemy-right-1.png";
+    enemies[2].src = "../img/moveables/bg-strongEnemy-right-1.png";
+    enemies[3].src = "../img/moveables/bg-veryStrongEnemy-right-1.png";
+    enemies[4].src = "../img/moveables/bg-easyEnemy-right-1.png";
+    enemies[4].style.opacity = "0.3";
 
     for (int i = 0; i < enemyNames.length; i++) {
-      var enemyImg = new ImageElement();
       var fieldProperties = _generateList(enemyProperties[i]);
-
-      enemyImg.src = "../img/moveables/bg-" + enemyNames[i] +"-right-1.png";
-      enemyImg.setAttribute("class", "tutorial-img-sm");
-
-
+      enemies[i].setAttribute("class", "tutorial-img-sm");
       enemiesTable.rows.elementAt(i).cells.elementAt(0).setAttribute("class", "text-center");
-
-      enemiesTable.rows.elementAt(i).cells.elementAt(0).children.add(enemyImg);
+      enemiesTable.rows.elementAt(i).cells.elementAt(0).children.add(enemies[i]);
       enemiesTable.rows.elementAt(i).cells.elementAt(1).children.add(fieldProperties);
+
     }
 
 
@@ -581,10 +583,8 @@ class View {
 
     modal.modalHeading.text = "Anleitung (5/5): Punkten und letzte Level";
 
-    text.text = "Nach Abschluss jeder Stage werden die zerstörten Panzer aufgezählt "
-        "und die Punktzahl errechnet. Wird das letzte Level erfolgreich abgeschlossen, "
-        "erscheint dann Hauptmenü.";
-
+    text.text = "Jeder Gegner gibt dem Spieler bei zerstörung Punkte."
+      "Wenn man verliert oder das letzte Level abschließt werden einem die erreichten Punkte noch einmal angezeigt.";
     text.style.textAlign = "justify";
     text.style.fontSize = "2vh";
     modal.modalBody.children.add(text);
