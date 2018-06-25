@@ -18,8 +18,9 @@ abstract class Tank extends Moveable {
   Bullet bullet;
 
   Tank(int x, int y, int width, int height, Directions direction, Game game,
-      int this.speed, int this.health, String this.bulletType, String type, int this.score)
+      int this.speed, int this.health, String this.bulletType, String type, int score)
       : super(x, y, width, height, direction, game, speed, type){
+    this.score = score * health;
   }
 
   factory Tank.factory(
