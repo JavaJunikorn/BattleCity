@@ -11,7 +11,7 @@ class Game {
   Level level;
   Timer t;
   int levelCount = 0;
-  int currentLevel = 1;
+  int currentLevel = 0;
   Set<Moveable> toRemove = new Set();
   int speedCount = 0;
   Function function;
@@ -69,8 +69,6 @@ class Game {
       level.gamefield.moveables.remove(toRemove.elementAt(i));
     }
 
-    //Todo remove
-    print("Score: $score");
 
     toRemove = new Set();
     _checkWinLose();
