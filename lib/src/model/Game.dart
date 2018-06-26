@@ -1,20 +1,31 @@
 part of BattleCity;
 
+/**
+ * the Game class has all nessesary information and functions to run the game
+ */
 class Game {
-  final int delay = 35;
-  Level level;
-  Timer t;
-  int levelCount = 0;
-  int currentLevel = 0;
-  Set<Moveable> toRemove = new Set();
-  int speedCount = 0;
-  Function function;
-  int score = 0;
-  bool _running = false;
+  final int delay = 35; //the update frequency of the gameloop (lower is higher frequency)
+  Level level; //the information to the current level
+  Timer t; //the timer that calles the levelLoop
+  int levelCount = 0; //the amount of levels that can be played
+  int currentLevel = 0; //the current level that is played
+  Set<Moveable> toRemove = new Set(); //set of Moveables that need to be removed from the gamefield
+  int speedCount = 0; //counter that is passed to moveables in gameloop to manage their speeds
+  Function function; //function that is calles when the game is stopped
+  int score = 0; //the score that the player has achieved in the current game
+  bool _running = false; //true if the game is running, false if is is stopped
 
+  /**
+   * Creates a new Game
+   * @param function this funtion is called when the game is stopped.
+   */
   Game(void this.function(String reason)) {
   }
 
+  /**
+   * loads the meta information needed from a Json file.
+   * @return a Future, so the calling function can wait for the Json to be loaded.
+   */
   Future loadMeta() {
     return HttpRequest.getString("../json/meta.json").then((json) {
       Map m = JSON.decode(json);
@@ -22,12 +33,15 @@ class Game {
     });
   }
 
-  Future loadNextLevel() {
-    return LevelLoader.load(currentLevel, this, (level) {
-      this.level = level;
-    });
-  }
+  /**
+   * loads the next level from a Json file
+   * @return a Future, so the calling function can wait for the next level to be loaded.
+   */
+  Future loadNextLevel() => LevelLoader.load(currentLevel, this);
 
+    /**
+   * starts the game loop
+   */
   void startLoop() {
     if(_running) return;
     _running = true;
@@ -36,17 +50,18 @@ class Game {
     });
   }
 
+  /**
+   * stops the game loop
+   */
   void stopLoop() {
     _running = false;
     this.t.cancel();
   }
 
-  /**
-   * true if exists, false if all levels have been complete
-   */
+
 
   /**
-   * @return true on completion, false if lost
+   * moves all the objects on the GameField and manages Collisions
    */
   void levelLoop() {
     for (int i = 0; i < level.gamefield.moveables.length; i++) {
@@ -70,6 +85,10 @@ class Game {
   }
 
 
+  /**
+   * checks if the game has been won or lost.
+   * if the game is won or lost it is stopped.
+   */
   void _checkWinLose() {
     if (level.player.health < 1 || level.gamefield.goals.length < 1) {
       stopLoop();

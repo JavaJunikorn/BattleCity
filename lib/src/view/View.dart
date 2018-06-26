@@ -49,12 +49,12 @@ class View {
   /**
    * Zaeler fuer den naechsten Teil des Anleitung.
    */
-  var tutorialPart = 0;
+  int tutorialPart = 0;
 
   /**
    * Punkte, die im Tutorial lvl mit Animation markiert werden sollen.
    */
-  var tutorialSubgoals = [
+  List<Point> tutorialSubgoals = [
     new Point(0,22), new Point(4, 22),
     new Point(18, 14), new Point(4, 11),
     new Point(22, 7), new Point(14, 7)
@@ -65,30 +65,30 @@ class View {
    * wenn der Spieler den Markierten Punkt erreicht.
    */
   var speechText = [
-    "Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels."
-    "Du kannst jederzeit die Steuerungs Hilfe mit der Taste (<i class=\"fa fa-gamepad\"></i>) abrufen."
+    "Willkommen in Battle City. In diesem Tutoriallevel lernst du die Grundlagen des Spieles."
+    "Du kannst jederzeit die Steuerungshilfe mit der Taste (<i class=\"fa fa-gamepad\"></i>) aufrufen."
     "Die Inhalte dieses Tutorials und mehr Info zum Spiel findest du unter der Taste (<i class=\"fa fa-question\"></i>).",
 
     "Perfekt!</br> "
-    "Achtung! Du hast Stahlhindernis (<img src=\"../img/fields/bg-steel-field.png\">) vor dir!"
-    " Sie ist nicht zestörbard, durchfahrbar oder kugeldurchlässig!"
-    " Überhole sie und bewege dich zum nächsten Ziel!",
+    "Achtung! Du hast ein Stahlhindernis (<img src=\"../img/fields/bg-steel-field.png\">) vor dir!"
+    " Es ist nicht zestörbar, durchfahrbar oder kugeldurchlässig!"
+    " Fahr vorbei und bewege dich zum nächsten Ziel!",
 
     "Gut gemacht!</br> "
-    "Links von dir liegt ein Wasserhindernis (<img src=\"../img/fields/bg-water-field.png\">)!"
-    " Sie ist nicht zestörbard oder durchfahrbar, aber kugeldurchlässig. "
-    " Überhole sie und bewege dich zum nächsten Ziel!",
+    "Links von dir ist Wasser (<img src=\"../img/fields/bg-water-field.png\">)!"
+    " Es ist nicht zestörbar oder durchfahrbar, aber kugeldurchlässig. "
+    " Fahr vorbei und bewege dich zum nächsten Ziel!",
 
 
     "Prima!</br> "
-        "Rechts von dir liegt eine Busche (<img src=\"../img/fields/bg-bush-field.png\">)!"
-        " Sie ist nicht zestörbard, aber durchfahrbar und kugeldurchlässig. In der "
-        "Busche sind Panzer versteckt!"
-        "Fahre Sie durch bis zum nächsten Ziel!",
+        "Rechts von dir ist ein Busch (<img src=\"../img/fields/bg-bush-field.png\">)!"
+        " Er ist nicht zestörbar, aber durchfahrbar und kugeldurchlässig. In "
+        "Büschen sind manchmal Panzer versteckt!"
+        "Fahre durch bis zum nächsten Ziel!",
 
     "Hervorragend!</br> "
-        "Links von dir liegt ein Ziegel (<img src=\"../img/fields/bg-brick-field.png\">)!"
-        "Er ist zestörbard, nicht durchfahrbar oder kugeldurchlässig"
+        "Links von dir ist ein Ziegel (<img src=\"../img/fields/bg-brick-field.png\">)!"
+        "Er ist zestörbar, aber nicht durchfahrbar oder kugeldurchlässig"
         " Zerstöre ihn und bewege dich zum nächsten Ziel!"
     ,
 
@@ -99,7 +99,7 @@ class View {
 
 
   /**
-   * @param Game das Modell des Spiels.
+   * @param Game das Model des Spiels.
    * @param Controller die Steuerung des Spiels.
    */
   View(Game this.model, Controller this.controller) {

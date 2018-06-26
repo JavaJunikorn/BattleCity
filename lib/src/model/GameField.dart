@@ -1,13 +1,22 @@
 part of BattleCity;
 
+/**
+ * Contains all the informtaion of the Gamefield.
+ */
 class GameField {
-  int height;
-  int width;
-  List<List<Field>> gameField;
-  List<Tank> moveables;
-  List<Point> goals = new List();
-  int enemyCount = 0;
+  int height; //the height of the gamefield
+  int width;  //the width of the gamefield
+  List<List<Field>> gameField; //the Fields that the gameField is made of
+  List<Tank> moveables; //the moveable objects on the gamefield
+  List<Point> goals = new List(); //the positions of goals on the gamefield
+  int enemyCount = 0; // the amount of enemies left on the gamefield
 
+  /**
+   * creates a new gamefield with the given dimensions.
+   * a layer of Barriers is created around the gamefield.
+   * @param height the height of the field, barriers outside excluded.
+   * @param width the width of the field, barriers outside excluded.
+   */
   GameField(int this.height, int this.width) {
     moveables = new List<Moveable>();
     gameField = new List(height + 2);
@@ -31,10 +40,20 @@ class GameField {
     }
   }
 
+
+  /**
+   * @param p a point on the gameField.
+   * @return the field on the position p of the gamefield.
+   */
   Field getField(Point p) {
     return gameField[p.y + 1][p.x + 1];
   }
 
+  /**
+   * sets the ground on a given position if the gamefield.
+   * @param desination the position where the ground shall be set.
+   * @param groundType the type of ground that shall be set.
+   */
   void setGround(Point destination, String groundType) {
     getField(destination).ground = new Ground.factory(groundType);
     if(groundType == "goal"){
@@ -43,7 +62,4 @@ class GameField {
   }
 }
 
-class Field {
-  Moveable moveable;
-  Ground ground;
-}
+

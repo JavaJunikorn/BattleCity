@@ -6,12 +6,14 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:js';
 
-part 'src/LevelLoader.dart';
-part 'src/Level.dart';
+part 'package:BattleCity/src/model/LevelLoader.dart';
+part 'package:BattleCity/src/model/Level.dart';
 
 part 'src/view/View.dart';
 part 'src/view/ModalElement.dart';
 
+part 'src/model/moveables/Directions.dart';
+part 'src/model/moveables/Field.dart';
 part 'src/model/Game.dart';
 part 'src/model/GameField.dart';
 part 'src/model/moveables/Bullet.dart';

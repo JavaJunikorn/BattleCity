@@ -5,9 +5,6 @@ class Listeners {
   Point first, last;
   Game game;
   bool _listen = true;
-  int i = 0;
-  StreamSubscription qr;
-  StreamSubscription next;
 
   Listeners(Controller this.controller, Game this.game){
    _startListeners();

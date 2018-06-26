@@ -2,14 +2,22 @@ part of BattleCity;
 
 class Bullet extends Moveable {
   int damage = 1;
-  bool _destroyed = false;
+  bool _destroyed = false; //true if the bullet is destroyed, else false
   Tank owner;
 
   /**
-   * @param gamefield a reference to the field the bullet is in
-   * @param direction the direction the bullet is flying in
-   * @param y the y position of the top left field of the Bullet
-   * @param x the x position of the top left field of the Bullet
+   * creates a Bullet
+   *
+   * @param x see Moveable
+   * @param y see Moveable
+   * @param width see Moveable
+   * @param height see Moveable
+   * @param direction see Moveable
+   * @param game see Moveable
+   * @param speed see Moveable
+   * @param damage the damage caused by this bullet
+   * @param type see Moveable
+   * @param owner the Tank that shot this bullet
    */
   Bullet._internal(int x, int y, int width, int height, Directions direction,
       Game game, int speed, int this.damage, String type, Tank this.owner)
@@ -17,6 +25,12 @@ class Bullet extends Moveable {
     doCollisions();
   }
 
+  /**
+   * creates a bullet via a given type
+   * @param bulletType the type of bullet that shall be created
+   * @param tank the Tank that shot the bullet
+   * @param game a reference to the game that the bullet belongs to
+   */
   factory Bullet(String bulletType, Tank tank, Game game) {
     Bullet b;
     Directions direction;
@@ -29,10 +43,6 @@ class Bullet extends Moveable {
     }
 
     switch (bulletType) {
-      case "wak":
-        {
-          break;
-        }
       default:
         {
           Point p = getStartPosition(tank, direction, 2, 1);
@@ -49,6 +59,14 @@ class Bullet extends Moveable {
     return b;
   }
 
+  /**
+   * determines the top left position of a bullet when shot
+   * @param t the tank shooting the bullet
+   * @param direction the direction the bullet is flying
+   * @param width zje width of the bullet
+   * @param height the height of the bullet
+   * @return the top left position of the bullet
+   */
   static Point getStartPosition(
       Tank t, Directions direction, int width, int height) {
     int x, y;
@@ -91,13 +109,20 @@ class Bullet extends Moveable {
     return new Point(y, x);
   }
 
+  /**
+   * see Moveable
+   * on hit thr bullet is destroyed
+   */
   @override
   void hit(int dmg, Moveable causedBy) {
-    owner.bullet = null;
     this._destroyed = true;
     game.toRemove.add(this);
   }
 
+  /**
+   * see moveable
+   * collisions are checked before moving
+   */
   void move(int count) {
     if (speed == 0 || count % speed != 0) return;
     if(positions[0][0].x < 0 || positions[0][0].y < 0 || positions[positions.length-1][positions[0].length-1].x >= game.level.cols || positions[positions.length-1][positions[0].length-1].y >= game.level.rows)
@@ -165,6 +190,9 @@ class Bullet extends Moveable {
     }
   }
 
+  /**
+   * see Moveable
+   */
   @override
   void doCollisions() {
     if(this._destroyed) return;
@@ -193,6 +221,9 @@ class Bullet extends Moveable {
     }
 
 
+  /**
+   * see Moveable
+   */
   @override
   String getLevel() {
     return this.damage.toString();

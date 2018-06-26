@@ -7,7 +7,6 @@ abstract class Tank extends Moveable {
   bool readyToShoot = true;
   int shootSpeed = 1000; //lower means shooting can be done more often
   int score;
-  Bullet bullet;
 
   Tank(int x, int y, int width, int height, Directions direction, Game game,
       int this.speed, int this.health, String this.bulletType, String type, int score)

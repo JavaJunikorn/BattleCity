@@ -1,14 +1,17 @@
 part of BattleCity;
 
-enum Directions { left, right, up, down, stop }
-
+/**
+ * the class containing the information and functionality of a moveable object
+ */
 abstract class Moveable {
+  // direction vectors
   static const Point UP = const Point(0, -1);
   static const Point DOWN = const Point(0, 1);
   static const Point LEFT = const Point(-1, 0);
   static const Point RIGHT = const Point(1, 0);
   static const Point STOP = const Point(0, 0);
-  List<List<Point>> positions;
+
+  List<List<Point>> positions; //the positions the object is on
   Directions direction;
   Game game;
   int speed;
@@ -17,7 +20,15 @@ abstract class Moveable {
   String type;
 
   /**
-   * (x,y) topLeft position of the Object
+   * creates a new moveable object
+   * @param x the x position of the top-left of the object
+   * @param y the y position of the top-left of the object
+   * @param width the width of the object
+   * @param height the height of the object
+   * @param direction the direction the object is moving
+   * @param game reference to the game the object belongs to
+   * @param speed the speed of the object, lower is faster
+   * @param type the type of the object, used to determine what type of object it is
    */
   Moveable(int x, int y, int this.width, int this.height, Directions this.direction,
       Game this.game, int this.speed, String this.type) {
@@ -34,8 +45,15 @@ abstract class Moveable {
   }
 
 
+  /**
+   * @return the power of the object, used to differ between objects of the same type
+   */
   String getLevel();
 
+  /**
+   * moves the object in the direction it is facing
+   * @param count a value that is used to determine of the object has the possibility to move
+   */
   void move(int count) {
     if (speed == 0 && count % speed != 0) return;
     switch (direction) {
@@ -96,6 +114,10 @@ abstract class Moveable {
     }
   }
 
+  /**
+   * updates the positions of the object
+   * @param direction the vector of the direction the object is facing
+   */
   void movePositions(Point direction) {
     for (int i = 0; i < positions.length; i++) {
       for (int j = 0; j < positions[i].length; j++) {
@@ -104,10 +126,23 @@ abstract class Moveable {
     }
   }
 
+  /**
+   * the object is hit
+   * @param dmg the amount of damage this object gets
+   * @param causedBy the object that is responsible for the hit
+   */
   void hit(int dmg, Moveable causedBy);
 
+  /**
+   * checks collisions and carries them out
+   */
   void doCollisions();
 
+  /**
+   * converts the direction of a moveable to a String
+   * @param m the moveable object which direction is needed
+   * @return the direction as a String
+   */
   static String directionOf(Moveable m) {
     if (m.direction == Directions.stop) {
       if (m is PlayerTank) {
@@ -117,6 +152,11 @@ abstract class Moveable {
     return directionToString(m.direction);
   }
 
+  /**
+   * converts a direction to a String
+   * @direction the direction that shall be converted
+   * @return the direction as a String
+   */
   static String directionToString(Directions direction) {
     String s;
     switch (direction) {
@@ -138,6 +178,12 @@ abstract class Moveable {
     return s;
   }
 
+
+  /**
+   * converts a string to a direction
+   * @param s the String containing the direction
+   * @return the direction
+   */
   static Directions stringToDirection(String s) {
     switch (s){
       case "up":
