@@ -29,7 +29,7 @@ class Controller {
 
     } else if (reason == "win") {
       if (game.currentLevel >= game.levelCount) {
-        view.showCongrats();
+        view.showWin();
         game.currentLevel = 1;
       } else {
         startLevel();

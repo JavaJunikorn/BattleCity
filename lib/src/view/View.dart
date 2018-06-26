@@ -1,21 +1,69 @@
 part of BattleCity;
 
-
+/**
+ *
+ */
 class View {
+
+
+  /**
+   *  Die Verzögerung für den Update-Timer.
+   */
   int delay = 25;
+
+  /**
+   * Timer, um den Spielfeld zu updaten.
+   */
+  Timer gameFieldUpdateTimer;
+
+  /**
+   * Model des Spieles laut MVC-Pattern.
+   */
   Game model;
+
+  /**
+   * Kontroller des Spieles laut MVC-Pattern.
+   */
   Controller controller;
-  Element htmlTable;
-  ModalElement modal;
+
+  /**
+   * Spielfeld als HTML-Tabelle.
+   */
+  Element htmlGamefield;
+
+  /**
+   * Die Zeilen des Spielfelds.
+   */
   List<Element> rows;
+
+  /**
+   * Die Spalten des Spielfelds.
+   */
   List<Element> cols;
-  Timer timer;
+
+  /**
+   * Das Modale Fenster fuer verschiedene Inhalte.
+   */
+  ModalElement modal;
+
+  /**
+   * Zaeler fuer den naechsten Teil des Anleitung.
+   */
   var tutorialPart = 0;
+
+  /**
+   * Punkte, die im Tutorial lvl mit Animation markiert werden sollen.
+   */
   var tutorialSubgoals = [
     new Point(0,22), new Point(4, 22),
     new Point(18, 14), new Point(4, 11),
     new Point(22, 7), new Point(14, 7)
   ];
+
+  /**
+   * Die Texte, die in der Sprechblase angezeigt werden sollen,
+   * wenn der Spieler den Markierten Punkt erreicht.
+   */
   var speechText = [
     "Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels."
     "Du kannst jederzeit die Steuerungs Hilfe mit der Taste (<i class=\"fa fa-gamepad\"></i>) abrufen."
@@ -50,12 +98,20 @@ class View {
   ];
 
 
+  /**
+   * @param Game das Modell des Spiels.
+   * @param Controller die Steuerung des Spiels.
+   */
   View(Game this.model, Controller this.controller) {
     modal = new ModalElement.created();
   }
 
- 
 
+  /**
+   * Bildet Spielfed in Dart nach HTML-Tabelle ab.
+   * @param Game das Model des Spields.
+   * @returen TableElement - Spielfeld als HTML-Tabelle
+   */
   TableElement toHTMLTable(Game game) {
     var table = new TableElement();
     var tBody = table.createTBody();
@@ -83,8 +139,13 @@ class View {
     return table;
   }
 
+////////////////////////////////////////////////////
+// Steuerung fuer das Update des Spielfelds in View
+///////////////////////////////////////////////////
 
-
+  /**
+   * Startet Update des Spielfelds.
+   */
   void startLoop() {
     querySelector(".main-container").children.clear();
     _resetSpeech();
@@ -97,11 +158,34 @@ class View {
     resumeLoop();
   }
 
+  /**
+   * Pausiert Update des Spielfelds.
+   */
+  void pauseLoop(){
+    gameFieldUpdateTimer.cancel();
+  }
 
+  /**
+   * Setzt Update des Spielfelds fort, falls das Update frueher pausiert wurde.
+   */
+  void resumeLoop(){
+    gameFieldUpdateTimer = new Timer.periodic(new Duration(milliseconds: delay), (t) {
+      updateField();
+    });
+
+  }
+
+////////////////////////////////////////////////////
+// Update des Spielfelds und der Sprechblase
+///////////////////////////////////////////////////
+
+  /**
+   * Updated die HTML-Tabelle und Sprechblase fuer alle Aenderungen auf
+   * dem Spielfeld im Model.
+   */
   void updateField(){
-      htmlTable =
-          querySelector(".main-container").children.first.children.first;
-      rows = htmlTable.children;
+      htmlGamefield = querySelector(".main-container").children.first.children.first;
+      rows = htmlGamefield.children;
       for (int i = 0; i < rows.length; i++) {
         cols = rows[i].children;
         for (int j = 0; j < cols.length; j++) {
@@ -109,10 +193,11 @@ class View {
               model.level.gamefield.gameField[i + 1][j + 1].ground.type);
         }
       }
+
       if (model.currentLevel == 0 && tutorialSubgoals.length != 0) {
-        updateTutorialSpeech();
+        _updateTutorialSpeech();
       } else {
-        updateLevelStatSpeech();
+        _updateLevelStatSpeech();
       }
 
       model.level.gamefield.moveables.forEach((m) {
@@ -133,19 +218,11 @@ class View {
       });
     }
 
-  void pauseLoop(){
-    timer.cancel();
-  }
-
-  void resumeLoop(){
-    timer = new Timer.periodic(new Duration(milliseconds: delay), (t) {
-      updateField();
-    });
-
-  }
-
-
-  void updateTutorialSpeech() {
+  /**
+   * Aendert die Sprechblase im Tutorial-Level abhaengig von der Position des
+   * Panzers auf dem Spielfeld.
+   */
+  void _updateTutorialSpeech() {
     Point playerPos = model.level.player.positions[0][0];
     document.getElementById("speech").style.fontSize = "1.6vh";
 
@@ -183,10 +260,16 @@ class View {
       speechText.removeAt(0);
       return;
     }
-    higlightTutorialSubgoal(tutorialSubgoals[0]);
+
+    _higlightTutorialSubgoal(tutorialSubgoals[0]);
   }
 
-  void higlightTutorialSubgoal(Point postion) {
+
+  /**
+   * Markiert den Quadrat rund um der gegebenen Position mit einer CSS-Animation.
+   * @param Point die linke obere Position des Quadrats.
+   */
+  void _higlightTutorialSubgoal(Point postion) {
     rows[postion.y].children.elementAt(postion.x).setAttribute("class", "bg-road invalid");
     rows[postion.y].children.elementAt(postion.x + 1).setAttribute("class", "bg-road invalid");
     rows[postion.y + 1].children.elementAt(postion.x).setAttribute("class", "bg-road invalid");
@@ -194,66 +277,163 @@ class View {
 
   }
 
-  void updateLevelStatSpeech() {
+  /**
+   * Aktualisiert die Statistik (Lebenspunkte, Gegneranzahl, Gewinnpunkten).
+   */
+  void _updateLevelStatSpeech() {
+
     document.getElementById("speech").children.clear();
     document.getElementById("speech").text = "Lebenspunkte:";
     document.getElementById("speech").style.fontSize = "2vh";
     document.getElementById("speech").style.marginBottom = "0";
+
     document.getElementById("scoreStat").style.fontSize = "2vh";
     document.getElementById("scoreStat").style.marginBottom = "2vh";
     document.getElementById("scoreStat").text = "Erreichte Punkte: " + model.score.toString();
-    for (int i = 0; i < model.level.player.health; i++) {
-      var  health = new SpanElement();
-      health.setAttribute("class", "fa fa-heart");
-      health.style.paddingLeft = "1vh";
-      document.getElementById("speech").children.add(health);
-    }
 
     document.getElementById("enemiesStat").children.clear();
     document.getElementById("enemiesStat").text = "Verbliebende Gegner: ";
     document.getElementById("enemiesStat").style.fontSize = "2vh";
     document.getElementById("enemiesStat").style.marginBottom = "0";
+
+
+    for (int i = 0; i < model.level.player.health; i++) {
+      var  healthIcon = new SpanElement();
+      healthIcon.setAttribute("class", "fa fa-heart");
+      healthIcon.style.paddingLeft = "1vh";
+      document.getElementById("speech").children.add(healthIcon);
+    }
+
     for (int i = 0; i < model.level.gamefield.enemyCount; i++) {
-      var  enemy = new ImageElement();
-      enemy.src = "../img/etc/enemy-stat.png";
-      enemy.style.paddingLeft = "1vh";
-      enemy.style.width = "4vh";
-      document.getElementById("enemiesStat").children.add(enemy);
+      var  enemyIcon = new ImageElement();
+      enemyIcon.src = "../img/etc/enemy-stat.png";
+      enemyIcon.style.paddingLeft = "1vh";
+      enemyIcon.style.width = "4vh";
+      document.getElementById("enemiesStat").children.add(enemyIcon);
     }
   }
 
-
+  /**
+   * Setzt die Kinderelemente der Sprechblase zurueck.
+   */
   void _resetSpeech() {
     document.getElementById("speech").children.clear();
     document.getElementById("enemiesStat").children.clear();
     document.getElementById("speech").setAttribute("style", "");
   }
 
-  void showCongrats() {
+////////////////////////////////////////////////////
+// Modal fuer Gewinnen/Verlieren/naechter Level
+///////////////////////////////////////////////////
+
+  /**
+   * Laedt die Information ueber Sieg in das Modallfenster.
+   * Die fuer dieses Modalfenster unnoetigen Elemente werden versteckt.
+   */
+  void showWin() {
     var winContainer = new Element.p();
     var scoreContainer = new Element.p();
+    var winImg = new ImageElement();
+
 
     scoreContainer.text = "Du hast " + model.score.toString() + " Punkte erreicht";
     scoreContainer.style.fontSize = "2.5vh";
     scoreContainer.setAttribute("class", "top-secret-font text-center");
 
-    var loseImg = new ImageElement();
-    loseImg.src = "../img/etc/win-banner.png";
-    loseImg.style.width = "100%";
+
+    winImg.src = "../img/etc/win-banner.png";
+    winImg.style.width = "100%";
+
+    winContainer.children.add(winImg);
+
     modal.modalFooter.style.border = "0";
-    winContainer.children.add(loseImg);
+
     modal.setModalbodyChildren(winContainer);
     modal.setModalbodyChildren(scoreContainer);
+
     modal.hideHeader();
     modal.showModalFooter();
     modal.backToMenuBtn.style.display = "block";
     modal.showModal();
   }
 
-  static void showCredits() {
-    //Todo showCredits
-    //Todo addListeners
+  /**
+   * Laedt die Information ueber Niederlage in das Modallfenster.
+   * Die fuer dieses Modalfenster unnoetigen Elemente werden versteckt.
+   */
+  void showLose() {
+    var loseContainer = new Element.p();
+    var scoreContainer = new Element.p();
+    var loseImg = new ImageElement();
+
+    scoreContainer.text = "Du hast " + model.score.toString() + " Punkte erreicht";
+    scoreContainer.style.fontSize = "2.5vh";
+    scoreContainer.setAttribute("class", "top-secret-font text-center");
+
+    loseImg.src = "../img/etc/lose-banner.png";
+    loseImg.style.width = "100%";
+
+    loseContainer.children.add(loseImg);
+
+    modal.modalFooter.style.border = "0";
+
+    modal.setModalbodyChildren(loseContainer);
+    modal.setModalbodyChildren(scoreContainer);
+
+    modal.hideHeader();
+    modal.showModalFooter();
+    modal.backToMenuBtn.style.display = "block";
+    modal.showModal();
   }
+
+  /**
+   * Laedt die Levelnummer in das Modallefenster.
+   * Die fuer dieses Modalfenster unnoetigen Elemente werden versteckt.
+   */
+  void showLoading() {
+    modal.modalWrapper.style.backgroundColor = "orange";
+    modal.modalWrapper.setAttribute("class", "modal bg-img");
+
+    modal.modalHeader.style.border = "0";
+
+    modal.modalBody.style.backgroundColor = "black";
+    modal.modalBody.style.color = "white";
+    modal.modalBody.style.fontSize = "5vh";
+    modal.modalBody.setAttribute("class", "modal-body text-center blade-runner-font");
+
+    modal.modalContent.style.border = "5px dotted black";
+
+    modal.modalFooter.style.backgroundColor = "black";
+    modal.modalFooter.style.border = "0";
+    modal.modalFooter.style.background = "black";
+
+    if (model.currentLevel == 0) {
+      modal.modalBody.text = "tutorial";
+    } else {
+      modal.modalBody.text = "level " + model.currentLevel.toString();
+    }
+
+
+    modal.backToMenuBtn.style.display = "none";
+    modal.nextBtn.style.display = "none";
+    modal.nextLevelBtn.style.display = "block";
+
+    modal.hideHeader();
+    modal.hideCloseButton();
+    modal.showModalFooter();
+    modal.showModal();
+  }
+
+
+  void hideLosee() {
+    modal.hideModal();
+  }
+
+  void hideLoading() {
+    modal.hideFooter();
+    modal.hideModal();
+  }
+
 
 //////////////////////////////////////////////////////
 //  Main menu
@@ -303,6 +483,7 @@ class View {
 
     modal.modalWrapper.style.backgroundColor = "orange";
     modal.modalWrapper.setAttribute("class", "modal bg-img");
+
 
     modal.hideFooter();
     modal.hideCloseButton();
@@ -588,70 +769,7 @@ var enemies= [
     modal.hideFooter();
   }
 
-  void showLose() {
 
-    var loseContainer = new Element.p();
-    var scoreContainer = new Element.p();
-
-    scoreContainer.text = "Du hast " + model.score.toString() + " Punkte erreicht";
-    scoreContainer.style.fontSize = "2.5vh";
-    scoreContainer.setAttribute("class", "top-secret-font text-center");
-
-    var loseImg = new ImageElement();
-    loseImg.src = "../img/etc/lose-banner.png";
-    loseImg.style.width = "100%";
-    modal.modalFooter.style.border = "0";
-    loseContainer.children.add(loseImg);
-    modal.setModalbodyChildren(loseContainer);
-    modal.setModalbodyChildren(scoreContainer);
-    modal.hideHeader();
-    modal.showModalFooter();
-    modal.backToMenuBtn.style.display = "block";
-    modal.showModal();
-  }
-
-  void hideLosee() {
-    modal.hideModal();
-  }
-
-  void showLoading() {
-    modal.backToMenuBtn.style.display = "none";
-    modal.nextBtn.style.display = "none";
-    modal.nextLevelBtn.style.display = "block";
-
-    modal.modalBody.style.backgroundColor = "black";
-    modal.modalContent.style.border = "5px dotted black";
-    modal.modalFooter.style.background = "black";
-
-    modal.modalHeader.style.border = "0";
-    modal.modalWrapper.style.backgroundColor = "orange";
-    modal.modalWrapper.setAttribute("class", "modal bg-img");
-
-    modal.modalBody.style.color = "white";
-    modal.modalBody.style.fontSize = "5vh";
-    modal.modalBody.setAttribute("class", "modal-body text-center blade-runner-font");
-    if (model.currentLevel == 0) {
-      modal.modalBody.text = "tutorial";
-    } else {
-      modal.modalBody.text = "level " + model.currentLevel.toString();
-    }
-
-
-
-    modal.modalFooter.style.backgroundColor = "black";
-    modal.modalFooter.style.border = "0";
-
-
-    modal.hideHeader();
-    modal.hideCloseButton();
-    modal.showModalFooter();
-    modal.showModal();
-  }
-
-  void hideLoading() {
-    modal.hideFooter();
-    modal.hideModal();
-  }
 
 
 

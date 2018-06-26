@@ -461,7 +461,7 @@ if(b>c)throw H.c(P.b5(b,null,null))
 if(c>a.length)throw H.c(P.b5(c,null,null))
 return a.substring(b,c)},
 cT:function(a,b){return this.bD(a,b,null)},
-eI:function(a){return a.toLowerCase()},
+eK:function(a){return a.toLowerCase()},
 aB:function(a,b){var z,y
 if(typeof b!=="number")return H.m(b)
 if(0>=b)return""
@@ -471,7 +471,7 @@ for(z=a,y="";!0;){if((b&1)===1)y=z+y
 b=b>>>1
 if(b===0)break
 z+=z}return y},
-e_:function(a,b,c){if(c>a.length)throw H.c(P.ab(c,0,a.length,null,null))
+e1:function(a,b,c){if(c>a.length)throw H.c(P.ab(c,0,a.length,null,null))
 return H.km(a,b,c)},
 j:function(a){return a},
 gE:function(a){var z,y,x
@@ -711,11 +711,11 @@ $0:function(){this.b.$2(this.a.a,null)}},
 j9:{"^":"d;a,b,c,d,e,f,r,x,y,z,Q,ch,cx",t:{
 ja:function(a){var z=P.aM(["command","print","msg",a])
 return new H.ay(!0,P.aO(null,P.t)).K(z)}}},
-cc:{"^":"d;a,b,c,ek:d<,e0:e<,f,r,x,y,z,Q,ch,cx,cy,db,dx",
+cc:{"^":"d;a,b,c,em:d<,e2:e<,f,r,x,y,z,Q,ch,cx,cy,db,dx",
 ca:function(a,b){if(!this.f.v(0,a))return
 if(this.Q.w(0,b)&&!this.y)this.y=!0
 this.bi()},
-eA:function(a){var z,y,x,w,v,u
+eC:function(a){var z,y,x,w,v,u
 if(!this.y)return
 z=this.Q
 z.ab(0,a)
@@ -730,7 +730,7 @@ y.b=w
 if(w<0||w>=u)return H.a(v,w)
 v[w]=x
 if(w===y.c)y.bO();++y.d}this.y=!1}this.bi()},
-dS:function(a,b){var z,y,x
+dU:function(a,b){var z,y,x
 if(this.ch==null)this.ch=[]
 for(z=J.o(a),y=0;x=this.ch,y<x.length;y+=2)if(z.v(a,x[y])){z=this.ch
 x=y+1
@@ -738,7 +738,7 @@ if(x>=z.length)return H.a(z,x)
 z[x]=b
 return}x.push(a)
 this.ch.push(b)},
-ez:function(a){var z,y,x
+eB:function(a){var z,y,x
 if(this.ch==null)return
 for(z=J.o(a),y=0;x=this.ch,y<x.length;y+=2)if(z.v(a,x[y])){z=this.ch
 x=y+2
@@ -749,14 +749,14 @@ z.splice(y,x-y)
 return}},
 cN:function(a,b){if(!this.r.v(0,a))return
 this.db=b},
-eb:function(a,b,c){var z=J.o(b)
+ed:function(a,b,c){var z=J.o(b)
 if(!z.v(b,0))z=z.v(b,1)&&!this.cy
 else z=!0
 if(z){J.aH(a,c)
 return}z=this.cx
 if(z==null){z=P.bW(null,null)
 this.cx=z}z.U(new H.j0(a,c))},
-ea:function(a,b){var z
+ec:function(a,b){var z
 if(!this.r.v(0,a))return
 z=J.o(b)
 if(!z.v(b,0))z=z.v(b,1)&&!this.cy
@@ -764,8 +764,8 @@ else z=!0
 if(z){this.bm()
 return}z=this.cx
 if(z==null){z=P.bW(null,null)
-this.cx=z}z.U(this.gem())},
-ec:function(a,b){var z,y,x
+this.cx=z}z.U(this.geo())},
+ee:function(a,b){var z,y,x
 z=this.dx
 if(z.a===0){if(this.db===!0&&this===init.globalState.e)return
 if(self.console&&self.console.error)self.console.error(a,b)
@@ -784,11 +784,11 @@ x=this.cy
 this.cy=!0
 try{y=a.$0()}catch(u){w=H.A(u)
 v=H.U(u)
-this.ec(w,v)
+this.ee(w,v)
 if(this.db===!0){this.bm()
 if(this===init.globalState.e)throw u}}finally{this.cy=x
 init.globalState.d=z
-if(z!=null)$=z.gek()
+if(z!=null)$=z.gem()
 if(this.cx!=null)for(;t=this.cx,!t.gR(t);)this.cx.cq().$0()}return y},
 cn:function(a){return this.b.h(0,a)},
 bF:function(a,b){var z=this.b
@@ -808,15 +808,15 @@ this.dx.I(0)
 if(this.ch!=null){for(x=0;z=this.ch,y=z.length,x<y;x+=2){w=z[x]
 v=x+1
 if(v>=y)return H.a(z,v)
-J.aH(w,z[v])}this.ch=null}},"$0","gem",0,0,2]},
+J.aH(w,z[v])}this.ch=null}},"$0","geo",0,0,2]},
 j0:{"^":"b:2;a,b",
 $0:function(){J.aH(this.a,this.b)}},
 iH:{"^":"d;a,b",
-e4:function(){var z=this.a
+e6:function(){var z=this.a
 if(z.b===z.c)return
 return z.cq()},
 cv:function(){var z,y,x
-z=this.e4()
+z=this.e6()
 if(z==null){if(init.globalState.e!=null)if(init.globalState.z.an(init.globalState.e.a))if(init.globalState.r===!0){y=init.globalState.e.b
 y=y.gR(y)}else y=!1
 else y=!1
@@ -829,7 +829,7 @@ if(x){y=y.Q
 x=P.aM(["command","close"])
 x=new H.ay(!0,new P.dU(0,null,null,null,null,null,0,[null,P.t])).K(x)
 y.toString
-self.postMessage(x)}return!1}z.ex()
+self.postMessage(x)}return!1}z.ez()
 return!0},
 c1:function(){if(self.window!=null)new H.iI(this).$0()
 else for(;this.cv(););},
@@ -846,7 +846,7 @@ iI:{"^":"b:2;a",
 $0:function(){if(!this.a.cv())return
 P.ds(C.y,this)}},
 b9:{"^":"d;a,b,c",
-ex:function(){var z=this.a
+ez:function(){var z=this.a
 if(z.y){z.z.push(this)
 return}z.ap(this.b)}},
 j8:{"^":"d;"},
@@ -869,20 +869,20 @@ if(z==null)return
 y=this.b
 if(y.gbS())return
 x=H.jB(b)
-if(z.ge0()===y){y=J.w(x)
+if(z.ge2()===y){y=J.w(x)
 switch(y.h(x,0)){case"pause":z.ca(y.h(x,1),y.h(x,2))
 break
-case"resume":z.eA(y.h(x,1))
+case"resume":z.eC(y.h(x,1))
 break
-case"add-ondone":z.dS(y.h(x,1),y.h(x,2))
+case"add-ondone":z.dU(y.h(x,1),y.h(x,2))
 break
-case"remove-ondone":z.ez(y.h(x,1))
+case"remove-ondone":z.eB(y.h(x,1))
 break
 case"set-errors-fatal":z.cN(y.h(x,1),y.h(x,2))
 break
-case"ping":z.eb(y.h(x,1),y.h(x,2),y.h(x,3))
+case"ping":z.ed(y.h(x,1),y.h(x,2),y.h(x,3))
 break
-case"kill":z.ea(y.h(x,1),y.h(x,2))
+case"kill":z.ec(y.h(x,1),y.h(x,2))
 break
 case"getErrors":y=y.h(x,1)
 z.dx.w(0,y)
@@ -1059,13 +1059,13 @@ this.b.push(x)
 y=H.y(this.ao(x),[null])
 y.fixed$length=Array
 return y
-case"map":return this.e7(a)
-case"sendport":return this.e8(a)
+case"map":return this.e9(a)
+case"sendport":return this.ea(a)
 case"raw sendport":if(1>=a.length)return H.a(a,1)
 x=a[1]
 this.b.push(x)
 return x
-case"js-object":return this.e6(a)
+case"js-object":return this.e8(a)
 case"function":if(1>=a.length)return H.a(a,1)
 x=init.globalFunctions[a[1]]()
 this.b.push(x)
@@ -1081,7 +1081,7 @@ u=init.instanceFromClassId(w)
 this.b.push(u)
 this.ao(v)
 return init.initializeEmptyInstance(w,u,v)
-default:throw H.c("couldn't deserialize: "+H.e(a))}},"$1","ge5",2,0,0],
+default:throw H.c("couldn't deserialize: "+H.e(a))}},"$1","ge7",2,0,0],
 ao:function(a){var z,y,x
 z=J.w(a)
 y=0
@@ -1089,7 +1089,7 @@ while(!0){x=z.gi(a)
 if(typeof x!=="number")return H.m(x)
 if(!(y<x))break
 z.q(a,y,this.a4(z.h(a,y)));++y}return a},
-e7:function(a){var z,y,x,w,v,u
+e9:function(a){var z,y,x,w,v,u
 z=a.length
 if(1>=z)return H.a(a,1)
 y=a[1]
@@ -1097,10 +1097,10 @@ if(2>=z)return H.a(a,2)
 x=a[2]
 w=P.cZ()
 this.b.push(w)
-y=J.eu(y,this.ge5()).ax(0)
+y=J.eu(y,this.ge7()).ax(0)
 for(z=J.w(y),v=J.w(x),u=0;u<z.gi(y);++u){if(u>=y.length)return H.a(y,u)
 w.q(0,y[u],this.a4(v.h(x,u)))}return w},
-e8:function(a){var z,y,x,w,v,u,t
+ea:function(a){var z,y,x,w,v,u,t
 z=a.length
 if(1>=z)return H.a(a,1)
 y=a[1]
@@ -1115,7 +1115,7 @@ if(u==null)return
 t=new H.bx(u,x)}else t=new H.cd(y,w,x)
 this.b.push(t)
 return t},
-e6:function(a){var z,y,x,w,v,u,t
+e8:function(a){var z,y,x,w,v,u,t
 z=a.length
 if(1>=z)return H.a(a,1)
 y=a[1]
@@ -1683,8 +1683,8 @@ if(typeof a==="string"){z=this.b
 if(z==null)return!1
 return this.bJ(z,a)}else if(typeof a==="number"&&(a&0x3ffffff)===a){y=this.c
 if(y==null)return!1
-return this.bJ(y,a)}else return this.eh(a)},
-eh:function(a){var z=this.d
+return this.bJ(y,a)}else return this.ej(a)},
+ej:function(a){var z=this.d
 if(z==null)return!1
 return this.as(this.aG(z,this.ar(a)),a)>=0},
 h:function(a,b){var z,y,x
@@ -1694,8 +1694,8 @@ y=this.al(z,b)
 return y==null?null:y.ga6()}else if(typeof b==="number"&&(b&0x3ffffff)===b){x=this.c
 if(x==null)return
 y=this.al(x,b)
-return y==null?null:y.ga6()}else return this.ei(b)},
-ei:function(a){var z,y,x
+return y==null?null:y.ga6()}else return this.ek(b)},
+ek:function(a){var z,y,x
 z=this.d
 if(z==null)return
 y=this.aG(z,this.ar(a))
@@ -1717,8 +1717,8 @@ if(u>=0)v[u].sa6(c)
 else v.push(this.bf(b,c))}}},
 ab:function(a,b){if(typeof b==="string")return this.c0(this.b,b)
 else if(typeof b==="number"&&(b&0x3ffffff)===b)return this.c0(this.c,b)
-else return this.ej(b)},
-ej:function(a){var z,y,x,w
+else return this.el(b)},
+el:function(a){var z,y,x,w
 z=this.d
 if(z==null)return
 y=this.aG(z,this.ar(a))
@@ -2042,31 +2042,31 @@ iy:{"^":"b:1;a",
 $0:function(){--init.globalState.f.b
 this.a.$0()}},
 iC:{"^":"d;$ti",
-dZ:[function(a,b){var z
+e0:[function(a,b){var z
 if(a==null)a=new P.c0()
 z=this.a
 if(z.a!==0)throw H.c(new P.Q("Future already completed"))
 $.n.toString
-z.di(a,b)},function(a){return this.dZ(a,null)},"dY","$2","$1","gdX",2,2,3,0]},
+z.di(a,b)},function(a){return this.e0(a,null)},"e_","$2","$1","gdZ",2,2,3,0]},
 it:{"^":"iC;a,$ti",
-dW:function(a,b){var z=this.a
+dY:function(a,b){var z=this.a
 if(z.a!==0)throw H.c(new P.Q("Future already completed"))
 z.dh(b)}},
 dO:{"^":"d;bg:a<,b,c,d,e",
-gdR:function(){return this.b.b},
+gdT:function(){return this.b.b},
 gcj:function(){return(this.c&1)!==0},
-gef:function(){return(this.c&2)!==0},
+geh:function(){return(this.c&2)!==0},
 gci:function(){return this.c===8},
-ed:function(a){return this.b.b.br(this.d,a)},
-er:function(a){if(this.c!==6)return!0
+ef:function(a){return this.b.b.br(this.d,a)},
+eu:function(a){if(this.c!==6)return!0
 return this.b.b.br(this.d,J.aG(a))},
-e9:function(a){var z,y,x
+eb:function(a){var z,y,x
 z=this.e
 y=J.l(a)
 x=this.b.b
-if(H.aD(z,{func:1,args:[,,]}))return x.eE(z,y.ga5(a),a.gT())
+if(H.aD(z,{func:1,args:[,,]}))return x.eG(z,y.ga5(a),a.gT())
 else return x.br(z,y.ga5(a))},
-ee:function(){return this.b.b.ct(this.d)}},
+eg:function(){return this.b.b.ct(this.d)}},
 Y:{"^":"d;aJ:a<,b,dK:c<,$ti",
 gdA:function(){return this.a===2},
 gbd:function(){return this.a>=4},
@@ -2178,7 +2178,7 @@ P.ax(z.a,b)}r=z.a.c
 x.a=w
 x.b=r
 y=!w
-if(!y||b.gcj()||b.gci()){q=b.gdR()
+if(!y||b.gcj()||b.gci()){q=b.gdT()
 if(w){u=z.a.b
 u.toString
 u=u==null?q==null:u===q
@@ -2196,7 +2196,7 @@ return}p=$.n
 if(p==null?q!=null:p!==q)$.n=q
 else p=null
 if(b.gci())new P.iY(z,x,w,b).$0()
-else if(y){if(b.gcj())new P.iX(x,b,r).$0()}else if(b.gef())new P.iW(z,x,b).$0()
+else if(y){if(b.gcj())new P.iX(x,b,r).$0()}else if(b.geh())new P.iW(z,x,b).$0()
 if(p!=null)$.n=p
 y=x.b
 if(!!J.o(y).$isa3){o=b.b
@@ -2242,7 +2242,7 @@ $0:function(){this.a.ag(this.b,this.c)}},
 iY:{"^":"b:2;a,b,c,d",
 $0:function(){var z,y,x,w,v,u,t
 z=null
-try{z=this.d.ee()}catch(w){y=H.A(w)
+try{z=this.d.eg()}catch(w){y=H.A(w)
 x=H.U(w)
 if(this.c){v=J.aG(this.a.a.c)
 u=y
@@ -2262,7 +2262,7 @@ iZ:{"^":"b:0;a",
 $1:function(a){return this.a}},
 iX:{"^":"b:2;a,b,c",
 $0:function(){var z,y,x,w
-try{this.a.b=this.b.ed(this.c)}catch(x){z=H.A(x)
+try{this.a.b=this.b.ef(this.c)}catch(x){z=H.A(x)
 y=H.U(x)
 w=this.a
 w.b=new P.bd(z,y)
@@ -2271,8 +2271,8 @@ iW:{"^":"b:2;a,b,c",
 $0:function(){var z,y,x,w,v,u,t,s
 try{z=this.a.a.c
 w=this.c
-if(w.er(z)===!0&&w.e!=null){v=this.b
-v.b=w.e9(z)
+if(w.eu(z)===!0&&w.e!=null){v=this.b
+v.b=w.eb(z)
 v.a=!1}}catch(u){y=H.A(u)
 x=H.U(u)
 w=this.a
@@ -2450,7 +2450,7 @@ x=H.aD(y,{func:1,args:[P.d,P.aw]})
 w=z.d
 v=this.b
 u=z.b
-if(x)w.eF(u,v,this.c)
+if(x)w.eH(u,v,this.c)
 else w.bs(u,v)
 z.e=(z.e&4294967263)>>>0}},
 iA:{"^":"b:2;a",
@@ -2572,7 +2572,7 @@ return x}catch(w){z=H.A(w)
 y=H.U(w)
 x=P.aR(null,null,this,z,y)
 return x}},
-eF:function(a,b,c){var z,y,x,w
+eH:function(a,b,c){var z,y,x,w
 try{if(C.c===$.n){x=a.$2(b,c)
 return x}x=P.e0(null,null,this,a,b,c)
 return x}catch(w){z=H.A(w)
@@ -2587,7 +2587,7 @@ ct:function(a){if($.n===C.c)return a.$0()
 return P.e_(null,null,this,a)},
 br:function(a,b){if($.n===C.c)return a.$1(b)
 return P.e1(null,null,this,a,b)},
-eE:function(a,b,c){if($.n===C.c)return a.$2(b,c)
+eG:function(a,b,c){if($.n===C.c)return a.$2(b,c)
 return P.e0(null,null,this,a,b,c)}},
 jg:{"^":"b:1;a,b",
 $0:function(){return this.a.cu(this.b)}},
@@ -2960,7 +2960,7 @@ if(this.b==null)this.c.q(0,b,c)
 else if(this.an(b)){z=this.b
 z[b]=c
 y=this.a
-if(y==null?z!=null:y!==z)y[b]=null}else this.dQ().q(0,b,c)},
+if(y==null?z!=null:y!==z)y[b]=null}else this.dS().q(0,b,c)},
 an:function(a){if(this.b==null)return this.c.an(a)
 if(typeof a!=="string")return!1
 return Object.prototype.hasOwnProperty.call(this.a,a)},
@@ -2976,7 +2976,7 @@ j:function(a){return P.d1(this)},
 b8:function(){var z=this.c
 if(z==null){z=Object.keys(this.a)
 this.c=z}return z},
-dQ:function(){var z,y,x,w,v
+dS:function(){var z,y,x,w,v
 if(this.b==null)return this.c
 z=P.h3(P.I,null)
 y=this.b8()
@@ -2994,10 +2994,10 @@ return this.b[a]=z}},
 eS:{"^":"d;"},
 eZ:{"^":"d;"},
 fT:{"^":"eS;a,b",
-e2:function(a,b){var z=P.jG(a,this.ge3().a)
+e4:function(a,b){var z=P.jG(a,this.ge5().a)
 return z},
-cg:function(a){return this.e2(a,null)},
-ge3:function(){return C.Q}},
+cg:function(a){return this.e4(a,null)},
+ge5:function(){return C.Q}},
 fU:{"^":"eZ;a"}}],["","",,P,{"^":"",
 cO:function(a){if(typeof a==="number"||typeof a==="boolean"||null==a)return J.a1(a)
 if(typeof a==="string")return JSON.stringify(a)
@@ -3211,10 +3211,10 @@ z=W.aZ
 y=new P.Y(0,$.n,null,[z])
 x=new P.it(y,[z])
 w=new XMLHttpRequest()
-C.H.eu(w,"GET",a,!0)
+C.H.ew(w,"GET",a,!0)
 z=W.lp
 W.G(w,"load",new W.fs(x,w),!1,z)
-W.G(w,"error",x.gdX(),!1,z)
+W.G(w,"error",x.gdZ(),!1,z)
 w.send()
 return y},
 P:function(a,b,c){var z=document.createElement("img")
@@ -3302,20 +3302,20 @@ return b},
 gB:function(a){var z=this.ax(this)
 return new J.bK(z,z.length,0,null)},
 I:function(a){J.cp(this.a)},
-cr:function(a){var z=this.gen(this)
+cr:function(a){var z=this.gep(this)
 this.a.removeChild(z)
 return z},
 gC:function(a){var z=this.a.firstElementChild
 if(z==null)throw H.c(new P.Q("No elements"))
 return z},
-gen:function(a){var z=this.a.lastElementChild
+gep:function(a){var z=this.a.lastElementChild
 if(z==null)throw H.c(new P.Q("No elements"))
 return z},
 $asav:function(){return[W.B]},
 $asi:function(){return[W.B]},
 $asf:function(){return[W.B]}},
-B:{"^":"k;ak:style=,bU:namespaceURI=,eG:tagName=",
-gdU:function(a){return new W.iG(a)},
+B:{"^":"k;ak:style=,bU:namespaceURI=,eI:tagName=",
+gdW:function(a){return new W.iG(a)},
 gbk:function(a){return new W.c8(a,a.children)},
 j:function(a){return a.localName},
 J:["b_",function(a,b,c,d){var z,y,x,w,v
@@ -3353,7 +3353,7 @@ for(;z=w.firstChild,z!=null;)v.appendChild(z)}z=$.a9.body
 if(w==null?z!=null:w!==z)J.cu(w)
 c.bw(v)
 document.adoptNode(v)
-return v},function(a,b,c){return this.J(a,b,c,null)},"e1",null,null,"geT",2,5,null,0,0],
+return v},function(a,b,c){return this.J(a,b,c,null)},"e3",null,null,"geT",2,5,null,0,0],
 saq:function(a,b){this.aW(a,b)},
 aX:function(a,b,c,d){a.textContent=null
 a.appendChild(this.J(a,b,c,d))},
@@ -3405,9 +3405,9 @@ $asi:function(){return[W.k]},
 $asf:function(){return[W.k]},
 $isi:1,
 $isf:1},
-aZ:{"^":"fp;eD:responseText=",
+aZ:{"^":"fp;eF:responseText=",
 eU:function(a,b,c,d,e,f){return a.open(b,c,!0,f,e)},
-eu:function(a,b,c,d){return a.open(b,c,d)},
+ew:function(a,b,c,d){return a.open(b,c,d)},
 aC:function(a,b){return a.send(b)},
 $isaZ:1,
 $isd:1,
@@ -3423,12 +3423,12 @@ x=y>=200&&y<300
 w=y>307&&y<400
 y=x||y===0||y===304||w
 v=this.a
-if(y)v.dW(0,z)
-else v.dY(a)}},
+if(y)v.dY(0,z)
+else v.e_(a)}},
 fp:{"^":"aY;","%":";XMLHttpRequestEventTarget"},
 kX:{"^":"u;G:name=","%":"HTMLIFrameElement"},
 kZ:{"^":"u;G:name=",$isB:1,$ish:1,"%":"HTMLInputElement"},
-fV:{"^":"dG;el:keyCode=","%":"KeyboardEvent"},
+fV:{"^":"dG;en:keyCode=","%":"KeyboardEvent"},
 l1:{"^":"u;G:name=","%":"HTMLKeygenElement"},
 l2:{"^":"u;aM:href}","%":"HTMLLinkElement"},
 l3:{"^":"h;",
@@ -3474,11 +3474,11 @@ return z[b]},
 $asav:function(){return[W.k]},
 $asi:function(){return[W.k]},
 $asf:function(){return[W.k]}},
-k:{"^":"aY;ev:parentNode=,ew:previousSibling=,aw:textContent}",
-ges:function(a){return new W.T(a)},
-ey:function(a){var z=a.parentNode
+k:{"^":"aY;ex:parentNode=,ey:previousSibling=,aw:textContent}",
+gev:function(a){return new W.T(a)},
+eA:function(a){var z=a.parentNode
 if(z!=null)z.removeChild(a)},
-eC:function(a,b){var z,y
+eE:function(a,b){var z,y
 try{z=a.parentNode
 J.em(z,b,a)}catch(y){H.A(y)}return a},
 b6:function(a){var z
@@ -3543,8 +3543,8 @@ new W.T(y).W(0,J.ep(z))
 return y},
 "%":"HTMLTableElement"},
 b7:{"^":"u;",
-gdV:function(a){return new W.Z(a.cells,[W.i0])},
-eg:function(a,b){return a.insertCell(b)},
+gdX:function(a){return new W.Z(a.cells,[W.i0])},
+ei:function(a,b){return a.insertCell(b)},
 J:function(a,b,c,d){var z,y,x,w
 if("createContextualFragment" in window.Range.prototype)return this.b_(a,b,c,d)
 z=document
@@ -3590,7 +3590,7 @@ $isdp:1,
 "%":"HTMLTemplateElement"},
 ly:{"^":"u;G:name=,a1:rows=","%":"HTMLTextAreaElement"},
 am:{"^":"h;",$isd:1,"%":"Touch"},
-ii:{"^":"dG;eJ:touches=","%":"TouchEvent"},
+ii:{"^":"dG;eL:touches=","%":"TouchEvent"},
 ij:{"^":"fB;",
 gi:function(a){return a.length},
 h:function(a,b){if(b>>>0!==b||b>=a.length)throw H.c(P.aa(b,a,null,null,null))
@@ -3793,8 +3793,8 @@ aj:function(a){return this.a.F(0,W.aJ(a))},
 a3:["d0",function(a,b,c){var z,y
 z=W.aJ(a)
 y=this.c
-if(y.F(0,H.e(z)+"::"+b))return this.d.dT(c)
-else if(y.F(0,"*::"+b))return this.d.dT(c)
+if(y.F(0,H.e(z)+"::"+b))return this.d.dV(c)
+else if(y.F(0,"*::"+b))return this.d.dV(c)
 else{y=this.b
 if(y.F(0,H.e(z)+"::"+b))return!0
 else if(y.F(0,"*::"+b))return!0
@@ -3947,9 +3947,9 @@ J.ev(z.b.$1(J.a7(z.a,b)),c)},
 si:function(a,b){var z=J.C(this.ga2().a)
 if(b>=z)return
 else if(b<0)throw H.c(P.aW("Invalid list length"))
-this.eB(0,b,z)},
+this.eD(0,b,z)},
 w:function(a,b){this.b.a.appendChild(b)},
-eB:function(a,b,c){var z=this.ga2()
+eD:function(a,b,c){var z=this.ga2()
 z=H.hM(z,b,H.x(z,"L",0))
 C.a.p(P.aN(H.i2(z,c-b,H.x(z,"L",0)),!0,null),new P.fg())},
 I:function(a){J.cp(this.b.a)},
@@ -4002,7 +4002,7 @@ c=new W.dX(new W.da(z))
 y='<svg version="1.1">'+b+"</svg>"
 z=document
 x=z.body
-w=(x&&C.m).e1(x,y,c)
+w=(x&&C.m).e3(x,y,c)
 v=z.createDocumentFragment()
 w.toString
 z=new W.T(w)
@@ -4143,56 +4143,58 @@ X.fX(y,z)
 X.fY(y,z)
 this.b.$1(x)}},
 eT:{"^":"d;a,b,c",
-bA:function(){var z,y,x
+bA:function(){var z,y,x,w
 z=this.b
-y=z.e
-x=y.y.style
-x.display="none"
-x=y.x.style
-x.display="none"
-x=y.z.style
-x.display="block"
-x=y.f.style
-x.backgroundColor="black"
-x=y.b.style
-x.border="5px dotted black"
-x=y.r.style
-x.background="black"
-x=y.c.style
-x.border="0"
-y=y.a
+y=z.x.a
 x=y.style
 x.backgroundColor="orange"
 y.setAttribute("class","modal bg-img")
-y=z.e.f
+y=z.x
+x=y.c.style
+x.border="0"
+y=y.f
+x=y.style
+x.backgroundColor="black"
 x=y.style
 x.color="white"
 x=y.style
 x.fontSize="5vh"
 y.setAttribute("class","modal-body text-center blade-runner-font")
-y=z.b.e
-if(y===0)z.e.f.textContent="tutorial"
-else z.e.f.textContent="level "+C.b.j(y)
-z=z.e
-y=z.r
-x=y.style
-x.backgroundColor="black"
-x=y.style
-x.border="0"
-x=z.c.style
-x.display="none"
-x=z.e.style
-x.display="none"
-y=y.style
+y=z.x
+x=y.b.style
+x.border="5px dotted black"
+x=y.r
+w=x.style
+w.backgroundColor="black"
+w=x.style
+w.border="0"
+x=x.style
+x.background="black"
+x=z.c.e
+y=y.f
+if(x===0)y.textContent="tutorial"
+else y.textContent="level "+C.b.j(x)
+z=z.x
+y=z.y.style
+y.display="none"
+y=z.x.style
+y.display="none"
+y=z.z.style
+y.display="block"
+y=z.c.style
+y.display="none"
+y=z.e.style
+y.display="none"
+y=z.r.style
 y.display="block"
 z=z.a.style
 z.display="block"
-this.a.eq().ac(new X.eX(this)).ac(new X.eY(this))},
+this.a.es().ac(new X.eX(this)).ac(new X.eY(this))},
 at:function(){this.b.cs()
 this.c.e=!0
 this.a.bB()},
 a_:function(a){var z
-this.b.x.L()
+this.b.b.L()
 this.c.e=!1
 z=this.a
 z.z=!1
@@ -4201,80 +4203,82 @@ d1:function(){var z,y
 z=new X.fi(35,null,null,0,0,P.W(null,null,null,null),0,new X.eV(this),0,!1)
 this.a=z
 y=[null]
-y=new X.im(25,z,this,null,null,null,null,null,0,[new P.F(0,22,y),new P.F(4,22,y),new P.F(18,14,y),new P.F(4,11,y),new P.F(22,7,y),new P.F(14,7,y)],['Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels.Du kannst jederzeit die Steuerungs Hilfe mit der Taste (<i class="fa fa-gamepad"></i>) abrufen.Die Inhalte dieses Tutorials und mehr Info zum Spiel findest du unter der Taste (<i class="fa fa-question"></i>).','Perfekt!</br> Achtung! Du hast Stahlhindernis (<img src="../img/fields/bg-steel-field.png">) vor dir! Sie ist nicht zest\xf6rbard, durchfahrbar oder kugeldurchl\xe4ssig! \xdcberhole sie und bewege dich zum n\xe4chsten Ziel!','Gut gemacht!</br> Links von dir liegt ein Wasserhindernis (<img src="../img/fields/bg-water-field.png">)! Sie ist nicht zest\xf6rbard oder durchfahrbar, aber kugeldurchl\xe4ssig.  \xdcberhole sie und bewege dich zum n\xe4chsten Ziel!','Prima!</br> Rechts von dir liegt eine Busche (<img src="../img/fields/bg-bush-field.png">)! Sie ist nicht zest\xf6rbard, aber durchfahrbar und kugeldurchl\xe4ssig. In der Busche sind Panzer versteckt!Fahre Sie durch bis zum n\xe4chsten Ziel!','Hervorragend!</br> Links von dir liegt ein Ziegel (<img src="../img/fields/bg-brick-field.png">)!Er ist zest\xf6rbard, nicht durchfahrbar oder kugeldurchl\xe4ssig Zerst\xf6re ihn und bewege dich zum n\xe4chsten Ziel!',"Ich sehe den Gegner auf der anderen Seite Mit einem Tap auf dem Bildschrirm kannst du schie\xdfen. Zerst\xf6re das gegnerische Fahrzeug!!!"])
-y.e=X.ho()
+y=new X.im(25,null,z,this,null,null,null,null,0,[new P.F(0,22,y),new P.F(4,22,y),new P.F(18,14,y),new P.F(4,11,y),new P.F(22,7,y),new P.F(14,7,y)],['Willcomen in Battle City. In diesem Tutoriallevel lernst du die Gundlagen des Spiels.Du kannst jederzeit die Steuerungs Hilfe mit der Taste (<i class="fa fa-gamepad"></i>) abrufen.Die Inhalte dieses Tutorials und mehr Info zum Spiel findest du unter der Taste (<i class="fa fa-question"></i>).','Perfekt!</br> Achtung! Du hast Stahlhindernis (<img src="../img/fields/bg-steel-field.png">) vor dir! Sie ist nicht zest\xf6rbard, durchfahrbar oder kugeldurchl\xe4ssig! \xdcberhole sie und bewege dich zum n\xe4chsten Ziel!','Gut gemacht!</br> Links von dir liegt ein Wasserhindernis (<img src="../img/fields/bg-water-field.png">)! Sie ist nicht zest\xf6rbard oder durchfahrbar, aber kugeldurchl\xe4ssig.  \xdcberhole sie und bewege dich zum n\xe4chsten Ziel!','Prima!</br> Rechts von dir liegt eine Busche (<img src="../img/fields/bg-bush-field.png">)! Sie ist nicht zest\xf6rbard, aber durchfahrbar und kugeldurchl\xe4ssig. In der Busche sind Panzer versteckt!Fahre Sie durch bis zum n\xe4chsten Ziel!','Hervorragend!</br> Links von dir liegt ein Ziegel (<img src="../img/fields/bg-brick-field.png">)!Er ist zest\xf6rbard, nicht durchfahrbar oder kugeldurchl\xe4ssig Zerst\xf6re ihn und bewege dich zum n\xe4chsten Ziel!',"Ich sehe den Gegner auf der anderen Seite Mit einem Tap auf dem Bildschrirm kannst du schie\xdfen. Zerst\xf6re das gegnerische Fahrzeug!!!"])
+y.x=X.ho()
 this.b=y
 y=new X.h5(this,null,null,this.a,!0,0,null,null)
 y.dO()
 y.e=!1
 this.c=y
-this.a.ep().ac(new X.eW(this))},
+this.a.er().ac(new X.eW(this))},
 t:{
 eU:function(){var z=new X.eT(null,null,null)
 z.d1()
 return z}}},
 eV:{"^":"b:5;a",
-$1:function(a){var z,y,x,w,v,u,t
+$1:function(a){var z,y,x,w,v,u,t,s,r
 z=this.a
-z.b.x.L()
+z.b.b.L()
 z.c.e=!1
 if(a==="lose"){z.a.e=1
 y=z.b
 y.toString
 x=W.ad("p",null)
 w=W.ad("p",null)
-v=J.l(w)
-v.saw(w,"Du hast "+C.j.j(y.b.y)+" Punkte erreicht")
-v=v.gak(w)
-v.fontSize="2.5vh"
+v=W.P(null,null,null)
+u=J.l(w)
+u.saw(w,"Du hast "+C.j.j(y.c.y)+" Punkte erreicht")
+u=u.gak(w)
+u.fontSize="2.5vh"
 w.setAttribute("class","top-secret-font text-center")
-u=W.P(null,null,null)
-u.src="../img/etc/lose-banner.png"
-v=u.style
-v.width="100%"
-v=y.e.r.style
-v.border="0"
-J.ae(J.q(x),u)
-y.e.f.appendChild(x)
-y.e.f.appendChild(w)
-y=y.e
-v=y.c.style
-v.display="none"
-v=y.r.style
-v.display="block"
-v=y.y.style
-v.display="block"
+v.src="../img/etc/lose-banner.png"
+u=v.style
+u.width="100%"
+J.ae(J.q(x),v)
+u=y.x
+t=u.r.style
+t.border="0"
+u.f.appendChild(x)
+y.x.f.appendChild(w)
+y=y.x
+u=y.c.style
+u.display="none"
+u=y.r.style
+u.display="block"
+u=y.y.style
+u.display="block"
 y=y.a.style
 y.display="block"
 z.a.y=0}else if(a==="win"){y=z.a
-v=y.e
+u=y.e
 y=y.d
 if(typeof y!=="number")return H.m(y)
-if(v>=y){y=z.b
+if(u>=y){y=z.b
 y.toString
-t=W.ad("p",null)
+s=W.ad("p",null)
 w=W.ad("p",null)
-v=J.l(w)
-v.saw(w,"Du hast "+C.j.j(y.b.y)+" Punkte erreicht")
-v=v.gak(w)
-v.fontSize="2.5vh"
+r=W.P(null,null,null)
+u=J.l(w)
+u.saw(w,"Du hast "+C.j.j(y.c.y)+" Punkte erreicht")
+u=u.gak(w)
+u.fontSize="2.5vh"
 w.setAttribute("class","top-secret-font text-center")
-u=W.P(null,null,null)
-u.src="../img/etc/win-banner.png"
-v=u.style
-v.width="100%"
-v=y.e.r.style
-v.border="0"
-J.ae(J.q(t),u)
-y.e.f.appendChild(t)
-y.e.f.appendChild(w)
-y=y.e
-v=y.c.style
-v.display="none"
-v=y.r.style
-v.display="block"
-v=y.y.style
-v.display="block"
+r.src="../img/etc/win-banner.png"
+u=r.style
+u.width="100%"
+J.ae(J.q(s),r)
+u=y.x
+t=u.r.style
+t.border="0"
+u.f.appendChild(s)
+y.x.f.appendChild(w)
+y=y.x
+u=y.c.style
+u.display="none"
+u=y.r.style
+u.display="block"
+u=y.y.style
+u.display="block"
 y=y.a.style
 y.display="block"
 z.a.e=1}else z.bA()}}},
@@ -4292,10 +4296,10 @@ J.q(x.querySelector(".main-container")).I(0)
 J.q(x.getElementById("speech")).I(0)
 J.q(x.getElementById("enemiesStat")).I(0)
 x.getElementById("speech").setAttribute("style","")
-w=y.b
+w=y.c
 if(w.e===0)x.getElementById("lvlTitle").textContent="Tutorial"
 else x.getElementById("lvlTitle").textContent="level "+C.b.j(w.e)
-J.q(x.querySelector(".main-container")).w(0,y.eH(w))
+J.q(x.querySelector(".main-container")).w(0,y.eJ(w))
 y.cs()
 z.c.e=!0
 z.a.bB()}},
@@ -4326,10 +4330,10 @@ y=J.af(z.getElementById("nextLvl"))
 W.G(y.a,y.b,new X.hf(this),!1,H.J(y,0))
 y=this.a
 x=W.d2
-W.G(y.b.e.x,"click",new X.hg(this),!1,x)
+W.G(y.b.x.x,"click",new X.hg(this),!1,x)
 w=J.af(z.getElementById("qr"))
 W.G(w.a,w.b,new X.hh(this),!1,H.J(w,0))
-W.G(y.b.e.e,"click",new X.hi(this),!1,x)
+W.G(y.b.x.e,"click",new X.hi(this),!1,x)
 z=J.af(z.getElementById("backToMenuBtn"))
 W.G(z.a,z.b,new X.hj(this),!1,H.J(z,0))}},
 h6:{"^":"b:0;a",
@@ -4382,9 +4386,9 @@ ha:{"^":"b:0;a",
 $1:function(a){var z,y,x
 z=this.a.a
 y=z.b
-x=y.e.c
+x=y.x.c
 new W.c8(x,x.children).cr(0)
-y=y.e
+y=y.x
 y.a0()
 y=y.a.style
 y.display="none"
@@ -4394,14 +4398,14 @@ hb:{"^":"b:0;a",
 $1:function(a){var z,y,x,w,v
 z=this.a.a
 y=z.b
-x=y.e.c
+x=y.x.c
 new W.c8(x,x.children).cr(0)
-y=y.e
+y=y.x
 y.a0()
 y=y.a.style
 y.display="none"
 z=z.b
-y=z.e
+y=z.x
 x=y.c.style
 x.textAlign="center"
 y=y.d
@@ -4410,7 +4414,7 @@ y=y.style
 y.fontFamily="top-secret"
 w=W.P(null,null,null)
 w.src="../img/qr.svg"
-y=z.e
+y=z.x
 x=y.c
 v=x.style
 v.padding="4vh"
@@ -4422,8 +4426,8 @@ y=y.a
 x=y.style
 x.backgroundColor="orange"
 y.setAttribute("class","modal bg-img")
-z.e.f.appendChild(w)
-z=z.e
+z.x.f.appendChild(w)
+z=z.x
 y=z.e.style
 y.display="none"
 y=z.a.style
@@ -4436,7 +4440,7 @@ hc:{"^":"b:0;a",
 $1:function(a){var z,y,x,w
 z=this.a.a
 y=z.b
-x=y.e
+x=y.x
 x.d.textContent="Das Spiel ist pausiert"
 x=x.f
 x.textContent="Pause"
@@ -4448,7 +4452,7 @@ x=x.style
 x.textAlign="center"
 x=J.q(document.getElementById("pause"))
 J.D(x.gC(x),"class","nav-link btn btn-primary ml-1")
-y=y.e
+y=y.x
 x=y.c.style
 x.display="none"
 x=y.z.style
@@ -4471,7 +4475,7 @@ z.a_(0)}},
 hf:{"^":"b:0;a",
 $1:function(a){var z,y,x
 z=this.a.a
-y=z.b.e
+y=z.b.x
 x=y.r.style
 x.display="none"
 y.a0()
@@ -4485,13 +4489,13 @@ hh:{"^":"b:0;a",
 $1:function(a){var z,y,x,w
 z=this.a.a
 y=z.b
-y.e.d.textContent="Teile unser spiel mit!"
+y.x.d.textContent="Teile unser spiel mit!"
 x=J.q(document.getElementById("qr"))
 J.D(x.gC(x),"class","nav-link btn btn-primary ml-1")
 w=W.P(null,null,null)
 w.src="../img/qr.svg"
-y.e.f.appendChild(w)
-y=y.e
+y.x.f.appendChild(w)
+y=y.x
 x=y.e.style
 x.display="block"
 y=y.a.style
@@ -4505,7 +4509,7 @@ y.toString
 x=document
 w=J.q(x.getElementById("controlls"))
 J.D(w.gC(w),"class","nav-link btn btn-secondary ml-1")
-y=y.e
+y=y.x
 y.a0()
 y=y.a.style
 y.display="none"
@@ -4513,7 +4517,7 @@ y=z.b
 y.toString
 w=J.q(x.getElementById("qr"))
 J.D(w.gC(w),"class","nav-link btn btn-secondary ml-1")
-y=y.e
+y=y.x
 y.a0()
 y=y.a.style
 y.display="none"
@@ -4521,26 +4525,26 @@ y=z.b
 y.y=0
 x=J.q(x.getElementById("help"))
 J.D(x.gC(x),"class","nav-link btn btn-secondary ml-1")
-y=y.e.r.style
+y=y.x.r.style
 y.display="none"
 z.b.cl()
 z.at()}},
 hj:{"^":"b:0;a",
 $1:function(a){var z,y
 z=this.a.a
-y=z.b.e
+y=z.b.x
 y.a0()
 y=y.a.style
 y.display="none"
 z.b.by()
 z.c.bC()}},
 fi:{"^":"d;a,b,c,d,e,f,r,x,y,z",
-ep:function(){return W.cU("../json/meta.json",null,null).aQ(new X.fl(this))},
-eq:function(){return X.fZ(this.e,this,new X.fm(this))},
+er:function(){return W.cU("../json/meta.json",null,null).aQ(new X.fl(this))},
+es:function(){return X.fZ(this.e,this,new X.fm(this))},
 bB:function(){if(this.z)return
 this.z=!0
 this.c=P.dt(P.bP(0,0,0,this.a,0,0),new X.fn(this))},
-eo:function(){var z,y,x,w,v,u,t
+eq:function(){var z,y,x,w,v,u,t
 for(z=0;y=this.b.e.d,z<y.length;++z)y[z].aN(this.r)
 for(z=0;z<this.f.a;++z){for(x=0;x<this.f.D(0,z).gaP().length;++x){w=0
 while(!0){y=this.f.D(0,z).gaP()
@@ -4571,7 +4575,7 @@ $1:function(a){this.a.d=J.j(C.B.cg(a),"lvlCount")}},
 fm:{"^":"b:0;a",
 $1:function(a){this.a.b=a}},
 fn:{"^":"b:0;a",
-$1:function(a){this.a.eo()}},
+$1:function(a){this.a.eq()}},
 fj:{"^":"d;a,b,c,d,e,f",
 A:function(a){var z,y,x
 z=this.c
@@ -5157,7 +5161,7 @@ ho:function(){var z=new X.hn(null,null,null,null,null,null,null,null,null,null)
 z.d4()
 return z}}},
 im:{"^":"d;a,b,c,d,e,a1:f>,r,x,y,z,Q",
-eH:function(a){var z,y,x,w,v,u,t,s
+eJ:function(a){var z,y,x,w,v,u,t,s
 z=document.createElement("table")
 y=C.l.bK(z)
 x=J.l(y)
@@ -5193,23 +5197,23 @@ if(w>=s.length)return H.a(s,w)
 J.D(v,"class","bg-"+s[w].r)}z.setAttribute("class","bg-black")
 z.id="gamefield"
 return z},
-eK:function(){var z,y,x,w,v
+cs:function(){this.b=P.dt(P.bP(0,0,0,this.a,0,0),new X.io(this))},
+eM:function(){var z,y,x,w,v
 z=J.q(document.querySelector(".main-container"))
 z=J.en(J.q(z.gC(z)))
-this.d=z
+this.e=z
 this.f=J.q(z)
-for(z=this.b,y=0;y<J.C(this.f);){this.r=J.q(J.j(this.f,y))
+for(z=this.c,y=0;y<J.C(this.f);){this.r=J.q(J.j(this.f,y))
 for(++y,x=0;x<J.C(this.r);){w=J.j(this.r,x)
 v=z.b.e.c
 if(y>=v.length)return H.a(v,y)
 v=v[y];++x
 if(x>=v.length)return H.a(v,x)
-J.D(w,"class","bg-"+v[x].b.d)}}if(z.e===0&&this.z.length!==0)this.eM()
-else this.eL()
+J.D(w,"class","bg-"+v[x].b.d)}}if(z.e===0&&this.z.length!==0)this.dR()
+else this.dQ()
 C.a.p(z.b.e.d,new X.ip(this))},
-cs:function(){this.x=P.dt(P.bP(0,0,0,this.a,0,0),new X.io(this))},
-eM:function(){var z,y,x,w,v
-z=this.b.b.d.a
+dR:function(){var z,y,x,w,v
+z=this.c.b.d.a
 if(0>=z.length)return H.a(z,0)
 y=J.j(z[0],0)
 z=document
@@ -5264,7 +5268,7 @@ J.D(J.a7(J.q(J.j(this.f,x)),w.S(z,1)),"class","bg-road invalid")
 v=J.bC(x)
 J.D(J.a7(J.q(J.j(this.f,v.S(x,1))),z),"class","bg-road invalid")
 J.D(J.a7(J.q(J.j(this.f,v.S(x,1))),w.S(z,1)),"class","bg-road invalid")},
-eL:function(){var z,y,x,w,v,u
+dQ:function(){var z,y,x,w,v,u
 z=document
 J.q(z.getElementById("speech")).I(0)
 z.getElementById("speech").textContent="Lebenspunkte:"
@@ -5276,28 +5280,28 @@ y=z.getElementById("scoreStat").style
 y.fontSize="2vh"
 y=z.getElementById("scoreStat").style
 y.marginBottom="2vh"
-y=this.b
+y=this.c
 z.getElementById("scoreStat").textContent="Erreichte Punkte: "+C.j.j(y.y)
-x=0
-while(!0){w=y.b.d.y
-if(typeof w!=="number")return H.m(w)
-if(!(x<w))break
+J.q(z.getElementById("enemiesStat")).I(0)
+z.getElementById("enemiesStat").textContent="Verbliebende Gegner: "
+x=z.getElementById("enemiesStat").style
+x.fontSize="2vh"
+x=z.getElementById("enemiesStat").style
+x.marginBottom="0"
+w=0
+while(!0){x=y.b.d.y
+if(typeof x!=="number")return H.m(x)
+if(!(w<x))break
 v=z.createElement("span")
 v.setAttribute("class","fa fa-heart")
-w=v.style
-w.paddingLeft="1vh"
-J.q(z.getElementById("speech")).w(0,v);++x}J.q(z.getElementById("enemiesStat")).I(0)
-z.getElementById("enemiesStat").textContent="Verbliebende Gegner: "
-w=z.getElementById("enemiesStat").style
-w.fontSize="2vh"
-w=z.getElementById("enemiesStat").style
-w.marginBottom="0"
-for(x=0;x<y.b.e.f;++x){u=W.P(null,null,null)
+x=v.style
+x.paddingLeft="1vh"
+J.q(z.getElementById("speech")).w(0,v);++w}for(w=0;w<y.b.e.f;++w){u=W.P(null,null,null)
 u.src="../img/etc/enemy-stat.png"
-w=u.style
-w.paddingLeft="1vh"
-w=u.style
-w.width="4vh"
+x=u.style
+x.paddingLeft="1vh"
+x=u.style
+x.width="4vh"
 J.q(z.getElementById("enemiesStat")).w(0,u)}},
 by:function(){var z,y,x,w,v,u,t,s
 z=W.P(null,null,null)
@@ -5323,14 +5327,14 @@ u.appendChild(y)
 t.appendChild(x)
 v.appendChild(u)
 v.appendChild(t)
-this.e.f.appendChild(v)
-w=this.e.c
+this.x.f.appendChild(v)
+w=this.x.c
 s=w.style
 s.padding="4vh"
 s=w.style
 s.border="0"
 w.appendChild(z)
-w=this.e
+w=this.x
 s=w.f.style
 s.backgroundColor="black"
 s=w.b.style
@@ -5339,7 +5343,7 @@ w=w.a
 s=w.style
 s.backgroundColor="orange"
 w.setAttribute("class","modal bg-img")
-w=this.e
+w=this.x
 s=w.r.style
 s.display="none"
 s=w.e.style
@@ -5350,12 +5354,12 @@ w=w.a.style
 w.display="block"},
 cl:function(){var z=J.q(document.getElementById("pause"))
 J.D(z.gC(z),"class","nav-link btn btn-secondary ml-1")
-z=this.e
+z=this.x
 z.a0()
 z=z.a.style
 z.display="none"},
 cP:function(){var z,y,x,w,v,u,t,s
-z=this.e
+z=this.x
 y=z.d
 y.textContent="Hilfe: Steuerung"
 y=y.style
@@ -5376,25 +5380,25 @@ s=t.style
 s.width="5vh"
 u.appendChild(t)
 J.cv(J.a_(new W.Z(w.rows,y).h(0,v)).h(0,0),x[v])
-J.ae(J.q(J.a_(new W.Z(w.rows,y).h(0,v)).h(0,1)),u)}this.e.f.appendChild(w)
-z=this.e
+J.ae(J.q(J.a_(new W.Z(w.rows,y).h(0,v)).h(0,1)),u)}this.x.f.appendChild(w)
+z=this.x
 y=z.e.style
 y.display="block"
 z=z.a.style
 z.display="block"},
 bz:function(){var z,y,x
-this.e.a0()
+this.x.a0()
 switch(this.y){case 0:z=J.q(document.getElementById("help"))
 J.D(z.gC(z),"class","nav-link btn btn-primary ml-1")
 y=W.ad("p",null)
-this.e.d.textContent="Anleitung (1/5): Info zum Spiel"
+this.x.d.textContent="Anleitung (1/5): Info zum Spiel"
 z=J.l(y)
 z.saq(y,"Die Level stellen Schlachtfelder aus der Vogelperspektive dar und enthalten immer folgende Elemente: Das Hauptquartier, den eigenen Panzer, feindliche Panzer und Hindernisse, wie z.B. Mauern oder Wasserfl\xe4chen. Das Hauptquartier, symbolisiert durch einen Wappenadler, befindet sich meist mittig am unteren Bildschirmrand und ist von einer Schutzmauer umgeben. Wird diese Mauer durch gegnerische oder eigene Sch\xfcsse zerst\xf6rt und der Adler getroffen, ist das Spiel verloren. Verliert der Spieler alle Leben, f\xfchrt dies ebenfalls zum Spielende. Die Steuerungshilfe (<i class='fa fa-gamepad'></i>) und diese Anleitung (<i class='fa fa-question'></i>) kannst du dir zu jeder Zeit anzeigen lassen")
 z=z.gak(y)
 z.textAlign="justify"
 z=y.style
 z.fontSize="2vh"
-z=this.e
+z=this.x
 x=z.b.style
 x.width="95%"
 z.f.appendChild(y);++this.y
@@ -5402,28 +5406,28 @@ break
 case 1:this.dC();++this.y
 break
 case 2:y=W.ad("p",null)
-this.e.d.textContent="Anleitung (3/5): Gegner und level"
+this.x.d.textContent="Anleitung (3/5): Gegner und level"
 z=J.l(y)
 z.saw(y,"Die Gegner erscheinen auf dem Spielfeld an fest definierten Pl\xe4tzen. Mit fortschreitendem Spielverlauf k\xe4mpft der Spieler gegen schnellere und besser gepanzerte Feindpanzer (insgesamt f\xfcnf Panzertypen) und man\xf6vriert an unterschiedlichen Hindernissen wie Backstein- und Stahlmauern oder Gew\xe4ssern vorbei bzw. zerschie\xdft sie. Je nach Level variiert die Menge der jeweiligen Panzertypen. Viel Erfolg auf dem Schlachtfeld!")
 z=z.gak(y)
 z.textAlign="justify"
 z=y.style
 z.fontSize="2vh"
-this.e.f.appendChild(y);++this.y
+this.x.f.appendChild(y);++this.y
 break
 case 3:this.dB();++this.y
 break
 case 4:y=W.ad("p",null)
-this.e.d.textContent="Anleitung (5/5): Punkten und letzte Level"
+this.x.d.textContent="Anleitung (5/5): Punkten und letzte Level"
 z=J.l(y)
 z.saw(y,"Jeder Gegner gibt dem Spieler bei zerst\xf6rung Punkte.Wenn man verliert oder das letzte Level abschlie\xdft werden einem die erreichten Punkte noch einmal angezeigt.")
 z=z.gak(y)
 z.textAlign="justify"
 z=y.style
 z.fontSize="2vh"
-this.e.f.appendChild(y)
+this.x.f.appendChild(y)
 this.y=0
-break}z=this.e
+break}z=this.x
 x=z.d.style
 x.display="block"
 x=z.e.style
@@ -5435,7 +5439,7 @@ x.display="block"
 z=z.a.style
 z.display="block"},
 dC:function(){var z,y,x,w,v,u,t
-this.e.d.textContent="Anleitung (2/5): Feldertypen"
+this.x.d.textContent="Anleitung (2/5): Feldertypen"
 z=this.bb(6,2,"fieldTypes")
 y=["road","brick","bush","water","steel","goal"]
 x=[["durchfahrbar","durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","zerst\xf6rbar"],["durchfahrbar","durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","durchl\xe4ssig","zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","nicht zerst\xf6rbar"],["nicht durchfahrbar","nicht durchl\xe4ssig","zerst\xf6rbar"]]
@@ -5445,9 +5449,9 @@ u.src="../img/fields/bg-"+y[v]+"-field.png"
 u.setAttribute("class","tutorial-img-sm")
 J.D(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,0),"class","text-center")
 J.ae(J.q(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,0)),u)
-J.ae(J.q(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,1)),t)}this.e.f.appendChild(z)},
+J.ae(J.q(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,1)),t)}this.x.f.appendChild(z)},
 dB:function(){var z,y,x,w,v,u
-this.e.d.textContent="Anleitung (4/5): Panzertypen"
+this.x.d.textContent="Anleitung (4/5): Panzertypen"
 z=this.bb(5,2,"enemyTypes")
 y=[["Geschwindigkeit: lansam ","Punkte: 50 * Leben "],["Geschwindigkeit: mittel","Punkte: 100 * Leben "],["Geschwindigkeit: schnell","Punkte: 150 * Leben"],["Geschwindigkeit: sehr schnell","Punkte: 100 * Leben"],["Geschwindigkeit: schnell","Punkte: 100 * Leben"]]
 x=[W.P(null,null,null),W.P(null,null,null),W.P(null,null,null),W.P(null,null,null),W.P(null,null,null)]
@@ -5463,7 +5467,7 @@ for(w=[W.b7],v=0;v<5;++v){u=this.bN(y[v])
 x[v].setAttribute("class","tutorial-img-sm")
 J.D(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,0),"class","text-center")
 J.ae(J.q(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,0)),x[v])
-J.ae(J.q(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,1)),u)}this.e.f.appendChild(z)},
+J.ae(J.q(J.a_(new W.Z(z.rows,w).h(0,v)).h(0,1)),u)}this.x.f.appendChild(z)},
 bb:function(a,b,c){var z,y,x,w,v
 z=document.createElement("table")
 y=C.l.bK(z)
@@ -5478,12 +5482,14 @@ for(y=0;y<a.length;++y){x=W.ad("li",null)
 if(y>=a.length)return H.a(a,y)
 J.cv(x,a[y])
 z.appendChild(x)}return z}},
+io:{"^":"b:0;a",
+$1:function(a){this.a.eM()}},
 ip:{"^":"b:0;a",
 $1:function(a){var z,y,x,w,v,u,t
 z=new P.br("bg-")
 x=z
 w=this.a
-v=w.b.b.e
+v=w.c.b.e
 u=a.gaP()
 if(0>=u.length)return H.a(u,0)
 u=v.A(J.j(u[0],0)).b.d
@@ -5511,9 +5517,7 @@ x=a.a
 if(0>=x.length)return H.a(x,0)
 y=J.j(w,J.ag(J.j(x[0],0)))
 x=z.gn()
-J.D(y,"class",x.charCodeAt(0)==0?x:x)}catch(t){H.A(t)}}},
-io:{"^":"b:0;a",
-$1:function(a){this.a.eK()}}}],["","",,F,{"^":"",
+J.D(y,"class",x.charCodeAt(0)==0?x:x)}catch(t){H.A(t)}}}}],["","",,F,{"^":"",
 lZ:[function(){W.G(window,"load",new F.kf(),!1,W.bf)},"$0","ec",0,0,2],
 kf:{"^":"b:0;",
 $1:function(a){X.eU()}}},1]]
@@ -5581,38 +5585,38 @@ J.el=function(a,b,c,d){return J.l(a).dH(a,b,c,d)}
 J.em=function(a,b,c){return J.l(a).dJ(a,b,c)}
 J.cq=function(a){return J.aT(a).c9(a)}
 J.ae=function(a,b){return J.ap(a).w(a,b)}
-J.bJ=function(a,b,c){return J.w(a).e_(a,b,c)}
+J.bJ=function(a,b,c){return J.w(a).e1(a,b,c)}
 J.a7=function(a,b){return J.ap(a).D(a,b)}
 J.X=function(a,b){return J.ap(a).p(a,b)}
-J.cr=function(a){return J.l(a).gdU(a)}
-J.a_=function(a){return J.l(a).gdV(a)}
+J.cr=function(a){return J.l(a).gdW(a)}
+J.a_=function(a){return J.l(a).gdX(a)}
 J.q=function(a){return J.l(a).gbk(a)}
 J.aG=function(a){return J.l(a).ga5(a)}
 J.en=function(a){return J.ap(a).gC(a)}
 J.a0=function(a){return J.o(a).gE(a)}
 J.aq=function(a){return J.ap(a).gB(a)}
-J.eo=function(a){return J.l(a).gel(a)}
+J.eo=function(a){return J.l(a).gen(a)}
 J.C=function(a){return J.w(a).gi(a)}
-J.ep=function(a){return J.l(a).ges(a)}
+J.ep=function(a){return J.l(a).gev(a)}
 J.af=function(a){return J.l(a).gcp(a)}
-J.eq=function(a){return J.l(a).gev(a)}
-J.er=function(a){return J.l(a).gew(a)}
-J.es=function(a){return J.l(a).geD(a)}
-J.et=function(a){return J.l(a).geG(a)}
-J.cs=function(a){return J.l(a).geJ(a)}
+J.eq=function(a){return J.l(a).gex(a)}
+J.er=function(a){return J.l(a).gey(a)}
+J.es=function(a){return J.l(a).geF(a)}
+J.et=function(a){return J.l(a).geI(a)}
+J.cs=function(a){return J.l(a).geL(a)}
 J.ag=function(a){return J.l(a).gk(a)}
 J.ah=function(a){return J.l(a).gl(a)}
-J.ct=function(a,b){return J.l(a).eg(a,b)}
+J.ct=function(a,b){return J.l(a).ei(a,b)}
 J.eu=function(a,b){return J.ap(a).aa(a,b)}
-J.cu=function(a){return J.ap(a).ey(a)}
-J.ev=function(a,b){return J.l(a).eC(a,b)}
+J.cu=function(a){return J.ap(a).eA(a)}
+J.ev=function(a,b){return J.l(a).eE(a,b)}
 J.aH=function(a,b){return J.l(a).aC(a,b)}
 J.ew=function(a,b){return J.l(a).saM(a,b)}
 J.aV=function(a,b){return J.l(a).saq(a,b)}
 J.ex=function(a,b){return J.w(a).si(a,b)}
 J.cv=function(a,b){return J.l(a).saw(a,b)}
 J.D=function(a,b,c){return J.l(a).cM(a,b,c)}
-J.ey=function(a){return J.jY(a).eI(a)}
+J.ey=function(a){return J.jY(a).eK(a)}
 J.a1=function(a){return J.o(a).j(a)}
 I.aE=function(a){a.immutable$list=Array
 a.fixed$length=Array
