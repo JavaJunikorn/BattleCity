@@ -1,16 +1,27 @@
 part of BattleCity;
 
+/**
+ * manages  all the listeners
+ */
 class Listeners {
   Controller controller;
-  Point first, last;
+  Point first, last; // used for managing swiping
   Game game;
-  bool _listen = true;
+  bool _listen = true; // used to activate and deactivate listeners for controlling tha playertank
 
+  /**
+   * create a Listeners object that manages listeners
+   * @param controller the controller the gameplay
+   * @param game the game the listeners are for
+   */
   Listeners(Controller this.controller, Game this.game){
    _startListeners();
    pauseListening();
   }
 
+  /**
+   * calculates the direction of a swipe or if it was to short count it as a tap
+   */
   void _getSwipe() {
     if (last == null || first.distanceTo(last) < 20)
       game.level.player.shoot();
@@ -38,14 +49,23 @@ class Listeners {
     }
   }
 
+  /**
+   * pause the listeners that are used for controlling the playertank
+   */
   void pauseListening() {
     _listen = false;
   }
 
+  /**
+   * resume the listeners that are used for controlling the playertank
+   */
   void resumeListening() {
     _listen = true;
   }
 
+  /**
+   * starts all the listeners
+   */
   void _startListeners() {
 
     startModalListeners();
@@ -89,6 +109,9 @@ class Listeners {
     });
   }
 
+  /**
+   * starts listeners used in the main menu
+   */
   void startMenuListeners(){
     document.getElementById("play").onClick.listen((ev) {
       controller.view.closeMainMenu();
@@ -102,6 +125,9 @@ class Listeners {
     });
   }
 
+  /**
+   * starts all the listeners used in modal elements
+   */
   void startModalListeners() {
 
 

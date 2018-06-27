@@ -49,12 +49,12 @@ class View {
   /**
    * Zaeler fuer den naechsten Teil des Anleitung.
    */
-  int tutorialPart = 0;
+  var tutorialPart = 0;
 
   /**
    * Punkte, die im Tutorial lvl mit Animation markiert werden sollen.
    */
-  List<Point> tutorialSubgoals = [
+  var tutorialSubgoals = [
     new Point(0,22), new Point(4, 22),
     new Point(18, 14), new Point(4, 11),
     new Point(22, 7), new Point(14, 7)
@@ -269,11 +269,11 @@ class View {
    * Markiert den Quadrat rund um der gegebenen Position mit einer CSS-Animation.
    * @param Point die linke obere Position des Quadrats.
    */
-  void _higlightTutorialSubgoal(Point postion) {
-    rows[postion.y].children.elementAt(postion.x).setAttribute("class", "bg-road invalid");
-    rows[postion.y].children.elementAt(postion.x + 1).setAttribute("class", "bg-road invalid");
-    rows[postion.y + 1].children.elementAt(postion.x).setAttribute("class", "bg-road invalid");
-    rows[postion.y + 1].children.elementAt(postion.x + 1).setAttribute("class", "bg-road invalid");
+  void _higlightTutorialSubgoal(Point position) {
+    rows[position.y].children.elementAt(position.x).setAttribute("class", "bg-road invalid");
+    rows[position.y].children.elementAt(position.x + 1).setAttribute("class", "bg-road invalid");
+    rows[position.y + 1].children.elementAt(position.x).setAttribute("class", "bg-road invalid");
+    rows[position.y + 1].children.elementAt(position.x + 1).setAttribute("class", "bg-road invalid");
 
   }
 
