@@ -1,10 +1,14 @@
 part of BattleCity;
 
 class Controller {
-  Game game;
-  View view;
-  Listeners listeners;
+  Game game; // the game this controller is working on
+  View view; // the view for the game
+  Listeners listeners; // the Listeners used
 
+  /**
+   * creates a new Controller
+   * game and view are automatically created
+   */
   Controller() {
     game = new Game((String reason) {
       {
@@ -19,6 +23,10 @@ class Controller {
     });
   }
 
+  /**
+   * function that is called when the game is stopped
+   * @param reason the reason the game has stopped
+   */
   void gamepaused(String reason) {
     view.pauseLoop();
     listeners.pauseListening();
@@ -37,11 +45,17 @@ class Controller {
     }
   }
 
+  /**
+   * load the main menu
+   */
   void mainMenu() {
     view.showMainMenu();
     listeners.startMenuListeners();
   }
 
+  /**
+   * starts the next level of the game, starts the listeners used for controlling the playertank and the View
+   */
   void startLevel() {
     view.showLoading();
     game.loadNextLevel().whenComplete(() {
@@ -52,11 +66,18 @@ class Controller {
     }).whenComplete(() { pause();});
   }
 
+  /**
+   * continue the view, listeners for controlling the playertank and the game
+   */
   void resume() {
     view.resumeLoop();
     listeners.resumeListening();
     game.startLoop();
   }
+
+  /**
+   * pause the view, listeners for controlling the playertank and the game
+   */
   void pause(){
     view.pauseLoop();
     listeners.pauseListening();

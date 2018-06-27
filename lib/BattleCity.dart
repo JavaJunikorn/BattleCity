@@ -13,7 +13,7 @@ part 'src/view/View.dart';
 part 'src/view/ModalElement.dart';
 
 part 'src/model/moveables/Directions.dart';
-part 'src/model/moveables/Field.dart';
+part 'src/model/Field.dart';
 part 'src/model/Game.dart';
 part 'src/model/GameField.dart';
 part 'src/model/moveables/Bullet.dart';

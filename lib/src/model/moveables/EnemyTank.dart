@@ -1,6 +1,10 @@
 part of BattleCity;
 
-
+/**
+ * creates a tank which is not controlled by a Player
+ *
+ * see Tank
+ */
 class EnemyTank extends Tank {
   EnemyTank(int x, int y, int width, int height, Directions direction,
       Game game, int speed, int health, String bulletType, String type, int score)
@@ -8,6 +12,11 @@ class EnemyTank extends Tank {
    game.level.gamefield.enemyCount++;
   }
 
+  /**
+   * see Tank
+   *
+   * shooting and turning is also handled here.
+   */
   @override
   move(int count) {
     if(health < 1)return;
@@ -28,7 +37,10 @@ class EnemyTank extends Tank {
   }
 
 
-void moveRandomly(){
+  /**
+   * randomly determines a new direction for the tank to move towards
+   */
+  void moveRandomly(){
   var rnd = new Random();
   int i = rnd.nextInt(4);
   switch (i) {
