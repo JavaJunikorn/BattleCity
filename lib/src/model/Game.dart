@@ -4,23 +4,24 @@ part of BattleCity;
  * the Game class has all nessesary information and functions to run the game
  */
 class Game {
-  final int delay = 35; //the update frequency of the gameloop (lower is higher frequency)
-  Level level; //the information to the current level
-  Timer t; //the timer that calles the levelLoop
+
+  bool _running = false; //true if the game is running, false if is is stopped
   int levelCount = 0; //the amount of levels that can be played
   int currentLevel = 0; //the current level that is played
-  Set<Moveable> toRemove = new Set(); //set of Moveables that need to be removed from the gamefield
-  int speedCount = 0; //counter that is passed to moveables in gameloop to manage their speeds
-  Function function; //function that is calles when the game is stopped
   int score = 0; //the score that the player has achieved in the current game
-  bool _running = false; //true if the game is running, false if is is stopped
+  int speedCount = 0; //counter that is passed to moveables in gameloop to manage their speeds
+  final int delay = 35; //the update frequency of the gameloop (lower is higher frequency)
+
+  Level level; //the information to the current level
+  Timer t; //the timer that calles the levelLoop
+  Set<Moveable> toRemove = new Set(); //set of Moveables that need to be removed from the gamefield
+  Function function; //function that is calles when the game is stopped
 
   /**
    * Creates a new Game
    * @param function this funtion is called when the game is stopped.
    */
-  Game(void this.function(String reason)) {
-  }
+  Game(void this.function(String reason)) {}
 
   /**
    * loads the meta information needed from a Json file.
