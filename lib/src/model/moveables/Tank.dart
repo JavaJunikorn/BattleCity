@@ -4,7 +4,6 @@ part of BattleCity;
  * the class modelling a Tank
  */
 abstract class Tank extends Moveable {
-  int speed;
   int health;
   String bulletType;
   bool readyToShoot = true; //used to manage the shooting freqquency of the tank
@@ -26,7 +25,7 @@ abstract class Tank extends Moveable {
    * @param score the amount of score the tank gives when killed by the player.
    */
   Tank(int x, int y, int width, int height, Directions direction, Game game,
-      int this.speed, int this.health, String this.bulletType, String type, int score)
+      int speed, int this.health, String this.bulletType, String type, int score)
       : super(x, y, width, height, direction, game, speed, type){
     this.score = score * health;
   }
